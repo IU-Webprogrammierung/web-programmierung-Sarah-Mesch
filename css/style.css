@@ -1,5 +1,7 @@
 header {
-    background-color: #2B3A58;
+    background-image: url('img/header.jpg');
+    background-size: cover;
+    background-position: center;
 }
 h1 {
     color: white;
