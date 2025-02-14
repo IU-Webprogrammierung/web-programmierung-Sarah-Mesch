@@ -1,0 +1,8 @@
+header {
+    background-image: url('img/fanclub.svg');
+    background-size: cover;
+    background-position: center;
+}
+h1 {
+    color: white;
+}
