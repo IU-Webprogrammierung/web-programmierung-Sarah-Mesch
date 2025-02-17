@@ -9,3 +9,57 @@ h1 {
 #MeinNächstesSpiel h2 {
         color: #2B3A58;
 }
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: relative;  
+}
+
+.bild img{
+    width: 120%;
+    height: auto;
+    display: block;
+    margin-top: 50px;
+}
+
+.box {
+    background-color: #2B3A58;
+    color: white;
+    padding: 20px;
+    position: relative;       
+    top: 17%;
+    height: 60%;
+}
+
+#ÜberMich {
+    .bild img{
+        margin-left: 20px;
+    }
+    
+    .box {
+        margin-right: 20px;
+    }
+}
+
+#MeinWegAlsSportlerin {
+    .bild img {
+        width: 97%;
+        margin-right: 20px;
+    }
+    
+    .box {
+        width: 115%;
+        margin-left: 20px;
+    }
+}
+
+#Fanclub {
+    .bild img{
+        margin-left: 20px;
+    }
+    
+    .box {
+        margin-right: 20px;
+    }
+}
