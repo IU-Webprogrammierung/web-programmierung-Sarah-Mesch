@@ -2,10 +2,19 @@ header {
     background-image: url('img/header.jpg');
     background-size: cover;
     background-position: center;
+    height: 100vh;   
+}
+
+header img {
+    margin: 20px;
 }
 
 h1 {
     color: white;
+    font-size: 17rem;
+    text-align: center;
+    position: absolute;
+    top: 2%;
 }
 
 #MeinNächstesSpiel h2 {
@@ -58,34 +67,28 @@ h1 {
     height: 60%;
 }
 
-#ÜberMich {
-    .bild img {
-        margin-left: 20px;
-    }
-
-    .filled-box {
-        margin-right: 20px;
-    }
+#ÜberMich .bild img{
+    margin-left: 20px;
 }
 
-#MeinWegAlsSportlerin {
-    .bild img {
-        width: 97%;
-        margin-right: 20px;
-    }
-
-    .filled-box {
-        width: 115%;
-        margin-left: 20px;
-    }
+#ÜberMich .filled-box {
+    margin-right: 20px;
 }
 
-#Fanclub {
-    .bild img {
-        margin-left: 20px;
-    }
+#MeinWegAlsSportlerin .bild img {
+    width: 97%;
+    margin-right: 20px;
+}
 
-    .filled-box {
-        margin-right: 20px;
-    }
+#MeinWegAlsSportlerin .filled-box {
+    width: 115%;
+    margin-left: 20px;
+}
+
+#Fanclub .bild img {
+    margin-left: 20px;
+}
+
+#Fanclub .filled-box {
+    margin-right: 20px;
 }
