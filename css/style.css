@@ -3,41 +3,67 @@ header {
     background-size: cover;
     background-position: center;
 }
+
 h1 {
     color: white;
 }
+
 #MeinNächstesSpiel h2 {
-        color: #2B3A58;
+    color: #2B3A58;
+    margin-left: 20px;
 }
 
-.grid-container {
+#MeinNächstesSpiel h5 {
+    color: #2B3A58;
+}
+
+#MeinNächstesSpiel span {
+    color: #2B3A58;
+}
+
+.grid-container-countdown {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.box-countdown {
+    border: 2px solid #2B3A58;
+    padding: 20px;
+    text-align: center;
+}
+
+.grid-container-filled-box {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    position: relative;  
+    position: relative;
 }
 
-.bild img{
+.bild img {
     width: 120%;
     height: auto;
     display: block;
     margin-top: 50px;
 }
 
-.box {
+.filled-box {
     background-color: #2B3A58;
     color: white;
     padding: 20px;
-    position: relative;       
+    position: relative;
     top: 17%;
     height: 60%;
 }
 
 #ÜberMich {
-    .bild img{
+    .bild img {
         margin-left: 20px;
     }
-    
-    .box {
+
+    .filled-box {
         margin-right: 20px;
     }
 }
@@ -47,19 +73,19 @@ h1 {
         width: 97%;
         margin-right: 20px;
     }
-    
-    .box {
+
+    .filled-box {
         width: 115%;
         margin-left: 20px;
     }
 }
 
 #Fanclub {
-    .bild img{
+    .bild img {
         margin-left: 20px;
     }
-    
-    .box {
+
+    .filled-box {
         margin-right: 20px;
     }
 }
