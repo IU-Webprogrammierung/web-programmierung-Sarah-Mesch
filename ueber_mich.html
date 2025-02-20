@@ -7,17 +7,22 @@
     <link rel="stylesheet" href="css/style_uebermich.css">
 </head>
 <body>
-    <header>
-        <a id="LinkzurHomepage" href="index.html"><img aria-label="gehe zur Homepage" src="css/img/logo.svg" alt="Logo Hannah Mesch"></a>
-        <h1>ÜBER MICH</h1>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="ueber_mich.html">Über mich</a></li>
-            <li><a href="mein_weg_als_sportlerin.html">Mein Weg als Sportlerin</a></li>
-            <li><a href="fanclub.html">Fanclub</a></li>
-          </ul>
-        </nav>
+        <header>
+            <a id="LinkzurHomepage" href="index.html" class="home" aria-label="Gehe zur Homepage">
+                <img src="css/img/logo.svg" alt="Logo Hannah Mesch">
+            </a>
+            <h1>ÜBER MICH</h1>
+            <button id="menuButton" class="menu-button">MENÜ</button>
+            <nav id="menu" class="menu">
+                <button id="closeButton" class="close-button">SCHLIESSEN</button>
+                <ul>
+                    <li><a href="index.html" class="home">HOME</a></li>
+                    <li><a href="ueber_mich.html" class="active ueber_mich">ÜBER MICH</a></li>
+                    <li><a href="mein_weg_als_sportlerin.html">MEIN WEG ALS SPORTLERIN</a></li>
+                    <li><a href="fanclub.html">FANCLUB</a></li>
+                </ul>
+            </nav>
+        </header>
     <main>
         <section id="Steckbrief">
             <!-- Bild dekorativ, deshalb Alt-Tag leer -->
@@ -93,5 +98,6 @@
         <a href="impressum.html">Impressum</a>
         <a href="datenschutz.html">Datenschutz</a>
      </footer>
+     <script src="script.js"></script>
 </body>
 </html>
