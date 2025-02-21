@@ -148,3 +148,63 @@ h1 {
 #Fanclub .filled-box {
     margin-right: 20px;
 }
+
+#MeineNächstenSpiele {
+    background-color: #2B3A58;
+    margin-top: 20px;
+    padding-top: 20px;
+    margin-bottom: 20px;
+}
+
+#MeineNächstenSpiele h2 {
+    color: white;
+    margin-left: 20px;
+}
+
+.spielplan-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding-bottom: 50px;
+}
+
+.spiel {
+    display: flex;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.team {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+}
+
+.team img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+}
+
+.team-name {
+    color: white;
+}
+
+.info {
+    text-align: center;
+    width: 40%;
+    color: white;
+}
+
+.datum, .uhrzeit {
+    margin: 5px 0;
+}
+
+.mehr-anzeigen {
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    padding: 10px 20px;
+    display: block; 
+    margin: 20px auto;
+}
