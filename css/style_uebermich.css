@@ -73,6 +73,48 @@ h1 {
     top: 2%;
 }
 
+.uebermich-container {
+    display: flex;
+    align-items: center;
+    background: #2B3A58;
+    margin-top: 20px;
+}
+
+.uebermich-container img { 
+    max-width: 300px;
+    margin-left: 150px;
+
+}
+
+.uebermich-überschrift {
+    flex: 1;
+    text-align: center;
+    color: white;
+}
+
+.uebermich-überschrift img {
+    max-width: 50px;
+    margin: 0px;
+}
+
+.steckbrief-container {
+    display: flex;
+    border: 2px solid #2B3A58;
+}
+
+.spalte1 {
+    flex: 1;
+    padding: 20px;
+    text-align: left;
+    font-weight: bold;
+}
+
+.spalte2 {
+    flex: 1;
+    padding: 20px;
+    text-align: left;
+}
+
 footer {
     display: flex;
     justify-content: space-between;

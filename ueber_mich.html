@@ -1,85 +1,76 @@
 <!DOCTYPE html>
 <html lang="de">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Über mich</title>
     <link rel="stylesheet" href="css/style_uebermich.css">
 </head>
+
 <body>
-        <header>
-            <a id="LinkzurHomepage" href="index.html" class="home" aria-label="Gehe zur Homepage">
-                <img src="css/img/logo.svg" alt="Logo Hannah Mesch">
-            </a>
-            <h1>ÜBER MICH</h1>
-            <button id="menuButton" class="menu-button">MENÜ</button>
-            <nav id="menu" class="menu">
-                <button id="closeButton" class="close-button">SCHLIESSEN</button>
-                <ul>
-                    <li><a href="index.html" class="home">HOME</a></li>
-                    <li><a href="ueber_mich.html" class="active ueber_mich">ÜBER MICH</a></li>
-                    <li><a href="mein_weg_als_sportlerin.html">MEIN WEG ALS SPORTLERIN</a></li>
-                    <li><a href="fanclub.html">FANCLUB</a></li>
-                </ul>
-            </nav>
-        </header>
+    <header>
+        <a id="LinkzurHomepage" href="index.html" class="home" aria-label="Gehe zur Homepage">
+            <img src="css/img/logo.svg" alt="Logo Hannah Mesch">
+        </a>
+        <h1>ÜBER MICH</h1>
+        <button id="menuButton" class="menu-button">MENÜ</button>
+        <nav id="menu" class="menu">
+            <button id="closeButton" class="close-button">SCHLIESSEN</button>
+            <ul>
+                <li><a href="index.html" class="home">HOME</a></li>
+                <li><a href="ueber_mich.html" class="active ueber_mich">ÜBER MICH</a></li>
+                <li><a href="mein_weg_als_sportlerin.html">MEIN WEG ALS SPORTLERIN</a></li>
+                <li><a href="fanclub.html">FANCLUB</a></li>
+            </ul>
+        </nav>
+    </header>
     <main>
         <section id="Steckbrief">
-            <!-- Bild dekorativ, deshalb Alt-Tag leer -->
-            <img src="css/img/ueber_mich.svg" alt="">
-            <h2>HEY, ICH BIN HANNAH</h2>
-            <p>Geburtsdatum: 
-
-                Geburtsort: 
-                
-                Größe: 
-                
-                Sturm: 
-                
-                Aktueller Verein:
-                
-                Rückennummer: 
-                
-                Jugendvereine:
-                
-                
-                
-                Besondere Erfolge:
-                
-                
-                
-                
-                Persönliche Ziele:
-                
-                
-                
-                
-                Besondere Ereignisse:</p>
-                <p>3. Dezember 2004
-
-                    Coburg
-                    
-                    1,68 Meter
-                    
-                    Angriff
-                    
-                    FC Carl Zeiss Jena
-                    
-                    11
-                    
-                    TSV Meeder
-                    FC Coburg
-                    FF USV Jena U17
-                    
-                    Teilnahme an der MDR-Dokuserie "Bundesliga oder Bolzplatz"
-                    Gründung des Fanclubs "Meschi#11" in ihrem Heimatort Drossenhausen
-                    
-                    Abiturabschluss im Jahr 2025
-                    Anschließendes Studium im Bereich Sportmanagement
-                    
-                    
-                    Im Alter von 15 Jahren erster Einsatz bei den Frauen im DFB-Pokal gegen den FC Bayern München
-                    Überstandene Verletzungen, darunter ein Sprunggelenkbruch und ein Außenbandriss im Knie</p>
+            <div class="uebermich-container">
+                <!-- Bild dekorativ, deshalb Alt-Tag leer -->
+                <img src="css/img/steckbrief.svg" alt="">
+                <div class="uebermich-überschrift">
+                    <h2>HEY, ICH BIN</h2>
+                    <h2>HANNAH</h2>
+                    <img src="css/img/instagram.svg" alt="">
+                </div>
+            </div>
+                <div class="steckbrief-container">
+                    <div class="spalte1">
+                        <p>Geburtsdatum:</p>
+                        <p>Geburtsort:</p>
+                        <p>Größe:</p>
+                        <p>Sturm:</p>
+                        <p>Aktueller Verein:</p>
+                        <p>Rückennummer:</p>
+                        <p>Jugendvereine:</p>
+                    </br>
+                    </br>   
+                        <p>Besondere Erfolge:</p>
+                    </br>
+                        <p>Persönliche Ziele:</p>
+                    </br>
+                        <p>Besondere Ereignisse:</p>
+                    </div>
+                    <div class="spalte2">
+                        <p>3. Dezember 2004</p>
+                        <p>Coburg</p>
+                        <p>1,68 Meter</p>
+                        <p>Angriff</p>
+                        <p>FC Carl Zeiss Jena</p>
+                        <p>11</p>
+                        <p>TSV Meeder</p>
+                        <p>FC Coburg</p>
+                        <p>FF USV Jena U17</p>
+                        <p>Teilnahme an der MDR-Dokuserie "Bundesliga oder Bolzplatz"</p>
+                        <p>Gründung des Fanclubs "Meschi#11" in ihrem Heimatort Drossenhausen</p>
+                        <p>Abiturabschluss im Jahr 2025</p>
+                        <p>Anschließendes Studium im Bereich Sportmanagement</p>
+                        <p>Im Alter von 15 Jahren erster Einsatz bei den Frauen im DFB-Pokal gegen den FC Bayern München</p>
+                        <p>Überstandene Verletzungen, darunter ein Sprunggelenkbruch und ein Außenbandriss im Knie</p>
+                        </div>
+                </div>
         </section>
         <section id="Autogrammkarten">
             <h2>LADE MEINE AUTOGRAMMKARTEN HERUNTER</h2>
@@ -100,6 +91,7 @@
             <a href="datenschutz.html">DATENSCHUTZ</a>
         </div>
     </footer>
-     <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
+
 </html>
