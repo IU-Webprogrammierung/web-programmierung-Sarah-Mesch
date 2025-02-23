@@ -145,6 +145,65 @@ h1 {
     border: 2px solid #2B3A58;
     color: white;
     padding: 10px 20px;
+    margin-bottom: 20px;
+}
+
+#Fotogalerie {
+    margin: 20px;
+    ;
+}
+
+#Fotogalerie h2 {
+    color: #2B3A58;
+}
+
+.gallery-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1.5fr;
+    gap: 20px;
+}
+
+.gallery-column {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.gallery-column img {
+    width: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.column-1 img {
+    height: 200px;
+}
+
+.column-2 .tall {
+    height: 415px;
+}
+
+.column-2 .small {
+    height: 200px;
+}
+
+.column-3 .small {
+    height: 265px;
+}
+
+.column-3 .tall {
+    height: 350px;
+}
+
+.gallery-container button {
+    background-color: #2B3A58;
+    border: 2px solid #2B3A58;
+    color: white;
+    padding: 10px 20px;
+    justify-self: left;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 footer {
@@ -163,4 +222,15 @@ footer a {
 footer .right {
     display: flex;
     gap: 20px;
+}
+
+/* Responsives Design */
+@media (max-width: 600px) {
+    .gallery-container {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-column img {
+        height: auto;
+    }
 }
