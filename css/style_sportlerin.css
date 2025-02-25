@@ -67,10 +67,79 @@ nav a.active {
 
 h1 {
     color: white;
-    font-size: 17rem;
-    text-align: center;
+    font-size: 12rem;
+    text-align: justify;
     position: absolute;
-    top: 2%;
+    top: 32%;
+}
+
+#Werdegang h2 {
+color: #2B3A58;
+}
+
+.slider-container {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    position: relative;
+}
+
+.slider {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+
+.slide {
+    position: absolute;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.slide.active {
+    opacity: 1;
+    position: relative;
+}
+
+.content-box {
+    display: flex;
+    width: 100%;
+    height: 300px;
+    background-color: #2B3A58;
+    color: white;
+}
+
+.text-box {
+    width: 50%;
+    padding: 40px;
+}
+
+.image-box {
+    width: 50%;
+}
+
+.image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.arrow {
+    font-size: 2rem;
+    color: #2B3A58;
+    cursor: pointer;
+    padding: 20px;
+    user-select: none;
+}
+
+.left-arrow {
+    margin-right: 10px;
+}
+
+.right-arrow {
+    margin-left: 10px;
 }
 
 footer {
