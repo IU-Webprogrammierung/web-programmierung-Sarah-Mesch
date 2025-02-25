@@ -82,6 +82,7 @@ color: #2B3A58;
     width: 100%;
     align-items: center;
     position: relative;
+    margin-bottom: 40px;
 }
 
 .slider {
@@ -140,6 +141,35 @@ color: #2B3A58;
 
 .right-arrow {
     margin-left: 10px;
+}
+
+#Spieleinsätze h2 {
+    color: #2B3A58;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+#Spieleinsätze h5 {
+    color: #2B3A58;
+}
+
+#Spieleinsätze span {
+    color: #2B3A58;
+}
+
+.grid-container-Spieleinsätze {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.box-Spieleinsätze {
+    border: 2px solid #2B3A58;
+    padding: 20px;
+    text-align: center;
 }
 
 footer {
