@@ -251,9 +251,10 @@ margin-left: 20px;
 }
 
 #Süddeutsche .icon {
-    font-size: 48px;
+    /*font-size: 48px;*/
     position: absolute;
-    right: 205px;
+    /*right: 205px;*/
+    right: 140px;
     top: 180px;
 }
 
