@@ -73,8 +73,9 @@ h1 {
     top: 32%;
 }
 
-#Werdegang h2 {
+h2 {
 color: #2B3A58;
+margin-left: 20px;
 }
 
 .slider-container {
@@ -170,6 +171,109 @@ color: #2B3A58;
     border: 2px solid #2B3A58;
     padding: 20px;
     text-align: center;
+}
+
+.grid-container-filled-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+}
+
+.bild img {
+    width: 120%;
+    height: auto;
+    display: block;
+    margin-top: 50px;
+}
+
+.filled-box {
+    background-color: #2B3A58;
+    color: white;
+    padding: 20px;
+    position: relative;
+    top: 17%;
+    height: 60%;
+}
+
+#Süddeutsche .bild img {
+    width: 97%;
+    margin-right: 20px;
+}
+
+#Süddeutsche .filled-box {
+    width: 115%;
+    margin-left: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+#Süddeutsche .filled-box::before {
+    content: "";
+    position: absolute;
+    left: 30%;
+    width: 2px;
+    height: 80%;
+    background-color: white;
+    transform: translateX(-50%);
+}
+
+#Süddeutsche .filled-box::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    width: 50%;
+    height: 2px;
+    background-color: white;
+    transform: translateY(-50%);
+}
+
+#Süddeutsche .rotated-title {
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+#Süddeutsche .content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 50%;
+    position: absolute;
+    top: 15%;
+    right: 80px;
+    text-align: center;
+}
+
+#Süddeutsche .icon {
+    font-size: 48px;
+    position: absolute;
+    right: 205px;
+    top: 180px;
+}
+
+#Länderpokal .bild img{
+    margin-left: 20px;
+}
+
+#Länderpokal .filled-box {
+    margin-right: 20px;
+}
+
+#Meisterin .bild img {
+    width: 97%;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+#Meisterin .filled-box {
+    width: 115%;
+    margin-left: 20px;
 }
 
 footer {
