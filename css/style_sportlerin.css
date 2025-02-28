@@ -2,24 +2,24 @@ header {
     background-image: url('img/sportlerin.svg');
     background-size: cover;
     background-position: center;
-    height: 100vh;   
+    height: 100vh;
 }
 
 header img {
     margin: 20px;
     position: absolute;
-    width: 150px; 
+    width: 150px;
     height: auto;
-    z-index: 100; 
+    z-index: 100;
 }
 
 .menu-button {
     position: absolute;
-    top: 20px; 
-    right: 20px; 
+    top: 20px;
+    right: 20px;
     background-color: transparent;
-    border: 2px solid white; 
-    color: white; 
+    border: 2px solid white;
+    color: white;
     padding: 10px 20px;
     font-size: 1.2rem;
 }
@@ -27,9 +27,9 @@ header img {
 .menu {
     position: absolute;
     width: 100%;
-    height: 100vh; 
-    background-color: #2B3A58; 
-    display: none; 
+    height: 100vh;
+    background-color: #2B3A58;
+    display: none;
     justify-content: center;
     align-items: center;
     display: flex;
@@ -55,7 +55,7 @@ header img {
     top: 20px;
     right: 20px;
     background-color: transparent;
-    border: 2px solid white; 
+    border: 2px solid white;
     color: white;
     padding: 10px 20px;
     font-size: 1.2rem;
@@ -74,8 +74,8 @@ h1 {
 }
 
 h2 {
-color: #2B3A58;
-margin-left: 20px;
+    color: #2B3A58;
+    margin-left: 20px;
 }
 
 .slider-container {
@@ -180,7 +180,6 @@ margin-left: 20px;
 }
 
 .bild img {
-    width: 120%;
     height: auto;
     display: block;
     margin-top: 50px;
@@ -196,14 +195,12 @@ margin-left: 20px;
 }
 
 #Süddeutsche .bild img {
-    width: 97%;
     margin-right: 20px;
 }
 
 #Süddeutsche .filled-box {
     width: 115%;
     margin-left: 20px;
-
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -258,23 +255,127 @@ margin-left: 20px;
     top: 180px;
 }
 
-#Länderpokal .bild img{
+#Länderpokal .bild img {
+    /*width: 97%;*/
     margin-left: 20px;
 }
 
 #Länderpokal .filled-box {
+    width: 115%;
     margin-right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    right: 150px;
+}
+
+#Länderpokal .filled-box::before {
+    content: "";
+    position: absolute;
+    right: 30%;
+    width: 2px;
+    height: 80%;
+    background-color: white;
+    transform: translateX(-50%);
+}
+
+#Länderpokal .filled-box::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 40%;
+    width: 50%;
+    height: 2px;
+    background-color: white;
+    transform: translateY(-50%);
+}
+
+#Länderpokal .rotated-title {
+    writing-mode: vertical-rl;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#Länderpokal .content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 50%;
+    position: absolute;
+    top: 15%;
+    left: 80px;
+    text-align: center;
+}
+
+#Länderpokal .icon {
+    position: absolute;
+    right: 140px;
+    top: 180px;
 }
 
 #Meisterin .bild img {
-    width: 97%;
     margin-right: 20px;
-    margin-bottom: 20px;
 }
 
 #Meisterin .filled-box {
     width: 115%;
     margin-left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+#Meisterin .filled-box::before {
+    content: "";
+    position: absolute;
+    left: 30%;
+    width: 2px;
+    height: 80%;
+    background-color: white;
+    transform: translateX(-50%);
+}
+
+#Meisterin .filled-box::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    width: 50%;
+    height: 2px;
+    background-color: white;
+    transform: translateY(-50%);
+}
+
+#Meisterin .rotated-title {
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+#Meisterin .content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 50%;
+    position: absolute;
+    top: 15%;
+    right: 80px;
+    text-align: center;
+}
+
+#Meisterin .icon {
+    position: absolute;
+    right: 140px;
+    top: 180px;
 }
 
 footer {
@@ -292,5 +393,5 @@ footer a {
 
 footer .right {
     display: flex;
-    gap: 20px; 
+    gap: 20px;
 }
