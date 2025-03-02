@@ -69,14 +69,28 @@
             </div>
         </section>
         <section id="Anmeldeformular">
-            <h2>MELDE DICH GERNE BEIM FANCLUB AN</h2>
-            <p>
-                Diese Anfrage ist ganz unverbindlich für Dich :) Du kannst Dir gerne noch weitere Infos einholen. Wenn
-                du die Abfrage abschickst, erhälst Du im Anschluss das offizielle Anmeldeformular per Mail.
-
-                Hannah würde sich sehr freuen, wenn Du ins Team Meschi#11 kommst!
-            </p>
-            <button>ABSENDEN</button>
+            <div class="form-container">
+                <h2>MELDE DICH GERNE BEIM FANCLUB AN</h2>
+                <div class="form-content">
+                    <div class="text-section">
+                        <p>
+                            Diese Anfrage ist ganz unverbindlich für Dich :) Du kannst Dir gerne noch weitere Infos einholen. Wenn
+                            du die Abfrage abschickst, erhälst Du im Anschluss das offizielle Anmeldeformular per Mail.
+                        </p>
+                        <p>
+                            Hannah würde sich sehr freuen, wenn Du ins Team Meschi#11 kommst!
+                        </p>
+                    </div>
+                    <form>
+                        <div class="input-row">
+                            <input aria-label="Name" type="text" placeholder="Name*" required>
+                            <input aria-label="Email" type="email" placeholder="E-Mail*" required>
+                        </div>
+                        <textarea placeholder="Deine Nachricht*" rows="4" required></textarea>
+                        <button type="submit">ABSENDEN</button>
+                    </form>
+                </div>
+            </div>
         </section>
     </main>
     <footer>
