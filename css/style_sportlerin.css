@@ -13,7 +13,7 @@ header img {
     z-index: 100;
 }
 
-.menu-button {
+header .menu-button {
     position: absolute;
     top: 20px;
     right: 20px;
@@ -22,9 +22,10 @@ header img {
     color: white;
     padding: 10px 20px;
     font-size: 1.2rem;
+    text-transform: uppercase;
 }
 
-.menu {
+header .menu {
     position: absolute;
     width: 100%;
     height: 100vh;
@@ -35,22 +36,23 @@ header img {
     display: flex;
 }
 
-.menu ul {
+header .menu ul {
     list-style: none;
     text-align: center;
 }
 
-.menu li {
+header .menu li {
     margin: 20px 0;
 }
 
-.menu a {
+header .menu a {
     text-decoration: none;
     color: white;
     font-size: 2rem;
+    text-transform: uppercase;
 }
 
-.close-button {
+header .close-button {
     position: absolute;
     top: 20px;
     right: 20px;
@@ -59,26 +61,29 @@ header img {
     color: white;
     padding: 10px 20px;
     font-size: 1.2rem;
+    text-transform: uppercase;
 }
 
-nav a.active {
+header nav a.active {
     text-decoration: underline;
 }
 
-h1 {
+header h1 {
     color: white;
     font-size: 12rem;
     text-align: justify;
     position: absolute;
     top: 32%;
+    text-transform: uppercase;
 }
 
 h2 {
     color: #2B3A58;
     margin-left: 20px;
+    text-transform: uppercase;
 }
 
-.slider-container {
+#Werdegang .slider-container {
     display: flex;
     width: 100%;
     align-items: center;
@@ -86,26 +91,26 @@ h2 {
     margin-bottom: 40px;
 }
 
-.slider {
+#Werdegang .slider {
     display: flex;
     position: relative;
     width: 100%;
     height: 300px;
 }
 
-.slide {
+#Werdegang .slide {
     position: absolute;
     width: 100%;
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
 }
 
-.slide.active {
+#Werdegang .slide.active {
     opacity: 1;
     position: relative;
 }
 
-.content-box {
+#Werdegang .content-box {
     display: flex;
     width: 100%;
     height: 300px;
@@ -113,22 +118,26 @@ h2 {
     color: white;
 }
 
-.text-box {
+#Werdegang .text-box {
     width: 50%;
     padding: 40px;
 }
 
-.image-box {
+#Werdegang .text-box h3 {
+    text-transform: uppercase;
+}
+
+#Werdegang .image-box {
     width: 50%;
 }
 
-.image-box img {
+#Werdegang .image-box img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.arrow {
+#Werdegang .arrow {
     font-size: 2rem;
     color: #2B3A58;
     cursor: pointer;
@@ -136,11 +145,11 @@ h2 {
     user-select: none;
 }
 
-.left-arrow {
+#Werdegang .left-arrow {
     margin-right: 10px;
 }
 
-.right-arrow {
+#Werdegang .right-arrow {
     margin-left: 10px;
 }
 
@@ -148,6 +157,7 @@ h2 {
     color: #2B3A58;
     margin-left: 20px;
     margin-top: 20px;
+    text-transform: uppercase;
 }
 
 #Spieleinsätze h5 {
@@ -158,7 +168,7 @@ h2 {
     color: #2B3A58;
 }
 
-.grid-container-Spieleinsätze {
+#Spieleinsätze .grid-container-Spieleinsätze {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
@@ -167,7 +177,7 @@ h2 {
     margin: 0 auto;
 }
 
-.box-Spieleinsätze {
+#Spieleinsätze .box-Spieleinsätze {
     border: 2px solid #2B3A58;
     padding: 20px;
     text-align: center;
@@ -234,6 +244,7 @@ h2 {
     font-size: 2.5rem;
     font-weight: bold;
     text-align: center;
+    text-transform: uppercase;
 }
 
 #Süddeutsche .content {
@@ -297,6 +308,7 @@ h2 {
     right: 10px;
     top: 50%;
     transform: translateY(-50%);
+    text-transform: uppercase;
 }
 
 #Länderpokal .content {
@@ -356,6 +368,7 @@ h2 {
     font-size: 2.5rem;
     font-weight: bold;
     text-align: center;
+    text-transform: uppercase;
 }
 
 #Meisterin .content {
@@ -390,6 +403,7 @@ h2 {
     flex: 1; 
     color: white;
     align-self: flex-start; 
+    text-transform: uppercase;
 }
 
 #Sponsoren .box-container {
@@ -438,6 +452,7 @@ footer a {
     color: #2B3A58;
     text-decoration: none;
     font-size: 1rem;
+    text-transform: uppercase;
 }
 
 footer .right {

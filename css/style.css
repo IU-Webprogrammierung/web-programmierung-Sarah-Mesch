@@ -13,7 +13,7 @@ header img {
     z-index: 100; 
 }
 
-.menu-button {
+header .menu-button {
     position: absolute;
     top: 20px; 
     right: 20px; 
@@ -22,9 +22,10 @@ header img {
     color: white; 
     padding: 10px 20px;
     font-size: 1.2rem;
+    text-transform: uppercase;
 }
 
-.menu {
+header .menu {
     position: absolute;
     width: 100%;
     height: 100vh; 
@@ -35,22 +36,23 @@ header img {
     display: flex;
 }
 
-.menu ul {
+header .menu ul {
     list-style: none;
     text-align: center;
 }
 
-.menu li {
+header .menu li {
     margin: 20px 0;
 }
 
-.menu a {
+header .menu a {
     text-decoration: none;
     color: white;
     font-size: 2rem;
+    text-transform: uppercase;
 }
 
-.close-button {
+header .close-button {
     position: absolute;
     top: 20px;
     right: 20px;
@@ -59,23 +61,26 @@ header img {
     color: white;
     padding: 10px 20px;
     font-size: 1.2rem;
+    text-transform: uppercase;
 }
 
-nav a.active {
+header nav a.active {
     text-decoration: underline;
 }
 
-h1 {
+header h1 {
     color: white;
     font-size: 17rem;
     text-align: center;
     position: absolute;
     top: 2%;
+    text-transform: uppercase;
 }
 
 #MeinNächstesSpiel h2 {
     color: #2B3A58;
     margin-left: 20px;
+    text-transform: uppercase;
 }
 
 #MeinNächstesSpiel h5 {
@@ -86,7 +91,7 @@ h1 {
     color: #2B3A58;
 }
 
-.grid-container-countdown {
+#MeinNächstesSpiel .grid-container-countdown {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
@@ -95,7 +100,7 @@ h1 {
     margin: 0 auto;
 }
 
-.box-countdown {
+#MeinNächstesSpiel .box-countdown {
     border: 2px solid #2B3A58;
     padding: 20px;
     text-align: center;
@@ -121,6 +126,14 @@ h1 {
     position: relative;
     top: 17%;
     height: 60%;
+}
+
+.filled-box h2 {
+    text-transform: uppercase;
+}
+
+.filled-box button {
+    text-transform: uppercase;
 }
 
 #ÜberMich .bild img{
@@ -159,54 +172,56 @@ h1 {
 #MeineNächstenSpiele h2 {
     color: white;
     margin-left: 20px;
+    text-transform: uppercase;
 }
 
-.spielplan-container {
+#MeineNächstenSpiele .spielplan-container {
     max-width: 600px;
     margin: 50px auto;
     padding-bottom: 50px;
 }
 
-.spiel {
+#MeineNächstenSpiele .spiel {
     display: flex;
     padding: 20px;
     margin-bottom: 20px;
 }
 
-.team {
+#MeineNächstenSpiele .team {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 30%;
 }
 
-.team img {
+#MeineNächstenSpiele .team img {
     width: 60px;
     height: 60px;
     margin-bottom: 10px;
 }
 
-.team-name {
+#MeineNächstenSpiele .team-name {
     color: white;
 }
 
-.info {
+#MeineNächstenSpiele .info {
     text-align: center;
     width: 40%;
     color: white;
 }
 
-.datum, .uhrzeit {
+#MeineNächstenSpiele .datum, .uhrzeit {
     margin: 5px 0;
 }
 
-.mehr-anzeigen {
+#MeineNächstenSpiele .mehr-anzeigen {
     background-color: transparent;
     border: 2px solid white;
     color: white;
     padding: 10px 20px;
     display: block; 
     margin: 20px auto;
+    text-transform: uppercase;
 }
 
 footer {
@@ -220,6 +235,7 @@ footer a {
     color: #2B3A58;
     text-decoration: none;
     font-size: 1rem;
+    text-transform: uppercase;
 }
 
 footer .right {

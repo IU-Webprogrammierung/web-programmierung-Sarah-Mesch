@@ -22,6 +22,7 @@
         color: white;
         padding: 10px 20px;
         font-size: 1.2rem;
+        text-transform: uppercase;
     }
 
     header .menu {
@@ -48,6 +49,7 @@
         text-decoration: none;
         color: white;
         font-size: 2rem;
+        text-transform: uppercase;
     }
 
     header .close-button {
@@ -59,6 +61,7 @@
         color: white;
         padding: 10px 20px;
         font-size: 1.2rem;
+        text-transform: uppercase;
     }
 
     header nav a.active {
@@ -71,6 +74,7 @@
         text-align: center;
         position: absolute;
         top: 2%;
+        text-transform: uppercase;
     }
 
     #Infos .container {
@@ -109,9 +113,14 @@
         max-width: 500px;
     }
 
+    #Infos .overlay-box h2 {
+    text-transform: uppercase;
+    }
+
     #Veranstaltungen h2 {
         text-align: center;
         color: #2B3A58;
+        text-transform: uppercase;
     }
 
     #Veranstaltungen .container {
@@ -166,6 +175,7 @@
     #Anmeldeformular h2 {
         margin-bottom: 40px;
         color: white;
+        text-transform: uppercase;
     }
 
     #Anmeldeformular .form-content {
@@ -223,6 +233,7 @@
         padding: 10px 20px;
         margin: 20px 0;
         width: 150px;
+        text-transform: uppercase;
     }
 
     #Anmeldeformular button:hover {
@@ -240,6 +251,7 @@
         color: #2B3A58;
         text-decoration: none;
         font-size: 1rem;
+        text-transform: uppercase;
     }
 
     footer .right {
