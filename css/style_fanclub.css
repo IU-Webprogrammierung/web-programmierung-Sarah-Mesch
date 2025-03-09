@@ -109,7 +109,6 @@
         padding: 50px;
         text-align: center;
         z-index: 10;
-        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
         max-width: 500px;
     }
 
@@ -258,3 +257,80 @@
         display: flex;
         gap: 20px;
     }
+
+/* Responsive Design - Mobile Ansicht (360px - 600px) */
+@media (max-width: 600px) {
+
+    header img {
+        width: 100px;  
+    }
+
+    header h1 {
+        font-size: 5rem;
+        top: 73%;
+    }
+
+    header .menu-button {
+        font-size: 1rem;
+    }
+
+    header .close-button {
+        font-size: 1rem;
+    }
+
+    #Infos .container {
+        height: auto; 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+    }
+
+    #Infos .left-image {
+        display: none;
+    }
+
+    #Infos .right-image {
+        position: static;
+    }
+
+    #Infos .overlay-box {
+        position: static;
+        max-width: 100%;
+        transform: none;
+        margin-top: -100px;
+        margin-right: 40px;
+
+    }
+
+    #Veranstaltungen .container {
+        flex-direction: column; 
+        gap: 30px;
+    }
+
+    #Veranstaltungen .box {
+        width: 90%;
+    }
+
+    #Anmeldeformular .form-content {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    #Anmeldeformular .text-section,
+    #Anmeldeformular form {
+        width: 100%;
+        text-align: left;
+    }
+
+    #Anmeldeformular .input-row {
+            display: unset;
+            margin-bottom: unset;
+    }
+
+    #Anmeldeformular input, textarea {
+        margin-bottom: 10px;
+    }
+
+}
