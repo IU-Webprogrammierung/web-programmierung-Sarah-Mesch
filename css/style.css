@@ -94,6 +94,10 @@ header nav a.active {
     text-decoration: underline;
 }
 
+h2 span {
+    display: block; 
+}
+
 #MeinNächstesSpiel h2 {
     color: #2B3A58;
     margin-left: 20px;
