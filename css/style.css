@@ -153,8 +153,17 @@ h2 span {
     text-transform: uppercase;
 }
 
-.filled-box button {
+.filled-box a {
     text-transform: uppercase;
+    display: inline-block;
+    padding: 10px 20px; 
+    background-color: white; 
+    color: #2B3A58; 
+    text-decoration: none; 
+    font-weight: bold;
+    bottom: 40px; 
+    right: 40px;
+    position: absolute;
 }
 
 #ÜberMich .bild img{
