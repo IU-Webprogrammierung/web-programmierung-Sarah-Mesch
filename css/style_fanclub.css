@@ -94,6 +94,11 @@
         text-transform: uppercase;
     }
 
+    p span {
+        display: block;
+        margin-top: 20px; 
+    }
+
     #Infos .container {
         position: relative;
         width: 100%;
