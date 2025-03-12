@@ -10,18 +10,26 @@
 </head>
 
 <body>
+    <!-- Header-Bereich der Seite -->
     <header role="banner">
         <div class="header-background">
+            <!-- Logo von Hannah Mesch im Header -->
             <img class="header-logo" src="img/fanclub.svg" alt="Bild von Hannah Mesch">
         </div>
+        <!-- Link zur Homepage -->
         <a id="LinkzurHomepage" href="index.html" class="home" aria-label="Gehe zur Homepage">
             <img class="header-logo" src="img/logo.svg" alt="Logo Hannah Mesch">
         </a>
+        <!-- Hauptüberschrift der Seite -->
         <h1>Fanclub Meschi#11</h1>
+        <!-- Menü-Button für die Navigation -->
         <button id="menuButton" class="menu-button" aria-label="Menü öffnen">Menü</button>
-        <nav id="menu" class="menu" role="navigation"> 
+        <!-- Navigationsmenü, das nach Klick auf den Menü-Button erscheint -->
+        <nav id="menu" class="menu" role="navigation">
+            <!-- Button zum Schließen des Menüs -->
             <button id="closeButton" class="close-button" aria-label="Menü schließen">Schließen</button>
             <ul>
+                <!-- Navigationseinträge mit Links zu verschiedenen Seiten -->
                 <li><a href="index.html" class="home" aria-label="Zur Startseite">Home</a></li>
                 <li><a href="ueber_mich.html" class="ueber_mich" aria-label="Mehr über Hannah erfahren">Über mich</a></li>
                 <li><a href="mein_weg_als_sportlerin.html" class="sportlerin" aria-label="Mein Weg als Sportlerin ansehen">Mein Weg als Sportlerin</a></li>
@@ -30,14 +38,18 @@
         </nav>
     </header>
 
+    <!-- Hauptbereich der Seite -->
     <main role="main">
+        <!-- Abschnitt mit Informationen zum Fanclub -->
         <section id="Infos">
             <div class="container">
+                <!-- Links und Rechts Bilder für den Abschnitt -->
                 <img src="img/fanclub.svg" alt="Infos" class="left-image">
                 <img src="img/sponsor1.svg" alt="Infos" class="right-image">
                 <div class="overlay-box">
                     <h2>Ein paar Infos</h2>
                     <p>
+                        <!-- Text mit Informationen zum Fanclub -->
                         Der Fanclub "Meschi#11" wurde in Hannah Meschs Heimatort Drossenhausen gegründet, um die junge
                         Fußballspielerin zu unterstützen. Die Mitglieder des Fanclubs begleiten Hannah zu ihren Spielen
                         und zeigen ihre Verbundenheit durch gemeinsame Aktivitäten und Präsenz bei Veranstaltungen. Der
@@ -47,9 +59,12 @@
                 </div>
             </div>
         </section>
+
+        <!-- Abschnitt mit Veranstaltungen des Fanclubs -->
         <section id="Veranstaltungen">
             <h2>Veranstaltungen des Fanclubs</h2>
             <div class="container">
+                <!-- Box für jede Veranstaltung -->
                 <div class="box">
                     <img src="img/fanclub.svg" alt="Jahreshauptversammlung">
                     <div class="text-box">
@@ -74,12 +89,15 @@
                 </div>
             </div>
         </section>
+
+        <!-- Abschnitt für das Anmeldeformular zum Fanclub -->
         <section id="Anmeldeformular" role="form">
             <div class="form-container">
                 <h2>Melde dich gerne beim Fanclub an</h2>
                 <div class="form-content">
                     <div class="text-section">
                         <p>
+                            <!-- Text zur Anmeldung -->
                             Diese Anfrage ist ganz unverbindlich für Dich :) Du kannst Dir gerne noch weitere Infos
                             einholen. Wenn
                             du die Abfrage abschickst, erhälst Du im Anschluss das offizielle Anmeldeformular per Mail.
@@ -90,19 +108,26 @@
                     </div>
                     <form>
                         <div class="input-row">
+                            <!-- Eingabefelder für Name und E-Mail -->
                             <input aria-label="Name" type="text" placeholder="Name*" required>
                             <input aria-label="Email" type="email" placeholder="E-Mail*" required>
                         </div>
+                         <!-- Textfeld für Deine Nachricht -->
                         <textarea aria-label="Deine Nachricht" placeholder="Deine Nachricht*" rows="4" required></textarea>
+                        <!-- Absenden-Button für das Formular -->
                         <button type="submit" aria-label="unverbindliche Anfrage für Fanclub-Mitgliedschaft absenden">Absenden</button>
                     </form>
                 </div>
             </div>
         </section>
     </main>
+
+    <!-- Footer-Bereich mit Links -->
     <footer>
+        <!-- Instagram-Link -->
         <a href="https://www.instagram.com/hannahmesch/" class="left" aria-label="Hannah Mesch auf Instagram besuchen">Instagram</a>
         <div class="right">
+            <!-- Links zum Impressum und zur Datenschutzerklärung -->
             <a href="impressum.html" aria-label="Zum Impressum">Impressum</a>
             <a href="datenschutz.html" aria-label="Zur Datenschutzerklärung">Datenschutz</a>
         </div>

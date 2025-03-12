@@ -11,17 +11,22 @@
 
 <body>
     <header role="banner">
+        <!-- Header-Bereich mit Hintergrundbild -->
         <div class="header-background">
             <img src="img/ueber_mich.svg" alt="Bild von Hannah Mesch">
         </div>
+        <!-- Link zur Startseite mit Logo -->
         <a id="LinkzurHomepage" href="index.html" class="home" aria-label="Gehe zur Homepage">
             <img class="header-logo" src="img/logo.svg" alt="Logo Hannah Mesch">
         </a>
-        <h1>ÜBER MICH</h1>
+        <h1>Über mich</h1>
+        <!-- Menübutton zum Öffnen des Navigationsmenüs -->
         <button id="menuButton" class="menu-button" aria-label="Menü öffnen">Menü</button>
         <nav id="menu" class="menu" role="navigation">
+            <!-- Button zum Schließen des Menüs -->
             <button id="closeButton" class="close-button" aria-label="Menü schließen">Schließen</button>
             <ul>
+                <!-- Navigationselemente für die verschiedenen Seiten -->
                 <li><a href="index.html" class="home" aria-label="Zur Startseite">Home</a></li>
                 <li><a href="ueber_mich.html" class="active ueber_mich" aria-label="Mehr über Hannah erfahren">Über mich</a></li>
                 <li><a href="mein_weg_als_sportlerin.html" aria-label="Mein Weg als Sportlerin ansehen">Mein Weg als Sportlerin</a></li>
@@ -31,49 +36,30 @@
     </header>
 
     <main role="main">
+        <!-- Steckbrief-Abschnitt -->
         <section id="Steckbrief">
             <div class="uebermich-container">
                 <!-- Bild dekorativ, deshalb Alt-Tag leer -->
                 <img src="img/steckbrief.svg" alt="">
                 <div class="uebermich-überschrift">
                     <h2>Hey, ich bin <span>Hannah</span></h2>
+                    <!-- Link zu Hannahs Instagram-Profil -->
                     <a href="https://www.instagram.com/hannahmesch/" aria-label="Hannah Mesch auf Instagram besuchen">
-                    <img src="img/instagram.svg" alt="">
-                </a>
+                        <img src="img/instagram.svg" alt="">
+                    </a>
                 </div>
             </div>
+            <!-- Liste mit persönlichen Informationen -->
             <div class="steckbrief-container" role="list">
-                <div class="zeile" role="listitem">
-                    <p>Geburtsdatum:</p>
-                    <p>3. Dezember 2004</p>
-                </div>
-                <div class="zeile" role="listitem">
-                    <p>Geburtsort:</p>
-                    <p>Coburg</p>
-                </div>
-                <div class="zeile" role="listitem">
-                    <p>Größe:</p>
-                    <p>1,68 Meter</p>
-                </div>
-                <div class="zeile" role="listitem">
-                    <p>Sturm:</p>
-                    <p>Angriff</p>
-                </div>
-                <div class="zeile" role="listitem">
-                    <p>Aktueller Verein:</p>
-                    <p>FC Carl Zeiss Jena</p>
-                </div>
-                <div class="zeile" role="listitem">
-                    <p>Rückennummer:</p>
-                    <p>11</p>
-                </div>
+                <div class="zeile" role="listitem"><p>Geburtsdatum:</p><p>3. Dezember 2004</p></div>
+                <div class="zeile" role="listitem"><p>Geburtsort:</p><p>Coburg</p></div>
+                <div class="zeile" role="listitem"><p>Größe:</p><p>1,68 Meter</p></div>
+                <div class="zeile" role="listitem"><p>Sturm:</p><p>Angriff</p></div>
+                <div class="zeile" role="listitem"><p>Aktueller Verein:</p><p>FC Carl Zeiss Jena</p></div>
+                <div class="zeile" role="listitem"><p>Rückennummer:</p><p>11</p></div>
                 <div class="zeile" role="listitem">
                     <p>Jugendvereine:</p>
-                    <div class="werte">
-                        <p>TSV Meeder</p>
-                        <p>FC Coburg</p>
-                        <p>FF USV Jena U17</p>
-                    </div>
+                    <div class="werte"><p>TSV Meeder</p><p>FC Coburg</p><p>FF USV Jena U17</p></div>
                 </div>
                 <div class="zeile" role="listitem">
                     <p>Besondere Erfolge:</p>
@@ -82,44 +68,29 @@
                         <p>Gründung des Fanclubs "Meschi#11" in ihrem Heimatort Drossenhausen</p>
                     </div>
                 </div>
-                <div class="zeile" role="listitem">
-                    <p>Persönliche Ziele:</p>
-                    <div class="werte">
-                        <p>Abiturabschluss im Jahr 2025</p>
-                        <p>Anschließendes Studium im Bereich Sportmanagement</p>
-                    </div>
-                </div>
-                <div class="zeile" role="listitem">
-                    <p>Besondere Ereignisse:</p>
-                    <div class="werte">
-                        <p>Im Alter von 15 Jahren erster Einsatz bei den Frauen im DFB-Pokal gegen den FC Bayern München
-                        </p>
-                        <p>Überstandene Verletzungen, darunter ein Sprunggelenkbruch und ein Außenbandriss im Knie</p>
-                    </div>
-                </div>
             </div>
         </section>
+
+        <!-- Autogrammkarten-Abschnitt -->
         <section id="Autogrammkarten">
             <div class="autogrammkarten">
                 <h2>Lade meine <span>Autogrammkarten herunter</span></h2>
                 <div class="autogrammkarten-container">
                     <div class="autogrammkarten-spalte">
                         <img src="img/steckbrief.svg" alt="Autogrammkarte 23/24">
-                        <p>Autogrammkarte
-                            <span>Saison 2023/24</span>
-                        </p>
+                        <p>Autogrammkarte <span>Saison 2023/24</span></p>
                         <button aria-label="Autogrammkarte Saison 2023/24 herunterladen">Download</button>
                     </div>
                     <div class="autogrammkarten-spalte">
                         <img src="img/steckbrief.svg" alt="Autogrammkarte 24/25">
-                        <p>Autogrammkarte
-                            <span>Saison 2024/25</span>
-                        </p>
+                        <p>Autogrammkarte <span>Saison 2024/25</span></p>
                         <button aria-label="Autogrammkarte Saison 2024/25 herunterladen">Download</button>
                     </div>
                 </div>
             </div>
         </section>
+
+        <!-- Fotogalerie-Abschnitt -->
         <section id="Fotogalerie">
             <h2>Ein paar Schnappschüsse</h2>
             <div class="gallery-container" role="list">
@@ -140,9 +111,13 @@
             </div>
         </section>
     </main>
+
+    <!-- Footer-Bereich mit Links -->
     <footer>
+        <!-- Instagram-Link -->
         <a href="https://www.instagram.com/hannahmesch/" class="left" aria-label="Hannah Mesch auf Instagram besuchen">Instagram</a>
         <div class="right">
+             <!-- Links zum Impressum und zur Datenschutzerklärung -->
             <a href="impressum.html" aria-label="Zum Impressum">Impressum</a>
             <a href="datenschutz.html" aria-label="Zur Datenschutzerklärung">Datenschutz</a>
         </div>
