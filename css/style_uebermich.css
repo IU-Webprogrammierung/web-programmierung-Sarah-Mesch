@@ -1,9 +1,11 @@
+/* Header-Stil */
 header {
     background-size: cover;
     background-position: center;
     height: 100vh;
 }
 
+/* Hintergrundbild im Header */
 header .header-background {
     position: absolute;
     top: 0;
@@ -11,15 +13,17 @@ header .header-background {
     width: 100%;
     height: 100vh;
     overflow: hidden;
-    z-index: -1; 
+    z-index: -1;
 }
 
+/* Bild im Hintergrund des Headers */
 header .header-background img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
+/* Logo im Header */
 header .header-logo {
     margin: 20px;
     position: absolute;
@@ -28,6 +32,7 @@ header .header-logo {
     z-index: 100;
 }
 
+/* Menübutton im Header */
 header .menu-button {
     position: absolute;
     top: 20px;
@@ -40,6 +45,7 @@ header .menu-button {
     text-transform: uppercase;
 }
 
+/* Menü im Header */
 header .menu {
     position: absolute;
     width: 100%;
@@ -51,15 +57,18 @@ header .menu {
     left: 0;
 }
 
+/* Menülisten-Stil im Header */
 header .menu ul {
     list-style: none;
     text-align: center;
 }
 
+/* Menüeinträge im Header */
 header .menu li {
     margin: 20px 0;
 }
 
+/* Links im Menü */
 header .menu a {
     text-decoration: none;
     color: white;
@@ -67,6 +76,7 @@ header .menu a {
     text-transform: uppercase;
 }
 
+/* Schließbutton im Header */
 header .close-button {
     position: absolute;
     top: 20px;
@@ -79,10 +89,12 @@ header .close-button {
     text-transform: uppercase;
 }
 
+/* Aktive Links im Header-Menü */
 header nav a.active {
     text-decoration: underline;
 }
 
+/* Haupttitel im Header */
 header h1 {
     color: white;
     font-size: 17rem;
@@ -91,15 +103,18 @@ header h1 {
     top: 2%;
 }
 
+/* Styling für Span-Elemente innerhalb von h2 */
 h2 span {
-    display: block; 
+    display: block;
 }
 
+/* Styling für Span-Elemente innerhalb von p */
 p span {
     display: block;
-    margin-top: 20px; 
+    margin-top: 20px;
 }
 
+/* Steckbrief - Über mich Container */
 #Steckbrief .uebermich-container {
     display: flex;
     align-items: center;
@@ -107,12 +122,13 @@ p span {
     margin-top: 20px;
 }
 
+/* Steckbrief - Bild im Über mich Container */
 #Steckbrief .uebermich-container img {
     max-width: 300px;
     margin-left: 150px;
-
 }
 
+/* Steckbrief - Überschrift */
 #Steckbrief .uebermich-überschrift {
     flex: 1;
     text-align: center;
@@ -120,67 +136,78 @@ p span {
     text-transform: uppercase;
 }
 
+/* Steckbrief - Bild in der Überschrift */
 #Steckbrief .uebermich-überschrift img {
     max-width: 50px;
     margin: 0px;
 }
 
+/* Steckbrief - Steckbrief-Container */
 #Steckbrief .steckbrief-container {
     border: 2px solid #2B3A58;
     display: grid;
-    gap: 20px; 
+    gap: 20px;
     padding: 20px;
-
 }
 
+/* Steckbrief - Zeilen im Steckbrief */
 #Steckbrief .zeile {
     display: flex;
-    justify-content: space-between; 
+    justify-content: space-between;
     gap: 20px;
 }
 
-#Steckbrief .zeile > p:first-child {
-    font-weight: bold; 
+/* Steckbrief - Erste Spalte der Zeile */
+#Steckbrief .zeile>p:first-child {
+    font-weight: bold;
     flex: 1;
 }
 
+/* Steckbrief - Zweite Spalte der Zeile */
 #Steckbrief .zeile p:last-child {
-    flex: 1; 
-    text-align: left; 
+    flex: 1;
+    text-align: left;
 }
 
+/* Steckbrief - Wertecontainer */
 #Steckbrief .werte {
     flex: 1;
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
 }
 
+/* Autogrammkarten - Überschrift */
 #Autogrammkarten h2 {
     color: white;
     text-transform: uppercase;
 }
 
+/* Autogrammkarten Container */
 #Autogrammkarten .autogrammkarten {
     margin-top: 20px;
     padding: 20px;
     background: linear-gradient(to bottom, #2B3A58 50%, white 50%);
 }
 
+/* Container für Autogrammkarten */
 #Autogrammkarten .autogrammkarten-container {
     display: flex;
     justify-content: center;
     gap: 60px;
 }
 
+/* Spalten in den Autogrammkarten */
 #Autogrammkarten .autogrammkarten-spalte {
     flex-direction: column;
 }
 
+/* Bilder in den Autogrammkarten */
 #Autogrammkarten .autogrammkarten-spalte img {
     width: 300px;
     border: 2px solid black;
 }
 
+/* Buttons in den Autogrammkarten */
 #Autogrammkarten .autogrammkarten-spalte button {
     background-color: #2B3A58;
     border: 2px solid #2B3A58;
@@ -190,28 +217,32 @@ p span {
     text-transform: uppercase;
 }
 
+/* Fotogalerie Container */
 #Fotogalerie {
     margin: 20px;
-    ;
 }
 
+/* Fotogalerie - Überschrift */
 #Fotogalerie h2 {
     color: #2B3A58;
     text-transform: uppercase;
 }
 
+/* Fotogalerie - Galerie Container */
 #Fotogalerie .gallery-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1.5fr;
     gap: 20px;
 }
 
+/* Fotogalerie - Spalten in der Galerie */
 #Fotogalerie .gallery-column {
     display: flex;
     flex-direction: column;
     gap: 15px;
 }
 
+/* Fotogalerie - Bilder in der Galerie */
 #Fotogalerie .gallery-column img {
     width: 100%;
     object-fit: cover;
@@ -219,26 +250,32 @@ p span {
     cursor: pointer;
 }
 
+/* Fotogalerie - Erste Spalte Bilder */
 #Fotogalerie .column-1 img {
     height: 200px;
 }
 
+/* Fotogalerie - Zweite Spalte hohe Bilder */
 #Fotogalerie .column-2 .tall {
     height: 415px;
 }
 
+/* Fotogalerie - Zweite Spalte kleine Bilder */
 #Fotogalerie .column-2 .small {
     height: 200px;
 }
 
+/* Fotogalerie - Dritte Spalte kleine Bilder */
 #Fotogalerie .column-3 .small {
     height: 265px;
 }
 
+/* Fotogalerie - Dritte Spalte hohe Bilder */
 #Fotogalerie .column-3 .tall {
     height: 350px;
 }
 
+/* Fotogalerie - Galerie-Buttons */
 #Fotogalerie .gallery-container button {
     background-color: #2B3A58;
     border: 2px solid #2B3A58;
@@ -250,6 +287,7 @@ p span {
     text-transform: uppercase;
 }
 
+/* Footer-Stil */
 footer {
     display: flex;
     justify-content: space-between;
@@ -257,6 +295,7 @@ footer {
     margin: 20px;
 }
 
+/* Footer Links */
 footer a {
     color: #2B3A58;
     text-decoration: none;
@@ -264,76 +303,88 @@ footer a {
     text-transform: uppercase;
 }
 
+/* Footer - Rechte Seite */
 footer .right {
     display: flex;
     gap: 20px;
 }
 
-/* Responsive Design - Mobile Ansicht (360px - 600px) */
+/* Responsive Design für mobile Ansicht */
 @media (max-width: 600px) {
 
+    /* Header - Bildgröße auf mobilen Geräten */
     header img {
-        width: 100px;  
+        width: 100px;
     }
 
+    /* Header - Schriftgröße für den Titel */
     header h1 {
         font-size: 6rem;
         top: 67%;
     }
 
+    /* Menübutton Größe auf mobilen Geräten */
     header .menu-button {
         font-size: 1rem;
     }
 
+    /* Schließbutton Größe auf mobilen Geräten */
     header .close-button {
         font-size: 1rem;
     }
 
+    /* Steckbrief - Layout auf mobilen Geräten */
     #Steckbrief .uebermich-container {
         flex-direction: column;
         text-align: center;
         margin-top: 10px;
     }
 
+    /* Steckbrief - Bild im Über mich Container auf mobilen Geräten */
     #Steckbrief .uebermich-container img {
         margin-left: 0;
     }
 
+    /* Steckbrief - Layout auf mobilen Geräten */
     #Steckbrief .steckbrief-container {
         display: flex;
         flex-direction: column;
     }
 
+    /* Steckbrief - Zeilenlayout auf mobilen Geräten */
     #Steckbrief .zeile {
-        flex-direction: column; 
+        flex-direction: column;
         gap: 5px;
     }
 
-    #Steckbrief .zeile > p:first-child {
+    /* Steckbrief - Textzentrierung auf mobilen Geräten */
+    #Steckbrief .zeile>p:first-child {
         text-align: center;
-      
     }
 
     #Steckbrief .zeile p:last-child {
         text-align: center;
     }
 
+    /* Steckbrief - Wertezentrierung auf mobilen Geräten */
     #Steckbrief .werte {
         text-align: center;
     }
 
+    /* Autogrammkarten - Hintergrund auf mobilen Geräten */
     #Autogrammkarten .autogrammkarten {
-    background: linear-gradient(to bottom, #2B3A58 0%, #2B3A58 27%, white 27%, white 100%);
+        background: linear-gradient(to bottom, #2B3A58 0%, #2B3A58 27%, white 27%, white 100%);
     }
 
+    /* Autogrammkarten - Container auf mobilen Geräten */
     #Autogrammkarten .autogrammkarten-container {
         flex-direction: column;
         gap: 20px;
         align-items: center;
     }
 
+    /* Fotogalerie - Layout auf mobilen Geräten */
     #Fotogalerie .gallery-container {
         grid-template-columns: 1fr;
     }
-
 }

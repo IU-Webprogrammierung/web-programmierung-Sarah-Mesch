@@ -1,9 +1,11 @@
+/* Header Styling */
 header {
     background-size: cover;
     background-position: center;
     height: 100vh;
 }
 
+/* Hintergrundbild des Headers */
 header .header-background {
     position: absolute;
     top: 0;
@@ -11,15 +13,17 @@ header .header-background {
     width: 100%;
     height: 100vh;
     overflow: hidden;
-    z-index: -1; 
+    z-index: -1;
 }
 
+/* Das Bild im Hintergrund des Headers */
 header .header-background img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
+/* Logo im Header */
 header .header-logo {
     margin: 20px;
     position: absolute;
@@ -28,6 +32,7 @@ header .header-logo {
     z-index: 100;
 }
 
+/* Menübutton im Header */
 header .menu-button {
     position: absolute;
     top: 20px;
@@ -40,6 +45,7 @@ header .menu-button {
     text-transform: uppercase;
 }
 
+/* Menü im Header */
 header .menu {
     position: absolute;
     width: 100%;
@@ -51,15 +57,18 @@ header .menu {
     left: 0;
 }
 
+/* Menüliste */
 header .menu ul {
     list-style: none;
     text-align: center;
 }
 
+/* Menüeinträge */
 header .menu li {
     margin: 20px 0;
 }
 
+/* Links im Menü */
 header .menu a {
     text-decoration: none;
     color: white;
@@ -67,6 +76,7 @@ header .menu a {
     text-transform: uppercase;
 }
 
+/* Schließen Button im Menü */
 header .close-button {
     position: absolute;
     top: 20px;
@@ -79,10 +89,12 @@ header .close-button {
     text-transform: uppercase;
 }
 
+/* Aktive Links im Header-Menü */
 header nav a.active {
     text-decoration: underline;
 }
 
+/* Überschrift im Header */
 header h1 {
     color: white;
     font-size: 12rem;
@@ -92,6 +104,7 @@ header h1 {
     text-transform: uppercase;
 }
 
+/* Unterüberschrift */
 h2 {
     color: #2B3A58;
     margin-left: 20px;
@@ -99,9 +112,10 @@ h2 {
 }
 
 h2 span {
-    display: block; 
+    display: block;
 }
 
+/* Werdegang-Sektion Slider Container */
 #Werdegang .slider-container {
     display: flex;
     width: 100%;
@@ -110,6 +124,7 @@ h2 span {
     margin-bottom: 40px;
 }
 
+/* Werdegang-Sektion Slider */
 #Werdegang .slider {
     display: flex;
     position: relative;
@@ -117,6 +132,7 @@ h2 span {
     height: 300px;
 }
 
+/* Einzelne Slides im Werdegang */
 #Werdegang .slide {
     position: absolute;
     width: 100%;
@@ -124,11 +140,13 @@ h2 span {
     transition: opacity 0.5s ease-in-out;
 }
 
+/* Aktiver Slide im Werdegang */
 #Werdegang .slide.active {
     opacity: 1;
     position: relative;
 }
 
+/* Werdegang Content Box */
 #Werdegang .content-box {
     display: flex;
     width: 100%;
@@ -137,25 +155,30 @@ h2 span {
     color: white;
 }
 
+/* Text Box im Werdegang */
 #Werdegang .text-box {
     width: 50%;
     padding: 40px;
 }
 
+/* Text Box Überschrift im Werdegang */
 #Werdegang .text-box h3 {
     text-transform: uppercase;
 }
 
+/* Bild Box im Werdegang */
 #Werdegang .image-box {
     width: 50%;
 }
 
+/* Bild in der Bild Box im Werdegang */
 #Werdegang .image-box img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
+/* Pfeile im Werdegang-Slider */
 #Werdegang .arrow {
     font-size: 2rem;
     color: #2B3A58;
@@ -164,14 +187,17 @@ h2 span {
     user-select: none;
 }
 
+/* Linke Pfeiltaste */
 #Werdegang .left-arrow {
     margin-right: 10px;
 }
 
+/* Rechte Pfeiltaste */
 #Werdegang .right-arrow {
     margin-left: 10px;
 }
 
+/* Spieleinsätze Überschrift */
 #Spieleinsätze h2 {
     color: #2B3A58;
     margin-left: 20px;
@@ -179,14 +205,17 @@ h2 span {
     text-transform: uppercase;
 }
 
+/* Spieleinsätze Subüberschrift */
 #Spieleinsätze h5 {
     color: #2B3A58;
 }
 
+/* Spieleinsätze Span */
 #Spieleinsätze span {
     color: #2B3A58;
 }
 
+/* Spieleinsätze Grid Container */
 #Spieleinsätze .grid-container-Spieleinsätze {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -196,24 +225,28 @@ h2 span {
     margin: 0 auto;
 }
 
+/* Box innerhalb des Grid Containers der Spieleinsätze */
 #Spieleinsätze .box-Spieleinsätze {
     border: 2px solid #2B3A58;
     padding: 20px;
     text-align: center;
 }
 
+/* Grid Container für gefüllte Boxen */
 .grid-container-filled-box {
     display: grid;
     grid-template-columns: 1fr 1fr;
     position: relative;
 }
 
+/* Bild Styling in den gefüllten Boxen */
 .bild img {
     height: auto;
     display: block;
     margin-top: 50px;
 }
 
+/* Styling der gefüllten Boxen */
 .filled-box {
     background-color: #2B3A58;
     color: white;
@@ -223,6 +256,7 @@ h2 span {
     height: 60%;
 }
 
+/* Süddeutsche Styling */
 #Süddeutsche .bild img {
     margin-right: 20px;
 }
@@ -236,6 +270,7 @@ h2 span {
     overflow: hidden;
 }
 
+/* Vorherige und Nachfolgende Pseudo-Elemente in der Süddeutsche Sektion */
 #Süddeutsche .filled-box::before {
     content: "";
     position: absolute;
@@ -257,6 +292,7 @@ h2 span {
     transform: translateY(-50%);
 }
 
+/* Rotierte Titel in Süddeutsche */
 #Süddeutsche .rotated-title {
     writing-mode: vertical-rl;
     transform: rotate(180deg);
@@ -266,6 +302,7 @@ h2 span {
     text-transform: uppercase;
 }
 
+/* Inhalt Box in Süddeutsche */
 #Süddeutsche .content {
     display: flex;
     flex-direction: column;
@@ -277,12 +314,14 @@ h2 span {
     text-align: center;
 }
 
+/* Icon in der Süddeutsche Sektion */
 #Süddeutsche .icon {
     position: absolute;
     right: 140px;
     top: 180px;
 }
 
+/* Länderpokal Sektion Styling */
 #Länderpokal .bild img {
     margin-left: 20px;
 }
@@ -297,6 +336,7 @@ h2 span {
     right: 150px;
 }
 
+/* Vorherige und Nachfolgende Pseudo-Elemente in der Länderpokal Sektion */
 #Länderpokal .filled-box::before {
     content: "";
     position: absolute;
@@ -318,6 +358,7 @@ h2 span {
     transform: translateY(-50%);
 }
 
+/* Rotierte Titel in Länderpokal */
 #Länderpokal .rotated-title {
     writing-mode: vertical-rl;
     font-size: 2.5rem;
@@ -330,6 +371,7 @@ h2 span {
     text-transform: uppercase;
 }
 
+/* Inhalt Box in Länderpokal */
 #Länderpokal .content {
     display: flex;
     flex-direction: column;
@@ -341,16 +383,19 @@ h2 span {
     text-align: center;
 }
 
+/* Icon in der Länderpokal Sektion */
 #Länderpokal .icon {
     position: absolute;
     right: 140px;
     top: 180px;
 }
 
+/* Bild-Elemente für den Meisterin Bereich */
 #Meisterin .bild img {
     margin-right: 20px;
 }
 
+/* Gefüllte Box für Meisterin Bereich */
 #Meisterin .filled-box {
     width: 115%;
     margin-left: 20px;
@@ -360,6 +405,7 @@ h2 span {
     overflow: hidden;
 }
 
+/* Vertikale Linie innerhalb der gefüllten Box (Meisterin) */
 #Meisterin .filled-box::before {
     content: "";
     position: absolute;
@@ -370,6 +416,7 @@ h2 span {
     transform: translateX(-50%);
 }
 
+/* Horizontale Linie innerhalb der gefüllten Box (Meisterin) */
 #Meisterin .filled-box::after {
     content: "";
     position: absolute;
@@ -381,6 +428,7 @@ h2 span {
     transform: translateY(-50%);
 }
 
+/* Titel im vertikalen Format (Meisterin) */
 #Meisterin .rotated-title {
     writing-mode: vertical-rl;
     transform: rotate(180deg);
@@ -390,6 +438,7 @@ h2 span {
     text-transform: uppercase;
 }
 
+/* Content-Bereich der Meisterin */
 #Meisterin .content {
     display: flex;
     flex-direction: column;
@@ -401,12 +450,14 @@ h2 span {
     text-align: center;
 }
 
+/* Icon im Meisterin Bereich */
 #Meisterin .icon {
     position: absolute;
     right: 140px;
     top: 180px;
 }
 
+/* Container der Sponsoren */
 #Sponsoren .container {
     display: flex;
     align-items: center;
@@ -416,6 +467,7 @@ h2 span {
     margin-bottom: 50px;
 }
 
+/* Titel der Sponsoren */
 #Sponsoren .title {
     font-size: 2.5rem;
     font-weight: bold;
@@ -425,6 +477,7 @@ h2 span {
     text-transform: uppercase;
 }
 
+/* Box-Container für Sponsoren */
 #Sponsoren .box-container {
     display: flex;
     gap: 30px;
@@ -434,17 +487,20 @@ h2 span {
     margin-right: 20px;
 }
 
+/* Box für jedes Sponsorenlogo */
 #Sponsoren .box {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
+/* Sponsorenlogos */
 #Sponsoren .box img {
     width: 100%;
     height: auto;
 }
 
+/* Box, die das Sponsorenlogo umgibt */
 #Sponsoren .logo-box {
     background-color: white;
     width: 100%;
@@ -455,11 +511,13 @@ h2 span {
     align-items: center;
 }
 
+/* Sponsorenlogo */
 #Sponsoren .logo-box img {
     width: 150px;
     height: auto;
 }
 
+/* Footer-Layout */
 footer {
     display: flex;
     justify-content: space-between;
@@ -467,6 +525,7 @@ footer {
     margin: 20px;
 }
 
+/* Footer-Links */
 footer a {
     color: #2B3A58;
     text-decoration: none;
@@ -474,31 +533,37 @@ footer a {
     text-transform: uppercase;
 }
 
+/* Footer rechts-Layout */
 footer .right {
     display: flex;
     gap: 20px;
 }
 
-/* Responsive Design - Mobile Ansicht (360px - 600px) */
+/* Responsive Design für mobile Ansicht (360px - 600px) */
 @media (max-width: 600px) {
 
+    /* Header Bild-Größe auf Mobilgeräten */
     header img {
         width: 100px;
     }
 
+    /* Header Titel auf Mobilgeräten */
     header h1 {
         font-size: 3rem;
         top: 84.5%;
     }
 
+    /* Menübutton-Größe auf Mobilgeräten */
     header .menu-button {
         font-size: 1rem;
     }
 
+    /* Schließen-Button-Größe auf Mobilgeräten */
     header .close-button {
         font-size: 1rem;
     }
 
+    /* Werdegang Boxen auf Mobilgeräten */
     #Werdegang .content-box {
         display: flex;
         align-items: center;
@@ -506,24 +571,29 @@ footer .right {
         flex-direction: column-reverse;
     }
 
+    /* Werdegang Text- und Bild-Boxen auf Mobilgeräten */
     #Werdegang .text-box,
     #Werdegang .image-box {
         width: 90%;
         text-align: center;
     }
 
+    /* Bild in Werdegang Box */
     #Werdegang .image-box img {
         margin-top: 20px;
     }
 
+    /* Textbox Padding in Werdegang */
     #Werdegang .text-box {
         padding: 20px;
     }
 
+    /* Spieleinsätze Layout auf Mobilgeräten */
     #Spieleinsätze {
         margin-top: 400px;
     }
 
+    /* Grid-Container für Spieleinsätze */
     #Spieleinsätze .grid-container-Spieleinsätze {
         display: grid;
         grid-template-columns: 1fr;
@@ -531,6 +601,7 @@ footer .right {
         width: 100%;
     }
 
+    /* Box für jedes Spieleinsatz-Element */
     #Spieleinsätze .box-Spieleinsätze {
         border: 2px solid #2B3A58;
         padding: 20px;
@@ -538,22 +609,26 @@ footer .right {
         width: 40%;
     }
 
+    /* Süddeutsche Bereich für Mobilgeräte */
     #Süddeutsche .grid-container-filled-box {
         display: flex;
         flex-direction: column-reverse;
     }
 
+    /* Gefüllte Box für Süddeutsche */
     #Süddeutsche .filled-box {
         width: 81%;
         height: 500px;
     }
 
+    /* Bild in Süddeutsche Bereich */
     #Süddeutsche .bild img {
         width: 90%;
         margin-left: 20px;
         margin-right: 20px;
     }
 
+    /* Rotierter Titel für Süddeutsche Bereich */
     #Süddeutsche .rotated-title {
         writing-mode: unset;
         transform: unset;
@@ -561,21 +636,25 @@ footer .right {
         margin-top: -380px;
     }
 
+    /* Content in Süddeutsche Bereich */
     #Süddeutsche .content {
         width: 100%;
         top: 80%;
     }
 
+    /* Text in Süddeutsche Bereich */
     #Süddeutsche .text {
         margin-top: -280px;
         margin-left: 150px;
     }
 
+    /* Icon für Süddeutsche Bereich */
     #Süddeutsche .icon {
         right: 40px;
         top: -100px;
     }
 
+    /* Gefüllte Box Linien für Süddeutsche */
     #Süddeutsche .filled-box::before {
         top: 23%;
         left: 50%;
@@ -583,22 +662,25 @@ footer .right {
         height: 2px;
     }
 
+    /* Gefüllte Box Linien für Süddeutsche */
     #Süddeutsche .filled-box::after {
         top: 58%;
         left: 10%;
         width: 80%;
     }
 
+    /* Länderpokal Layout */
     #Länderpokal .grid-container-filled-box {
         display: flex;
-        flex-direction: column; 
-        align-items: center; 
-        justify-content: center; 
-        width: 100%; 
-        margin: 0 auto; 
-        position: relative; 
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin: 0 auto;
+        position: relative;
     }
 
+    /* Gefüllte Box für Länderpokal */
     #Länderpokal .filled-box {
         width: 90%;
         margin-left: 20px;
@@ -608,30 +690,33 @@ footer .right {
         display: flex;
         align-items: center;
         justify-content: center;
-        padding: 20px; 
-        background-color: #2B3A58; 
-        color: white; 
-        box-sizing: border-box; 
+        padding: 20px;
+        background-color: #2B3A58;
+        color: white;
+        box-sizing: border-box;
         z-index: 1;
     }
 
+    /* Bild im Länderpokal Bereich */
     #Länderpokal .bild img {
-        width: 90%; 
-        height: auto; 
-        max-width: none; 
-        object-fit: cover; 
+        width: 90%;
+        height: auto;
+        max-width: none;
+        object-fit: cover;
         margin-left: 20px;
         margin-right: 20px;
     }
 
+    /* Bildcontainer im Länderpokal Bereich */
     #Länderpokal .bild {
-        width: 100%; 
+        width: 100%;
         display: flex;
         justify-content: center;
         position: relative;
         z-index: 2;
     }
 
+    /* Rotierter Titel im Länderpokal Bereich */
     #Länderpokal .rotated-title {
         writing-mode: unset;
         transform: unset;
@@ -639,6 +724,7 @@ footer .right {
         margin-top: -280px;
     }
 
+    /* Content-Bereich im Länderpokal */
     #Länderpokal .content {
         width: 100%;
         top: 80%;
@@ -646,21 +732,24 @@ footer .right {
         flex-direction: column;
         align-items: center;
         width: 50%;
-        position: relative;  
+        position: relative;
         top: 0;
         left: 0;
         text-align: center;
     }
 
+    /* Text im Länderpokal Bereich */
     #Länderpokal .text {
         margin-top: -20px;
     }
 
+    /* Icon im Länderpokal Bereich */
     #Länderpokal .icon {
         right: 5px;
         top: 250px;
     }
 
+    /* Gefüllte Box Linien im Länderpokal */
     #Länderpokal .filled-box::before {
         top: 20%;
         left: 50%;
@@ -668,28 +757,33 @@ footer .right {
         height: 2px;
     }
 
+    /* Gefüllte Box Linien im Länderpokal */
     #Länderpokal .filled-box::after {
         top: 71%;
         left: 10%;
         width: 80%;
     }
-    
+
+    /* Meisterin Bereich Layout */
     #Meisterin .grid-container-filled-box {
         display: flex;
         flex-direction: column-reverse;
     }
 
+    /* Gefüllte Box im Meisterin Bereich */
     #Meisterin .filled-box {
         width: 81%;
         height: 550px;
     }
 
+    /* Bild im Meisterin Bereich */
     #Meisterin .bild img {
         width: 90%;
         margin-left: 20px;
         margin-right: 20px;
     }
 
+    /* Rotierter Titel im Meisterin Bereich */
     #Meisterin .rotated-title {
         writing-mode: unset;
         transform: unset;
@@ -697,21 +791,25 @@ footer .right {
         margin-top: -400px;
     }
 
+    /* Content im Meisterin Bereich */
     #Meisterin .content {
         width: 100%;
         top: 80%;
     }
 
+    /* Text im Meisterin Bereich */
     #Meisterin .text {
         margin-top: -280px;
         margin-left: 150px;
     }
 
+    /* Icon im Meisterin Bereich */
     #Meisterin .icon {
         right: 35px;
         top: -80px;
     }
 
+    /* Gefüllte Box Linien im Meisterin Bereich */
     #Meisterin .filled-box::before {
         top: 27%;
         left: 50%;
@@ -719,25 +817,30 @@ footer .right {
         height: 2px;
     }
 
+    /* Gefüllte Box Linien im Meisterin Bereich */
     #Meisterin .filled-box::after {
         top: 63%;
         left: 10%;
         width: 80%;
     }
 
+    /* Container für Sponsoren im vertikalen Layout */
     #Sponsoren .container {
         flex-direction: column;
     }
 
+    /* Box-Container für Sponsoren im vertikalen Layout */
     #Sponsoren .box-container {
         flex-direction: column;
         margin: 20px 0;
     }
 
+    /* Sponsorenlogo-Bildgröße reduzieren */
     #Sponsoren .box img {
         width: 80%;
     }
 
+    /* Logo-Box für Sponsoren mit 80% Breite */
     #Sponsoren .logo-box {
         width: 80%;
     }

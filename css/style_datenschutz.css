@@ -1,36 +1,40 @@
+/* Header-Bereich mit Hintergrundbild */
 header {
     background-color: grey;
     background-size: cover;
     background-position: center;
-    height: 100vh;   
+    height: 100vh;
 }
 
+/* Logo im Header */
 header .header-logo {
     margin: 20px;
     position: absolute;
-    width: 150px; 
+    width: 150px;
     height: auto;
-    z-index: 100; 
+    z-index: 100;
 }
 
+/* Menü-Button für Navigation */
 header .menu-button {
     position: absolute;
-    top: 20px; 
-    right: 20px; 
+    top: 20px;
+    right: 20px;
     background-color: transparent;
-    border: 2px solid white; 
-    color: white; 
+    border: 2px solid white;
+    color: white;
     padding: 10px 20px;
     font-size: 1.2rem;
     text-transform: uppercase;
 }
 
+/* Navigationsmenü */
 header .menu {
     position: absolute;
     width: 100%;
-    height: 100vh; 
-    background-color: #2B3A58; 
-    display: none; 
+    height: 100vh;
+    background-color: #2B3A58;
+    display: none;
     justify-content: center;
     align-items: center;
     display: flex;
@@ -38,15 +42,18 @@ header .menu {
     left: 0;
 }
 
+/* Navigation-Liste */
 header .menu ul {
     list-style: none;
     text-align: center;
 }
 
+/* Listenelemente im Menü */
 header .menu li {
     margin: 20px 0;
 }
 
+/* Links im Navigationsmenü */
 header .menu a {
     text-decoration: none;
     color: white;
@@ -54,22 +61,25 @@ header .menu a {
     text-transform: uppercase;
 }
 
+/* Schließen-Button für das Menü */
 header .close-button {
     position: absolute;
     top: 20px;
     right: 20px;
     background-color: transparent;
-    border: 2px solid white; 
+    border: 2px solid white;
     color: white;
     padding: 10px 20px;
     font-size: 1.2rem;
     text-transform: uppercase;
 }
 
+/* Markierung für aktive Navigationselemente */
 header nav a.active {
     text-decoration: underline;
 }
 
+/* Hauptüberschrift im Header */
 header h1 {
     color: white;
     font-size: 8.1rem;
@@ -79,6 +89,7 @@ header h1 {
     text-transform: uppercase;
 }
 
+/* Footer-Bereich */
 footer {
     display: flex;
     justify-content: space-between;
@@ -86,6 +97,7 @@ footer {
     margin: 20px;
 }
 
+/* Links im Footer */
 footer a {
     color: #2B3A58;
     text-decoration: none;
@@ -93,7 +105,8 @@ footer a {
     text-transform: uppercase;
 }
 
+/* Rechte Sektion im Footer */
 footer .right {
     display: flex;
-    gap: 20px; 
+    gap: 20px;
 }

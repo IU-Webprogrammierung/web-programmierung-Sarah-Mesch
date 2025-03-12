@@ -1,305 +1,345 @@
-    header {
-        background-size: cover;
-        background-position: center;
-        height: 100vh;
-    }
+/* Header-Bereich mit Hintergrundbild */
+header {
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
 
-    header .header-background {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100vh;
-        overflow: hidden;
-        z-index: -1; 
-    }
-    
-    header .header-background img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
+/* Hintergrundbild des Headers */
+header .header-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    z-index: -1;
+}
 
-    header .header-logo {
-        margin: 20px;
-        position: absolute;
-        width: 150px;
-        height: auto;
-        z-index: 100;
-    }
+/* Bild innerhalb des Header-Hintergrunds */
+header .header-background img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 
-    header .menu-button {
-        position: absolute;
-        top: 20px;
-        right: 20px;
-        background-color: transparent;
-        border: 2px solid white;
-        color: white;
-        padding: 10px 20px;
-        font-size: 1.2rem;
-        text-transform: uppercase;
-    }
+/* Logo im Header */
+header .header-logo {
+    margin: 20px;
+    position: absolute;
+    width: 150px;
+    height: auto;
+    z-index: 100;
+}
 
-    header .menu {
-        position: absolute;
-        width: 100%;
-        height: 100vh;
-        background-color: #2B3A58;
-        justify-content: center;
-        align-items: center;
-        top: 0;
-        left: 0;
-    }
-
-    header .menu ul {
-        list-style: none;
-        text-align: center;
-    }
-
-    header .menu li {
-        margin: 20px 0;
-    }
-
-    header .menu a {
-        text-decoration: none;
-        color: white;
-        font-size: 2rem;
-        text-transform: uppercase;
-    }
-
-    header .close-button {
-        position: absolute;
-        top: 20px;
-        right: 20px;
-        background-color: transparent;
-        border: 2px solid white;
-        color: white;
-        padding: 10px 20px;
-        font-size: 1.2rem;
-        text-transform: uppercase;
-    }
-
-    header nav a.active {
-        text-decoration: underline;
-    }
-
-    header h1 {
-        color: white;
-        font-size: 17rem;
-        text-align: center;
-        position: absolute;
-        top: 2%;
-        text-transform: uppercase;
-    }
-
-    p span {
-        display: block;
-        margin-top: 20px; 
-    }
-
-    #Infos .container {
-        position: relative;
-        width: 100%;
-        height: 750px;
-        margin-top: 40px;
-    }
-
-    #Infos .left-image {
-        position: absolute;
-        left: 0;
-        width: 600px;
-        height: auto;
-    }
-
-    #Infos .right-image {
-        position: absolute;
-        right: 0;
-        width: 600px;
-        height: auto;
-        top: 10%;
-    }
-
-    #Infos .overlay-box {
-        position: absolute;
-        top: 40%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        background-color: #2B3A58;
-        color: white;
-        padding: 50px;
-        text-align: center;
-        z-index: 10;
-        max-width: 500px;
-    }
-
-    #Infos .overlay-box h2 {
+/* Menü-Button für Navigation */
+header .menu-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.2rem;
     text-transform: uppercase;
-    }
+}
 
-    #Veranstaltungen h2 {
-        text-align: center;
-        color: #2B3A58;
-        text-transform: uppercase;
-    }
+/* Navigationsmenü */
+header .menu {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color: #2B3A58;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+}
 
-    #Veranstaltungen .container {
-        display: flex;
-        gap: 100px;
-        margin-top: 40px;
-        margin-bottom: 40px;
-        justify-content: center;
-        align-items: center;
-    }
+/* Navigation-Liste */
+header .menu ul {
+    list-style: none;
+    text-align: center;
+}
 
-    #Veranstaltungen .box {
-        width: 400px;
-        display: flex;
-        flex-direction: column;
-        overflow: hidden;
-    }
+/* Listenelemente im Menü */
+header .menu li {
+    margin: 20px 0;
+}
 
-    #Veranstaltungen .box img {
-        width: 100%;
-        height: 50%;
-        object-fit: cover;
-    }
+/* Links im Navigationsmenü */
+header .menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
 
-    #Veranstaltungen .text-box {
-        height: 50%;
-        background-color: #2B3A58;
-        color: white;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        padding: 20px;
-    }
+/* Schließen-Button für das Menü */
+header .close-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
 
-    #Veranstaltungen .date {
-        font-size: 0.9rem;
-        opacity: 0.8;
-    }
+/* Markierung für aktive Navigationselemente */
+header nav a.active {
+    text-decoration: underline;
+}
 
-    #Veranstaltungen h3 {
-        margin: 10px 0;
-        font-size: 1.5rem;
-    }
+/* Hauptüberschrift im Header */
+header h1 {
+    color: white;
+    font-size: 17rem;
+    text-align: center;
+    position: absolute;
+    top: 2%;
+    text-transform: uppercase;
+}
 
-    #Anmeldeformular .form-container {
-        background: #2B3A58;
-        padding: 30px;
-        margin-bottom: 40px;
-        margin-top: 20px;
-    }
+/* Absatz mit span-Element */
+p span {
+    display: block;
+    margin-top: 20px;
+}
 
-    #Anmeldeformular h2 {
-        margin-bottom: 40px;
-        color: white;
-        text-transform: uppercase;
-    }
+/* Container für den Informationsbereich */
+#Infos .container {
+    position: relative;
+    width: 100%;
+    height: 750px;
+    margin-top: 40px;
+}
 
-    #Anmeldeformular .form-content {
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-        gap: 60px;
-    }
+/* Linkes Bild im Informationsbereich */
+#Infos .left-image {
+    position: absolute;
+    left: 0;
+    width: 600px;
+    height: auto;
+}
 
-    #Anmeldeformular .text-section {
-        width: 40%;
-        color: white;
-    }
+/* Rechtes Bild im Informationsbereich */
+#Infos .right-image {
+    position: absolute;
+    right: 0;
+    width: 600px;
+    height: auto;
+    top: 10%;
+}
 
-    #Anmeldeformular form {
-        width: 60%;
-        display: flex;
-        flex-direction: column;
-    }
+/* Überlagerungstextbox im Informationsbereich */
+#Infos .overlay-box {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #2B3A58;
+    color: white;
+    padding: 50px;
+    text-align: center;
+    z-index: 10;
+    max-width: 500px;
+}
 
-    #Anmeldeformular .input-row {
-        display: flex;
-        gap: 20px;
-        margin-bottom: 10px;
-    }
+/* Überschrift in der Overlay-Box */
+#Infos .overlay-box h2 {
+    text-transform: uppercase;
+}
 
-    #Anmeldeformular input,
-    textarea {
-        width: 100%;
-        padding: 10px;
-        font-size: 1rem;
-        background-color: rgba(173, 173, 172, 0.5);
-        color: white;
-        box-sizing: border-box;
-    }
+/* Überschrift im Veranstaltungsbereich */
+#Veranstaltungen h2 {
+    text-align: center;
+    color: #2B3A58;
+    text-transform: uppercase;
+}
 
-    #Anmeldeformular input::placeholder,
-    #Anmeldeformular textarea::placeholder {
-        color: white;
-    }
+/* Container für Veranstaltungen */
+#Veranstaltungen .container {
+    display: flex;
+    gap: 100px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    justify-content: center;
+    align-items: center;
+}
 
-    #Anmeldeformular textarea {
-        margin-bottom: 10px;
-        resize: none; 
-    }
+/* Box für eine Veranstaltung */
+#Veranstaltungen .box {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
 
-    #Anmeldeformular button {
-        background-color: white;
-        color: #2B3A58;
-        padding: 10px;
-        border: none;
-        font-size: 1rem;
-        cursor: pointer;
-        transition: 0.3s;
-        padding: 10px 20px;
-        margin: 20px 0;
-        width: 150px;
-        text-transform: uppercase;
-    }
+/* Bild in der Veranstaltungsbox */
+#Veranstaltungen .box img {
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+}
 
-    #Anmeldeformular button:hover {
-        background-color: gray;
-    }
+/* Textbox in der Veranstaltungsbox */
+#Veranstaltungen .text-box {
+    height: 50%;
+    background-color: #2B3A58;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+}
 
-    footer {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin: 20px;
-    }
+/* Datumsanzeige in der Veranstaltungsbox */
+#Veranstaltungen .date {
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
 
-    footer a {
-        color: #2B3A58;
-        text-decoration: none;
-        font-size: 1rem;
-        text-transform: uppercase;
-    }
+/* Überschrift in der Veranstaltungsbox */
+#Veranstaltungen h3 {
+    margin: 10px 0;
+    font-size: 1.5rem;
+}
 
-    footer .right {
-        display: flex;
-        gap: 20px;
-    }
+/* Formular-Container */
+#Anmeldeformular .form-container {
+    background: #2B3A58;
+    padding: 30px;
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
 
-/* Responsive Design - Mobile Ansicht (360px - 600px) */
+/* Überschrift im Anmeldeformular */
+#Anmeldeformular h2 {
+    margin-bottom: 40px;
+    color: white;
+    text-transform: uppercase;
+}
+
+/* Layout des Formularinhalts */
+#Anmeldeformular .form-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 60px;
+}
+
+/* Textbereich im Formular */
+#Anmeldeformular .text-section {
+    width: 40%;
+    color: white;
+}
+
+/* Formularfeld */
+#Anmeldeformular form {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Zeile für mehrere Eingabefelder */
+#Anmeldeformular .input-row {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 10px;
+}
+
+/* Eingabefelder und Textbereich */
+#Anmeldeformular input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    background-color: rgba(173, 173, 172, 0.5);
+    color: white;
+    box-sizing: border-box;
+}
+
+/* Platzhalterfarbe in Eingabefeldern */
+#Anmeldeformular input::placeholder,
+#Anmeldeformular textarea::placeholder {
+    color: white;
+}
+
+/* Textbereich im Formular */
+#Anmeldeformular textarea {
+    margin-bottom: 10px;
+    resize: none;
+}
+
+/* Absenden-Button */
+#Anmeldeformular button {
+    background-color: white;
+    color: #2B3A58;
+    padding: 10px;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+    padding: 10px 20px;
+    margin: 20px 0;
+    width: 150px;
+    text-transform: uppercase;
+}
+
+/* Hover-Effekt für den Button */
+#Anmeldeformular button:hover {
+    background-color: gray;
+}
+
+/* Footer-Bereich */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+}
+
+/* Links im Footer */
+footer a {
+    color: #2B3A58;
+    text-decoration: none;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+/* Rechte Sektion im Footer */
+footer .right {
+    display: flex;
+    gap: 20px;
+}
+
+/* Responsive Design - Mobile Ansicht (bis 600px) */
 @media (max-width: 600px) {
 
+    /* Logo-Größe im Header */
     header img {
-        width: 100px;  
+        width: 100px;
     }
 
+    /* Kleinere Schriftgröße für h1 im Header */
     header h1 {
         font-size: 5rem;
         top: 73%;
     }
 
-    header .menu-button {
-        font-size: 1rem;
-    }
-
+    /* Kleinere Schriftgröße für Menü-Buttons */
+    header .menu-button,
     header .close-button {
         font-size: 1rem;
     }
 
+    /* Anpassung des Info-Bereichs für Mobilgeräte */
     #Infos .container {
-        height: auto; 
+        height: auto;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -307,49 +347,58 @@
         padding: 20px;
     }
 
+    /* Linkes Bild im Informationsbereich wird auf Mobilgeräten ausgeblendet */
     #Infos .left-image {
         display: none;
     }
 
+    /* Rechtes Bild im Informationsbereich wird statisch positioniert */
     #Infos .right-image {
         position: static;
     }
 
+    /* Überlagerungstextbox wird auf Mobilgeräten statisch positioniert */
     #Infos .overlay-box {
         position: static;
         max-width: 100%;
         transform: none;
         margin-top: -100px;
         margin-right: 40px;
-
     }
 
+    /* Container der Veranstaltungen wird auf Mobilgeräten in eine Spalte umgewandelt */
     #Veranstaltungen .container {
-        flex-direction: column; 
+        flex-direction: column;
         gap: 30px;
     }
 
+    /* Veranstaltungsbox wird für kleinere Bildschirme angepasst */
     #Veranstaltungen .box {
         width: 90%;
     }
 
+    /* Formularinhalt wird auf Mobilgeräten in eine Spalte umgewandelt */
     #Anmeldeformular .form-content {
         flex-direction: column;
         gap: 20px;
     }
 
+    /* Textbereich und Formular im Anmeldeformular nehmen die volle Breite ein */
     #Anmeldeformular .text-section,
     #Anmeldeformular form {
         width: 100%;
         text-align: left;
     }
 
+    /* Eingabereihen im Formular werden aufgelöst */
     #Anmeldeformular .input-row {
-            display: unset;
-            margin-bottom: unset;
+        display: unset;
+        margin-bottom: unset;
     }
 
-    #Anmeldeformular input, textarea {
+    /* Abstand bei Eingabefeldern im Formular */
+    #Anmeldeformular input,
+    #Anmeldeformular textarea {
         margin-bottom: 10px;
     }
 
