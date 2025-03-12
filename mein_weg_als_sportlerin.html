@@ -19,14 +19,14 @@
             <img class="header-logo" src="img/logo.svg" alt="Logo Hannah Mesch">
         </a>
         <h1>Mein Weg als Sportlerin</h1>
-        <button id="menuButton" class="menu-button">Menü</button>
+        <button id="menuButton" class="menu-button" aria-label="Menü öffnen">Menü</button>
         <nav id="menu" class="menu">
-            <button id="closeButton" class="close-button">Schließen</button>
+            <button id="closeButton" class="close-button" aria-label="Menü schließen">Schließen</button>
             <ul>
-                <li><a href="index.html" class="home">Home</a></li>
-                <li><a href="ueber_mich.html" class="ueber_mich">Über mich</a></li>
-                <li><a href="mein_weg_als_sportlerin.html" class="active sportlerin">Mein Weg als Sportlerin</a></li>
-                <li><a href="fanclub.html">Fanclub</a></li>
+                <li><a href="index.html" class="home" aria-label="Zur Startseite">Home</a></li>
+                <li><a href="ueber_mich.html" class="ueber_mich" aria-label="Mehr über Hannah erfahren">Über mich</a></li>
+                <li><a href="mein_weg_als_sportlerin.html" class="active sportlerin" aria-label="Mein Weg als Sportlerin ansehen">Mein Weg als Sportlerin</a></li>
+                <li><a href="fanclub.html" aria-label="Informationen zum Fanclub">Fanclub</a></li>
             </ul>
         </nav>
     </header>
@@ -34,7 +34,7 @@
         <section id="Werdegang">
             <h2>Werdegang</h2>
             <div class="slider-container">
-                <div class="arrow left-arrow">&#10094;</div>
+                <div class="arrow left-arrow" aria-label="Vorherigen Slider anzeigen">&#10094;</div>
                 <div class="slider">
                     <div class="slide active">
                         <div class="content-box">
@@ -95,7 +95,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="arrow right-arrow">&#10095;</div>
+                <div class="arrow right-arrow" aria-label="Nächsten Slider anzeigen">&#10095;</div>
             </div>
         </section>
 
@@ -103,15 +103,15 @@
             <h2>Ein paar Zahlen <span>der aktuellen</span> <span>Saison</span></h2>
             <div class="grid-container-Spieleinsätze">
                 <div class="box-Spieleinsätze">
-                    <span>4</span>
+                    <span aria-label="Hannahs geschossene Tore in dieser Saison">4</span>
                     <h5>Tore</h5>
                 </div>
                 <div class="box-Spieleinsätze">
-                    <span>18</span>
+                    <span aria-label="Hannahs absolvierte Einsätze in dieser Saison">18</span>
                     <h5>Einsätze</h5>
                 </div>
                 <div class="box-Spieleinsätze">
-                    <span>973</span>
+                    <span aria-label="Hannahs gespielte Minuten in dieser Saison">973</span>
                     <h5>Spielminuten</h5>
                 </div>
             </div>
@@ -211,10 +211,10 @@
         </section>
     </main>
     <footer>
-        <a href="https://www.instagram.com/hannahmesch/" class="left">Instagram</a>
+        <a href="https://www.instagram.com/hannahmesch/" class="left" aria-label="Hannah Mesch auf Instagram besuchen">Instagram</a>
         <div class="right">
-            <a href="impressum.html">Impressum</a>
-            <a href="datenschutz.html">Datenschutz</a>
+            <a href="impressum.html" aria-label="Zum Impressum">Impressum</a>
+            <a href="datenschutz.html" aria-label="Zur Datenschutzerklärung">Datenschutz</a>
         </div>
     </footer>
 </body>
