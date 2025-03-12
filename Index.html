@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <header>
+    <header role="banner">
         <div class="header-background">
             <img src="img/header.svg" alt="Bild von Hannah Mesch">
         </div>
@@ -19,7 +19,7 @@
         </a>
         <h1>Hannah Mesch</h1>
         <button id="menuButton" class="menu-button" aria-label="Menü öffnen">Menü</button>
-        <nav id="menu" class="menu">
+        <nav id="menu" class="menu" role="navigation">
             <button id="closeButton" class="close-button" aria-label="Menü schließen">Schließen</button>
             <ul>
                 <li><a href="index.html" class="active closeMenu" aria-label="Zur Startseite">Home</a></li>
@@ -29,11 +29,12 @@
             </ul>
         </nav>
     </header>
-    <main>
+
+    <main role="main">
         <section id="MeinNächstesSpiel">
             <h2>Mein nächstes <span>Spiel</span></h2>
             <div class="grid-container-countdown">
-                <div class="box-countdown" aria-label="Tage bis zum nächsten Spiel">
+                <div class="box-countdown" aria-label="Tage bis zum nächsten Spiel" role="status">
                     <h3>03</h3>
                     <span>Tage</span>
                 </div>
@@ -92,9 +93,9 @@
         </section>
         <section id="MeineNächstenSpiele">
             <h2>Meine nächsten <span>Spiele</span></h2>
-            <div class="spielplan-container">
+            <div class="spielplan-container" role="list">
                 <!-- Erstes Spiel -->
-                <div class="spiel">
+                <div class="spiel" role="listitem">
                     <div class="team">
                         <img src="img/team1.png" alt="Team 1 Logo">
                         <p class="team-name">Team 1</p>
@@ -111,7 +112,7 @@
                 </div>
 
                 <!-- Zweites Spiel -->
-                <div class="spiel">
+                <div class="spiel" role="listitem">
                     <div class="team">
                         <img src="img/team3.png" alt="Team 3 Logo">
                         <p class="team-name">Team 3</p>
@@ -128,7 +129,7 @@
                 </div>
 
                 <!-- Drittes Spiel -->
-                <div class="spiel">
+                <div class="spiel" role="listitem">
                     <div class="team">
                         <img src="img/team5.png" alt="Team 5 Logo">
                         <p class="team-name">Team 5</p>

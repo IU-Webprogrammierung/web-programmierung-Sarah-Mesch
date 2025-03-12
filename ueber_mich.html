@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <header>
+    <header role="banner">
         <div class="header-background">
             <img src="img/ueber_mich.svg" alt="Bild von Hannah Mesch">
         </div>
@@ -19,7 +19,7 @@
         </a>
         <h1>ÜBER MICH</h1>
         <button id="menuButton" class="menu-button" aria-label="Menü öffnen">Menü</button>
-        <nav id="menu" class="menu">
+        <nav id="menu" class="menu" role="navigation">
             <button id="closeButton" class="close-button" aria-label="Menü schließen">Schließen</button>
             <ul>
                 <li><a href="index.html" class="home" aria-label="Zur Startseite">Home</a></li>
@@ -29,7 +29,8 @@
             </ul>
         </nav>
     </header>
-    <main>
+
+    <main role="main">
         <section id="Steckbrief">
             <div class="uebermich-container">
                 <!-- Bild dekorativ, deshalb Alt-Tag leer -->
@@ -41,32 +42,32 @@
                 </a>
                 </div>
             </div>
-            <div class="steckbrief-container">
-                <div class="zeile">
+            <div class="steckbrief-container" role="list">
+                <div class="zeile" role="listitem">
                     <p>Geburtsdatum:</p>
                     <p>3. Dezember 2004</p>
                 </div>
-                <div class="zeile">
+                <div class="zeile" role="listitem">
                     <p>Geburtsort:</p>
                     <p>Coburg</p>
                 </div>
-                <div class="zeile">
+                <div class="zeile" role="listitem">
                     <p>Größe:</p>
                     <p>1,68 Meter</p>
                 </div>
-                <div class="zeile">
+                <div class="zeile" role="listitem">
                     <p>Sturm:</p>
                     <p>Angriff</p>
                 </div>
-                <div class="zeile">
+                <div class="zeile" role="listitem">
                     <p>Aktueller Verein:</p>
                     <p>FC Carl Zeiss Jena</p>
                 </div>
-                <div class="zeile">
+                <div class="zeile" role="listitem">
                     <p>Rückennummer:</p>
                     <p>11</p>
                 </div>
-                <div class="zeile">
+                <div class="zeile" role="listitem">
                     <p>Jugendvereine:</p>
                     <div class="werte">
                         <p>TSV Meeder</p>
@@ -74,21 +75,21 @@
                         <p>FF USV Jena U17</p>
                     </div>
                 </div>
-                <div class="zeile">
+                <div class="zeile" role="listitem">
                     <p>Besondere Erfolge:</p>
                     <div class="werte">
                         <p>Teilnahme an der MDR-Dokuserie "Bundesliga oder Bolzplatz"</p>
                         <p>Gründung des Fanclubs "Meschi#11" in ihrem Heimatort Drossenhausen</p>
                     </div>
                 </div>
-                <div class="zeile">
+                <div class="zeile" role="listitem">
                     <p>Persönliche Ziele:</p>
                     <div class="werte">
                         <p>Abiturabschluss im Jahr 2025</p>
                         <p>Anschließendes Studium im Bereich Sportmanagement</p>
                     </div>
                 </div>
-                <div class="zeile">
+                <div class="zeile" role="listitem">
                     <p>Besondere Ereignisse:</p>
                     <div class="werte">
                         <p>Im Alter von 15 Jahren erster Einsatz bei den Frauen im DFB-Pokal gegen den FC Bayern München
@@ -121,17 +122,17 @@
         </section>
         <section id="Fotogalerie">
             <h2>Ein paar Schnappschüsse</h2>
-            <div class="gallery-container">
-                <div class="gallery-column column-1">
+            <div class="gallery-container" role="list">
+                <div class="gallery-column column-1" role="listitem">
                     <img src="img/ueber_mich.svg" alt="">
                     <img src="img/ueber_mich.svg" alt="">
                     <img src="img/ueber_mich.svg" alt="">
                 </div>
-                <div class="gallery-column column-2">
+                <div class="gallery-column column-2" role="listitem">
                     <img class="tall" src="img/ueber_mich.svg" alt="">
                     <img class="small" src="img/ueber_mich.svg" alt="">
                 </div>
-                <div class="gallery-column column-3">
+                <div class="gallery-column column-3" role="listitem">
                     <img class="small" src="img/ueber_mich.svg" alt="">
                     <img class="tall" src="img/ueber_mich.svg" alt="">
                 </div>
