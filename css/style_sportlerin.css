@@ -1,3 +1,14 @@
+/* Festlegung Schriftgröße */
+html {
+    font-size: 18px;
+    /* 1rem = 18px */
+}
+
+/* Schriftgröße Absätze */
+p {
+    font-size: 1rem;
+}
+
 /* Header Styling */
 header {
     background-size: cover;
@@ -25,9 +36,9 @@ header .header-background img {
 
 /* Logo im Header */
 header .header-logo {
-    margin: 20px;
+    margin: 1.1rem;
     position: absolute;
-    width: 150px;
+    width: 8.3rem;
     height: auto;
     z-index: 100;
 }
@@ -35,13 +46,13 @@ header .header-logo {
 /* Menübutton im Header */
 header .menu-button {
     position: absolute;
-    top: 20px;
-    right: 20px;
+    top: 1.1rem;
+    right: 1.1rem;
     background-color: transparent;
     border: 2px solid white;
     color: white;
-    padding: 10px 20px;
-    font-size: 1.2rem;
+    padding: 0.5rem 1.1rem;
+    font-size: 1rem;
     text-transform: uppercase;
 }
 
@@ -65,27 +76,27 @@ header .menu ul {
 
 /* Menüeinträge */
 header .menu li {
-    margin: 20px 0;
+    margin: 1.1rem 0;
 }
 
 /* Links im Menü */
 header .menu a {
     text-decoration: none;
     color: white;
-    font-size: 2rem;
+    font-size: 1rem;
     text-transform: uppercase;
 }
 
 /* Schließen Button im Menü */
 header .close-button {
     position: absolute;
-    top: 20px;
-    right: 20px;
+    top: 1.1rem;
+    right: 1.1rem;
     background-color: transparent;
     border: 2px solid white;
     color: white;
-    padding: 10px 20px;
-    font-size: 1.2rem;
+    padding: 0.5rem 1.1rem;
+    font-size: 1rem;
     text-transform: uppercase;
 }
 
@@ -97,7 +108,7 @@ header nav a.active {
 /* Überschrift im Header */
 header h1 {
     color: white;
-    font-size: 12rem;
+    font-size: 3rem;
     text-align: justify;
     position: absolute;
     top: 32%;
@@ -107,7 +118,7 @@ header h1 {
 /* Unterüberschrift */
 h2 {
     color: #2B3A58;
-    margin-left: 20px;
+    margin-left: 1.1rem;
     text-transform: uppercase;
 }
 
@@ -121,7 +132,7 @@ h2 span {
     width: 100%;
     align-items: center;
     position: relative;
-    margin-bottom: 40px;
+    margin-bottom: 2.2rem;
 }
 
 /* Werdegang-Sektion Slider */
@@ -129,7 +140,7 @@ h2 span {
     display: flex;
     position: relative;
     width: 100%;
-    height: 300px;
+    height: 16.6rem;
 }
 
 /* Einzelne Slides im Werdegang */
@@ -150,7 +161,7 @@ h2 span {
 #Werdegang .content-box {
     display: flex;
     width: 100%;
-    height: 300px;
+    height: 16.6rem;
     background-color: #2B3A58;
     color: white;
 }
@@ -158,7 +169,7 @@ h2 span {
 /* Text Box im Werdegang */
 #Werdegang .text-box {
     width: 50%;
-    padding: 40px;
+    padding: 2.2rem;
 }
 
 /* Text Box Überschrift im Werdegang */
@@ -183,25 +194,25 @@ h2 span {
     font-size: 2rem;
     color: #2B3A58;
     cursor: pointer;
-    padding: 20px;
+    padding: 1.1rem;
     user-select: none;
 }
 
 /* Linke Pfeiltaste */
 #Werdegang .left-arrow {
-    margin-right: 10px;
+    margin-right: 0.5rem;
 }
 
 /* Rechte Pfeiltaste */
 #Werdegang .right-arrow {
-    margin-left: 10px;
+    margin-left: 0.5rem;
 }
 
 /* Spieleinsätze Überschrift */
 #Spieleinsätze h2 {
     color: #2B3A58;
-    margin-left: 20px;
-    margin-top: 20px;
+    margin-left: 1.1rem;
+    margin-top: 1.1rem;
     text-transform: uppercase;
 }
 
@@ -219,16 +230,16 @@ h2 span {
 #Spieleinsätze .grid-container-Spieleinsätze {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    padding: 20px;
-    max-width: 1200px;
+    gap: 1.1rem;
+    padding: 1.1rem;
+    max-width: 66.6rem;
     margin: 0 auto;
 }
 
 /* Box innerhalb des Grid Containers der Spieleinsätze */
 #Spieleinsätze .box-Spieleinsätze {
     border: 2px solid #2B3A58;
-    padding: 20px;
+    padding: 1.1rem;
     text-align: center;
 }
 
@@ -243,14 +254,14 @@ h2 span {
 .bild img {
     height: auto;
     display: block;
-    margin-top: 50px;
+    margin-top: 2.7rem;
 }
 
 /* Styling der gefüllten Boxen */
 .filled-box {
     background-color: #2B3A58;
     color: white;
-    padding: 20px;
+    padding: 1.1rem;
     position: relative;
     top: 17%;
     height: 60%;
@@ -258,12 +269,12 @@ h2 span {
 
 /* Süddeutsche Styling */
 #Süddeutsche .bild img {
-    margin-right: 20px;
+    margin-right: 1.1rem;
 }
 
 #Süddeutsche .filled-box {
     width: 115%;
-    margin-left: 20px;
+    margin-left: 1.1rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -310,30 +321,30 @@ h2 span {
     width: 50%;
     position: absolute;
     top: 15%;
-    right: 80px;
+    right: 4.4rem;
     text-align: center;
 }
 
 /* Icon in der Süddeutsche Sektion */
 #Süddeutsche .icon {
     position: absolute;
-    right: 140px;
-    top: 180px;
+    right: 7.7rem;
+    top: 10rem;
 }
 
 /* Länderpokal Sektion Styling */
 #Länderpokal .bild img {
-    margin-left: 20px;
+    margin-left: 1.1rem;
 }
 
 #Länderpokal .filled-box {
     width: 115%;
-    margin-right: 20px;
+    margin-right: 1.1rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
     overflow: hidden;
-    right: 150px;
+    right: 8.3rem;
 }
 
 /* Vorherige und Nachfolgende Pseudo-Elemente in der Länderpokal Sektion */
@@ -365,7 +376,7 @@ h2 span {
     font-weight: bold;
     text-align: center;
     position: absolute;
-    right: 10px;
+    right: 0.5rem;
     top: 50%;
     transform: translateY(-50%);
     text-transform: uppercase;
@@ -379,26 +390,26 @@ h2 span {
     width: 50%;
     position: absolute;
     top: 15%;
-    left: 80px;
+    left: 4.4rem;
     text-align: center;
 }
 
 /* Icon in der Länderpokal Sektion */
 #Länderpokal .icon {
     position: absolute;
-    right: 140px;
-    top: 180px;
+    right: 7.7rem;
+    top: 10rem;
 }
 
 /* Bild-Elemente für den Meisterin Bereich */
 #Meisterin .bild img {
-    margin-right: 20px;
+    margin-right: 1.1rem;
 }
 
 /* Gefüllte Box für Meisterin Bereich */
 #Meisterin .filled-box {
     width: 115%;
-    margin-left: 20px;
+    margin-left: 1.1rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -446,15 +457,15 @@ h2 span {
     width: 50%;
     position: absolute;
     top: 15%;
-    right: 80px;
+    right: 4.4rem;
     text-align: center;
 }
 
 /* Icon im Meisterin Bereich */
 #Meisterin .icon {
     position: absolute;
-    right: 140px;
-    top: 180px;
+    right: 7.7rem;
+    top: 10rem;
 }
 
 /* Container der Sponsoren */
@@ -462,9 +473,9 @@ h2 span {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 50px;
+    margin-top: 2.7rem;
     background-color: #2B3A58;
-    margin-bottom: 50px;
+    margin-bottom: 2.7rem;
 }
 
 /* Titel der Sponsoren */
@@ -480,11 +491,11 @@ h2 span {
 /* Box-Container für Sponsoren */
 #Sponsoren .box-container {
     display: flex;
-    gap: 30px;
+    gap: 1.6rem;
     flex: 2;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    margin-right: 20px;
+    margin-top: 2.7rem;
+    margin-bottom: 2.7rem;
+    margin-right: 1.1rem;
 }
 
 /* Box für jedes Sponsorenlogo */
@@ -505,7 +516,7 @@ h2 span {
     background-color: white;
     width: 100%;
     text-align: center;
-    height: 80px;
+    height: 4.4rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -513,7 +524,7 @@ h2 span {
 
 /* Sponsorenlogo */
 #Sponsoren .logo-box img {
-    width: 150px;
+    width: 8.3rem;
     height: auto;
 }
 
@@ -522,7 +533,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 20px;
+    margin: 1.1rem;
 }
 
 /* Footer-Links */
@@ -536,15 +547,26 @@ footer a {
 /* Footer rechts-Layout */
 footer .right {
     display: flex;
-    gap: 20px;
+    gap: 1.1rem;
 }
 
 /* Responsive Design für mobile Ansicht (360px - 600px) */
 @media (max-width: 600px) {
 
+    /* Festlegung Schriftgröße */
+    html {
+        font-size: 16px;
+        /* 1rem = 16px */
+    }
+
+    /* Schriftgröße Absätze */
+    p {
+        font-size: 1rem;
+    }
+
     /* Header Bild-Größe auf Mobilgeräten */
     header img {
-        width: 100px;
+        width: 6.2rem;
     }
 
     /* Header Titel auf Mobilgeräten */
@@ -580,17 +602,17 @@ footer .right {
 
     /* Bild in Werdegang Box */
     #Werdegang .image-box img {
-        margin-top: 20px;
+        margin-top: 1.2rem;
     }
 
     /* Textbox Padding in Werdegang */
     #Werdegang .text-box {
-        padding: 20px;
+        padding: 1.2rem;
     }
 
     /* Spieleinsätze Layout auf Mobilgeräten */
     #Spieleinsätze {
-        margin-top: 400px;
+        margin-top: 25rem;
     }
 
     /* Grid-Container für Spieleinsätze */
@@ -604,7 +626,7 @@ footer .right {
     /* Box für jedes Spieleinsatz-Element */
     #Spieleinsätze .box-Spieleinsätze {
         border: 2px solid #2B3A58;
-        padding: 20px;
+        padding: 1.2rem;
         text-align: center;
         width: 40%;
     }
@@ -618,14 +640,14 @@ footer .right {
     /* Gefüllte Box für Süddeutsche */
     #Süddeutsche .filled-box {
         width: 81%;
-        height: 500px;
+        height: 31.2rem;
     }
 
     /* Bild in Süddeutsche Bereich */
     #Süddeutsche .bild img {
         width: 90%;
-        margin-left: 20px;
-        margin-right: 20px;
+        margin-left: 1.2rem;
+        margin-right: 1.2rem;
     }
 
     /* Rotierter Titel für Süddeutsche Bereich */
@@ -633,7 +655,7 @@ footer .right {
         writing-mode: unset;
         transform: unset;
         font-size: 2rem;
-        margin-top: -380px;
+        margin-top: -23.7rem;
     }
 
     /* Content in Süddeutsche Bereich */
@@ -644,14 +666,14 @@ footer .right {
 
     /* Text in Süddeutsche Bereich */
     #Süddeutsche .text {
-        margin-top: -280px;
-        margin-left: 150px;
+        margin-top: -17.5rem;
+        margin-left: 9.3rem;
     }
 
     /* Icon für Süddeutsche Bereich */
     #Süddeutsche .icon {
-        right: 40px;
-        top: -100px;
+        right: 2.5rem;
+        top: -6.2rem;
     }
 
     /* Gefüllte Box Linien für Süddeutsche */
@@ -683,14 +705,14 @@ footer .right {
     /* Gefüllte Box für Länderpokal */
     #Länderpokal .filled-box {
         width: 90%;
-        margin-left: 20px;
-        margin-right: 20px;
+        margin-left: 1.2rem;
+        margin-right: 1.2rem;
         left: 0%;
-        height: 600px;
+        height: 37.5rem;
         display: flex;
         align-items: center;
         justify-content: center;
-        padding: 20px;
+        padding: 1.2rem;
         background-color: #2B3A58;
         color: white;
         box-sizing: border-box;
@@ -703,8 +725,8 @@ footer .right {
         height: auto;
         max-width: none;
         object-fit: cover;
-        margin-left: 20px;
-        margin-right: 20px;
+        margin-left: 1.2rem;
+        margin-right: 1.2rem;
     }
 
     /* Bildcontainer im Länderpokal Bereich */
@@ -721,7 +743,7 @@ footer .right {
         writing-mode: unset;
         transform: unset;
         font-size: 2rem;
-        margin-top: -280px;
+        margin-top: -17.5rem;
     }
 
     /* Content-Bereich im Länderpokal */
@@ -740,13 +762,13 @@ footer .right {
 
     /* Text im Länderpokal Bereich */
     #Länderpokal .text {
-        margin-top: -20px;
+        margin-top: -1.2rem;
     }
 
     /* Icon im Länderpokal Bereich */
     #Länderpokal .icon {
-        right: 5px;
-        top: 250px;
+        right: 0.3rem;
+        top: 15.6rem;
     }
 
     /* Gefüllte Box Linien im Länderpokal */
@@ -773,14 +795,14 @@ footer .right {
     /* Gefüllte Box im Meisterin Bereich */
     #Meisterin .filled-box {
         width: 81%;
-        height: 550px;
+        height: 34.3rem;
     }
 
     /* Bild im Meisterin Bereich */
     #Meisterin .bild img {
         width: 90%;
-        margin-left: 20px;
-        margin-right: 20px;
+        margin-left: 1.2rem;
+        margin-right: 1.2rem;
     }
 
     /* Rotierter Titel im Meisterin Bereich */
@@ -788,7 +810,7 @@ footer .right {
         writing-mode: unset;
         transform: unset;
         font-size: 2rem;
-        margin-top: -400px;
+        margin-top: -25rem;
     }
 
     /* Content im Meisterin Bereich */
@@ -799,14 +821,14 @@ footer .right {
 
     /* Text im Meisterin Bereich */
     #Meisterin .text {
-        margin-top: -280px;
-        margin-left: 150px;
+        margin-top: -17.5rem;
+        margin-left: 9.3rem;
     }
 
     /* Icon im Meisterin Bereich */
     #Meisterin .icon {
-        right: 35px;
-        top: -80px;
+        right: 2.1rem;
+        top: -5rem;
     }
 
     /* Gefüllte Box Linien im Meisterin Bereich */
@@ -832,7 +854,7 @@ footer .right {
     /* Box-Container für Sponsoren im vertikalen Layout */
     #Sponsoren .box-container {
         flex-direction: column;
-        margin: 20px 0;
+        margin: 1.2rem 0;
     }
 
     /* Sponsorenlogo-Bildgröße reduzieren */

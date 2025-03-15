@@ -1,3 +1,14 @@
+/* Festlegung Schriftgröße */
+html {
+    font-size: 18px;
+    /* 1rem = 18px */
+}
+
+/* Schriftgröße Absätze */
+p {
+    font-size: 1rem;
+}
+
 /* Header-Stil */
 header {
     background-size: cover;
@@ -25,9 +36,9 @@ header .header-background img {
 
 /* Logo im Header */
 header .header-logo {
-    margin: 20px;
+    margin: 1.1rem;
     position: absolute;
-    width: 150px;
+    width: 8.3rem;
     height: auto;
     z-index: 100;
 }
@@ -35,13 +46,13 @@ header .header-logo {
 /* Menübutton im Header */
 header .menu-button {
     position: absolute;
-    top: 20px;
-    right: 20px;
+    top: 1.1rem;
+    right: 1.1rem;
     background-color: transparent;
     border: 2px solid white;
     color: white;
-    padding: 10px 20px;
-    font-size: 1.2rem;
+    padding: o.5rem 1.1rem;
+    font-size: 1rem;
     text-transform: uppercase;
 }
 
@@ -65,27 +76,27 @@ header .menu ul {
 
 /* Menüeinträge im Header */
 header .menu li {
-    margin: 20px 0;
+    margin: 1.1rem 0;
 }
 
 /* Links im Menü */
 header .menu a {
     text-decoration: none;
     color: white;
-    font-size: 2rem;
+    font-size: 1rem;
     text-transform: uppercase;
 }
 
 /* Schließbutton im Header */
 header .close-button {
     position: absolute;
-    top: 20px;
-    right: 20px;
+    top: 1.1rem;
+    right: 1.1rem;
     background-color: transparent;
     border: 2px solid white;
     color: white;
-    padding: 10px 20px;
-    font-size: 1.2rem;
+    padding: 0.5rem 1.1rem;
+    font-size: 1rem;
     text-transform: uppercase;
 }
 
@@ -97,7 +108,7 @@ header nav a.active {
 /* Haupttitel im Header */
 header h1 {
     color: white;
-    font-size: 17rem;
+    font-size: 3rem;
     text-align: center;
     position: absolute;
     top: 2%;
@@ -111,7 +122,7 @@ h2 span {
 /* Styling für Span-Elemente innerhalb von p */
 p span {
     display: block;
-    margin-top: 20px;
+    margin-top: 1.1rem;
 }
 
 /* Steckbrief - Über mich Container */
@@ -119,13 +130,13 @@ p span {
     display: flex;
     align-items: center;
     background: #2B3A58;
-    margin-top: 20px;
+    margin-top: 1.1rem;
 }
 
 /* Steckbrief - Bild im Über mich Container */
 #Steckbrief .uebermich-container img {
-    max-width: 300px;
-    margin-left: 150px;
+    max-width: 16.6rem;
+    margin-left: 8.3rem;
 }
 
 /* Steckbrief - Überschrift */
@@ -138,7 +149,7 @@ p span {
 
 /* Steckbrief - Bild in der Überschrift */
 #Steckbrief .uebermich-überschrift img {
-    max-width: 50px;
+    max-width: 2.7rem;
     margin: 0px;
 }
 
@@ -146,15 +157,15 @@ p span {
 #Steckbrief .steckbrief-container {
     border: 2px solid #2B3A58;
     display: grid;
-    gap: 20px;
-    padding: 20px;
+    gap: 1.1rem;
+    padding: 1.1rem;
 }
 
 /* Steckbrief - Zeilen im Steckbrief */
 #Steckbrief .zeile {
     display: flex;
     justify-content: space-between;
-    gap: 20px;
+    gap: 1.1rem;
 }
 
 /* Steckbrief - Erste Spalte der Zeile */
@@ -184,8 +195,8 @@ p span {
 
 /* Autogrammkarten Container */
 #Autogrammkarten .autogrammkarten {
-    margin-top: 20px;
-    padding: 20px;
+    margin-top: 1.1rem;
+    padding: 1.1rem;
     background: linear-gradient(to bottom, #2B3A58 50%, white 50%);
 }
 
@@ -193,7 +204,7 @@ p span {
 #Autogrammkarten .autogrammkarten-container {
     display: flex;
     justify-content: center;
-    gap: 60px;
+    gap: 3.3rem;
 }
 
 /* Spalten in den Autogrammkarten */
@@ -203,7 +214,7 @@ p span {
 
 /* Bilder in den Autogrammkarten */
 #Autogrammkarten .autogrammkarten-spalte img {
-    width: 300px;
+    width: 16.6rem;
     border: 2px solid black;
 }
 
@@ -212,14 +223,14 @@ p span {
     background-color: #2B3A58;
     border: 2px solid #2B3A58;
     color: white;
-    padding: 10px 20px;
-    margin-bottom: 20px;
+    padding: 0.5rem 1.1rem;
+    margin-bottom: 1.1rem;
     text-transform: uppercase;
 }
 
 /* Fotogalerie Container */
 #Fotogalerie {
-    margin: 20px;
+    margin: 1.1rem;
 }
 
 /* Fotogalerie - Überschrift */
@@ -232,14 +243,14 @@ p span {
 #Fotogalerie .gallery-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1.5fr;
-    gap: 20px;
+    gap: 1.1rem;
 }
 
 /* Fotogalerie - Spalten in der Galerie */
 #Fotogalerie .gallery-column {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 0.8rem;
 }
 
 /* Fotogalerie - Bilder in der Galerie */
@@ -252,27 +263,27 @@ p span {
 
 /* Fotogalerie - Erste Spalte Bilder */
 #Fotogalerie .column-1 img {
-    height: 200px;
+    height: 11.1rem;
 }
 
 /* Fotogalerie - Zweite Spalte hohe Bilder */
 #Fotogalerie .column-2 .tall {
-    height: 415px;
+    height: 23rem;
 }
 
 /* Fotogalerie - Zweite Spalte kleine Bilder */
 #Fotogalerie .column-2 .small {
-    height: 200px;
+    height: 11.1rem;
 }
 
 /* Fotogalerie - Dritte Spalte kleine Bilder */
 #Fotogalerie .column-3 .small {
-    height: 265px;
+    height: 14.7rem;
 }
 
 /* Fotogalerie - Dritte Spalte hohe Bilder */
 #Fotogalerie .column-3 .tall {
-    height: 350px;
+    height: 19.4rem;
 }
 
 /* Fotogalerie - Galerie-Buttons */
@@ -280,10 +291,10 @@ p span {
     background-color: #2B3A58;
     border: 2px solid #2B3A58;
     color: white;
-    padding: 10px 20px;
+    padding: 0.5rem 1.1rem;
     justify-self: left;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 1.1rem;
+    margin-bottom: 1.1rem;
     text-transform: uppercase;
 }
 
@@ -292,7 +303,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 20px;
+    margin: 1.1rem;
 }
 
 /* Footer Links */
@@ -306,20 +317,31 @@ footer a {
 /* Footer - Rechte Seite */
 footer .right {
     display: flex;
-    gap: 20px;
+    gap: 1.1rem;
 }
 
 /* Responsive Design für mobile Ansicht */
 @media (max-width: 600px) {
 
+    /* Festlegung Schriftgröße */
+    html {
+        font-size: 16px;
+        /* 1rem = 16px */
+    }
+
+    /* Schriftgröße Absätze */
+    p {
+        font-size: 1rem;
+    }
+
     /* Header - Bildgröße auf mobilen Geräten */
     header img {
-        width: 100px;
+        width: 6.2rem;
     }
 
     /* Header - Schriftgröße für den Titel */
     header h1 {
-        font-size: 6rem;
+        font-size: 3rem;
         top: 67%;
     }
 
@@ -337,7 +359,7 @@ footer .right {
     #Steckbrief .uebermich-container {
         flex-direction: column;
         text-align: center;
-        margin-top: 10px;
+        margin-top: 0.6rem;
     }
 
     /* Steckbrief - Bild im Über mich Container auf mobilen Geräten */
@@ -354,7 +376,7 @@ footer .right {
     /* Steckbrief - Zeilenlayout auf mobilen Geräten */
     #Steckbrief .zeile {
         flex-direction: column;
-        gap: 5px;
+        gap: 0.3rem;
     }
 
     /* Steckbrief - Textzentrierung auf mobilen Geräten */
@@ -379,7 +401,7 @@ footer .right {
     /* Autogrammkarten - Container auf mobilen Geräten */
     #Autogrammkarten .autogrammkarten-container {
         flex-direction: column;
-        gap: 20px;
+        gap: 1.2rem;
         align-items: center;
     }
 
@@ -387,4 +409,5 @@ footer .right {
     #Fotogalerie .gallery-container {
         grid-template-columns: 1fr;
     }
+    
 }

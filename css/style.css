@@ -1,3 +1,14 @@
+/* Festlegung Schriftgröße */
+html {
+    font-size: 18px;
+    /* 1rem = 18px */
+}
+
+/* Schriftgröße Absätze */
+p {
+    font-size: 1rem;
+}
+
 /* Header Styling */
 header {
     background-size: cover;
@@ -25,9 +36,9 @@ header .header-background img {
 
 /* Logo im Header */
 header .header-logo {
-    margin: 20px;
+    margin: 1.1rem;
     position: absolute;
-    width: 150px;
+    width: 8.3rem;
     height: auto;
     z-index: 100;
 }
@@ -35,7 +46,7 @@ header .header-logo {
 /* Überschrift im Header */
 header h1 {
     color: white;
-    font-size: 17rem;
+    font-size: 3rem;
     text-align: center;
     position: absolute;
     top: 2%;
@@ -45,13 +56,13 @@ header h1 {
 /* Menü-Button im Header */
 header .menu-button {
     position: absolute;
-    top: 20px;
-    right: 20px;
+    top: 1.1rem;
+    right: 1.1rem;
     background-color: transparent;
     border: 2px solid white;
     color: white;
-    padding: 10px 20px;
-    font-size: 1.2rem;
+    padding: 0.5rem 1.1rem;
+    font-size: 1rem;
     text-transform: uppercase;
 }
 
@@ -75,27 +86,27 @@ header .menu ul {
 
 /* Listenelemente im Menü */
 header .menu li {
-    margin: 20px 0;
+    margin: 1.1rem 0;
 }
 
 /* Links im Menü */
 header .menu a {
     text-decoration: none;
     color: white;
-    font-size: 2rem;
+    font-size: 1rem;
     text-transform: uppercase;
 }
 
 /* Schließen-Button im Header */
 header .close-button {
     position: absolute;
-    top: 20px;
-    right: 20px;
+    top: 1.1rem;
+    right: 1.1rem;
     background-color: transparent;
     border: 2px solid white;
     color: white;
-    padding: 10px 20px;
-    font-size: 1.2rem;
+    padding: 0.5rem 1.1rem;
+    font-size: 1rem;
     text-transform: uppercase;
 }
 
@@ -112,7 +123,7 @@ h2 span {
 /* Titel im MeinNächstesSpiel-Bereich */
 #MeinNächstesSpiel h2 {
     color: #2B3A58;
-    margin-left: 20px;
+    margin-left: 1.1rem;
     text-transform: uppercase;
 }
 
@@ -130,16 +141,16 @@ h2 span {
 #MeinNächstesSpiel .grid-container-countdown {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
-    padding: 20px;
-    max-width: 1200px;
+    gap: 1.1rem;
+    padding: 1.1rem;
+    max-width: 66.6rem;
     margin: 0 auto;
 }
 
 /* Countdown-Box im MeinNächstesSpiel-Bereich */
 #MeinNächstesSpiel .box-countdown {
     border: 2px solid #2B3A58;
-    padding: 20px;
+    padding: 1.1rem;
     text-align: center;
 }
 
@@ -155,14 +166,14 @@ h2 span {
     width: 120%;
     height: auto;
     display: block;
-    margin-top: 50px;
+    margin-top: 2.7rem;
 }
 
 /* Gefüllte Boxen im Layout */
 .filled-box {
     background-color: #2B3A58;
     color: white;
-    padding: 20px;
+    padding: 1.1rem;
     position: relative;
     top: 17%;
     height: 60%;
@@ -177,75 +188,75 @@ h2 span {
 .filled-box a {
     text-transform: uppercase;
     display: inline-block;
-    padding: 10px 20px;
+    padding: 0.5rem 1.1rem;
     background-color: white;
     color: #2B3A58;
     text-decoration: none;
     font-weight: bold;
-    bottom: 40px;
-    right: 40px;
+    bottom: 2.2rem;
+    right: 2.2rem;
     position: absolute;
 }
 
 /* Styling für das ÜberMich-Bild */
 #ÜberMich .bild img {
-    margin-left: 20px;
+    margin-left: 1.1rem;
 }
 
 /* Gefüllte Box im ÜberMich-Bereich */
 #ÜberMich .filled-box {
-    margin-right: 20px;
+    margin-right: 1.1rem;
 }
 
 /* Styling für Bilder im MeinWegAlsSportlerin-Bereich */
 #MeinWegAlsSportlerin .bild img {
     width: 97%;
-    margin-right: 20px;
+    margin-right: 1.1rem;
 }
 
 /* Gefüllte Box im MeinWegAlsSportlerin-Bereich */
 #MeinWegAlsSportlerin .filled-box {
     width: 115%;
-    margin-left: 20px;
+    margin-left: 1.1rem;
 }
 
 /* Styling für das Fanclub-Bild */
 #Fanclub .bild img {
-    margin-left: 20px;
-    margin-bottom: 20px;
+    margin-left: 1.1rem;
+    margin-bottom: 1.1rem;
 }
 
 /* Gefüllte Box im Fanclub-Bereich */
 #Fanclub .filled-box {
-    margin-right: 20px;
+    margin-right: 1.1rem;
 }
 
 /* Styling für den MeineNächstenSpiele-Bereich */
 #MeineNächstenSpiele {
     background-color: #2B3A58;
-    margin: 20px;
-    padding-top: 20px;
+    margin: 1.1rem;
+    padding-top: 1.1rem;
 }
 
 /* Titel im MeineNächstenSpiele-Bereich */
 #MeineNächstenSpiele h2 {
     color: white;
-    margin-left: 20px;
+    margin-left: 1.1rem;
     text-transform: uppercase;
 }
 
 /* Spielplan-Container im MeineNächstenSpiele-Bereich */
 #MeineNächstenSpiele .spielplan-container {
-    max-width: 600px;
-    margin: 50px auto;
-    padding-bottom: 50px;
+    max-width: 33.3rem;
+    margin: 2.7rem auto;
+    padding-bottom: 2.7rem;
 }
 
 /* Einzelnes Spiel im Spielplan */
 #MeineNächstenSpiele .spiel {
     display: flex;
-    padding: 20px;
-    margin-bottom: 20px;
+    padding: 1.1rem;
+    margin-bottom: 1.1rem;
 }
 
 /* Team-Bereich im Spielplan */
@@ -258,9 +269,9 @@ h2 span {
 
 /* Bild des Teams im Spielplan */
 #MeineNächstenSpiele .team img {
-    width: 60px;
-    height: 60px;
-    margin-bottom: 10px;
+    width: 3.3rem;
+    height: 3.3rem;
+    margin-bottom: 0.5rem;
 }
 
 /* Team-Name im Spielplan */
@@ -286,9 +297,9 @@ h2 span {
     background-color: transparent;
     border: 2px solid white;
     color: white;
-    padding: 10px 20px;
+    padding: 0.5rem 1.1rem;
     display: block;
-    margin: 20px auto;
+    margin: 1.1rem auto;
     text-transform: uppercase;
 }
 
@@ -297,7 +308,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 20px;
+    margin: 1.1rem;
 }
 
 /* Links im Footer */
@@ -311,20 +322,31 @@ footer a {
 /* Styling für rechte Elemente im Footer */
 footer .right {
     display: flex;
-    gap: 20px;
+    gap: 1.1rem;
 }
 
 /* Responsive Design - Mobile Ansicht (360px - 600px) */
 @media (max-width: 600px) {
 
+    /* Festlegung Schriftgröße */
+    html {
+        font-size: 16px;
+        /* 1rem = 16px */
+    }
+
+    /* Schriftgröße Absätze */
+    p {
+        font-size: 1rem;
+    }
+
     /* Logo im Header für kleine Bildschirme */
     header img {
-        width: 100px;
+        width: 6.2rem;
     }
 
     /* Überschrift im Header für kleine Bildschirme */
     header h1 {
-        font-size: 6rem;
+        font-size: 3rem;
         top: 67%;
     }
 
@@ -352,7 +374,7 @@ footer .right {
     /* Bild in gefüllten Boxen für kleine Bildschirme */
     .bild img {
         width: 90%;
-        margin-left: 20px;
+        margin-left: 1.2rem;
     }
 
     /* Gefüllte Boxen für kleine Bildschirme */
@@ -362,9 +384,9 @@ footer .right {
 
     /* Stil für das ÜberMich-Bild auf kleinen Bildschirmen */
     #ÜberMich .filled-box {
-        margin-left: 100px;
+        margin-left: 6.2rem;
         top: -25%;
-        padding: 10px;
+        padding: 0.6rem;
     }
 
     /* Layout für MeinWegAlsSportlerin-Bereich auf kleinen Bildschirmen */
@@ -372,14 +394,14 @@ footer .right {
         flex-direction: column-reverse;
         display: flex;
         position: relative;
-        margin-bottom: 50px;
+        margin-bottom: 3.1rem;
     }
 
     /* Gefüllte Boxen im MeinWegAlsSportlerin-Bereich */
     #MeinWegAlsSportlerin .filled-box {
-        margin-right: 100px;
+        margin-right: 6.2rem;
         top: 85%;
-        padding: 10px;
+        padding: 0.6rem;
         width: 70%;
         position: absolute;
         z-index: 2;
@@ -389,20 +411,20 @@ footer .right {
     /* Bilder im MeinWegAlsSportlerin-Bereich */
     #MeinWegAlsSportlerin .bild img {
         width: 100%;
-        margin-top: 20px;
+        margin-top: 1.2rem;
         z-index: 1;
     }
 
     /* Styling für den Fanclub-Bereich */
     #Fanclub .grid-container-filled-box {
-        margin-top: 200px;
+        margin-top: 12.5rem;
     }
 
     /* Gefüllte Boxen im Fanclub-Bereich */
     #Fanclub .filled-box {
-        margin-left: 100px;
+        margin-left: 6.2rem;
         top: -25%;
-        padding: 10px;
+        padding: 0.6rem;
     }
 
     /* Spielplan-Container im MeineNächstenSpiele-Bereich */
