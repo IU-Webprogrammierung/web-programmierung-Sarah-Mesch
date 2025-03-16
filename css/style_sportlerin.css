@@ -41,6 +41,7 @@ header .header-logo {
     width: 8.3rem;
     height: auto;
     z-index: 100;
+    top: 0;
 }
 
 /* Menübutton im Header */
@@ -83,7 +84,7 @@ header .menu li {
 header .menu a {
     text-decoration: none;
     color: white;
-    font-size: 1rem;
+    font-size: 2.4rem;
     text-transform: uppercase;
 }
 
@@ -108,11 +109,18 @@ header nav a.active {
 /* Überschrift im Header */
 header h1 {
     color: white;
-    font-size: 3rem;
-    text-align: justify;
-    position: absolute;
-    top: 32%;
+    font-size: 8rem;
     text-transform: uppercase;
+    display: flex;
+    align-items: center; 
+    position: relative;
+    bottom: -48%;
+    flex-direction: column;
+}
+
+/* Stil für span-Elemente innerhalb von h1 */
+header h1 span {
+    display: block;
 }
 
 /* Unterüberschrift */
@@ -122,6 +130,7 @@ h2 {
     text-transform: uppercase;
 }
 
+/* Stil für span-Elemente innerhalb von h2 */
 h2 span {
     display: block;
 }
@@ -572,7 +581,7 @@ footer .right {
     /* Header Titel auf Mobilgeräten */
     header h1 {
         font-size: 3rem;
-        top: 84.5%;
+        bottom: -82%;
     }
 
     /* Menübutton-Größe auf Mobilgeräten */
