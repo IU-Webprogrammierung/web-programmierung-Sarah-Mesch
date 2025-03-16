@@ -35,9 +35,20 @@ header .header-background img {
     margin: 0;
 }
 
+/* Overlay mit `::before` */
+header .header-background::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); 
+}
+
 /* Logo im Header */
 header .header-logo {
-    margin: 1.1rem;
+    margin: 1rem;
     position: absolute;
     width: 8.3rem;
     height: auto;
@@ -110,14 +121,17 @@ header nav a.active {
 /* Hauptüberschrift im Header */
 header h1 {
     color: white;
-    font-size: 8rem;
+    font-size: 4.2rem;
     text-transform: uppercase;
     display: flex;
     align-items: center; 
     position: relative;
-    bottom: -48%;
     flex-direction: column;
     padding-left: 0.5rem;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
 }
 
 /* Stil für span-Elemente innerhalb von h1 */
@@ -360,7 +374,6 @@ footer .right {
     /* Kleinere Schriftgröße für h1 im Header */
     header h1 {
         font-size: 3rem;
-        bottom: -83%;
     }
 
     /* Kleinere Schriftgröße für Menü-Buttons */
