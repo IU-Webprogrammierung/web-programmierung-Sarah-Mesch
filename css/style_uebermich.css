@@ -9,6 +9,34 @@ p {
     font-size: 1rem;
 }
 
+/* Großbuchstaben */
+header .menu-button,
+header .menu a,
+header .close-button,
+header h1,
+#Steckbrief .uebermich-überschrift,
+#Autogrammkarten h2,
+#Autogrammkarten .autogrammkarten-spalte button,
+#Fotogalerie h2,
+#Fotogalerie .gallery-container button,
+footer a {
+    text-transform: uppercase;
+}
+
+/* Blaue Hintergrundfarbe */
+header .menu,
+#Steckbrief .uebermich-container,
+#Autogrammkarten .autogrammkarten-spalte button,
+#Fotogalerie .gallery-container button {
+    background-color: #2B3A58;
+}
+
+/* Blaue Textfarbe */
+#Fotogalerie h2,
+footer a {
+    color: #2B3A58;
+}
+
 /* Header-Stil */
 header {
     background-size: cover;
@@ -42,7 +70,7 @@ header .header-background::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.4); 
+    background: rgba(0, 0, 0, 0.4);
 }
 
 /* Logo im Header */
@@ -56,7 +84,8 @@ header .header-logo {
 }
 
 /* Menübutton im Header */
-header .menu-button {
+header .menu-button,
+header .close-button {
     position: absolute;
     top: 1.1rem;
     right: 1.1rem;
@@ -65,7 +94,6 @@ header .menu-button {
     color: white;
     padding: 0.5rem 1.1rem;
     font-size: 1rem;
-    text-transform: uppercase;
 }
 
 /* Menü im Header */
@@ -73,7 +101,6 @@ header .menu {
     position: absolute;
     width: 100%;
     height: 100vh;
-    background-color: #2B3A58;
     justify-content: center;
     align-items: center;
     top: 0;
@@ -96,20 +123,6 @@ header .menu a {
     text-decoration: none;
     color: white;
     font-size: 2.4rem;
-    text-transform: uppercase;
-}
-
-/* Schließbutton im Header */
-header .close-button {
-    position: absolute;
-    top: 1.1rem;
-    right: 1.1rem;
-    background-color: transparent;
-    border: 2px solid white;
-    color: white;
-    padding: 0.5rem 1.1rem;
-    font-size: 1rem;
-    text-transform: uppercase;
 }
 
 /* Aktive Links im Header-Menü */
@@ -121,23 +134,18 @@ header nav a.active {
 header h1 {
     color: white;
     font-size: 4.2rem;
-    text-transform: uppercase;
     display: flex;
-    align-items: center; 
+    align-items: center;
     position: relative;
     flex-direction: column;
-    top: 50%; 
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
 }
 
-/* Stil für span-Elemente innerhalb von h1 */
-header h1 span {
-    display: block;
-}
-
-/* Styling für Span-Elemente innerhalb von h2 */
+/* Stil für span-Elemente */
+header h1 span,
 h2 span {
     display: block;
 }
@@ -152,7 +160,6 @@ p span {
 #Steckbrief .uebermich-container {
     display: flex;
     align-items: center;
-    background: #2B3A58;
     margin-top: 1.1rem;
 }
 
@@ -167,7 +174,6 @@ p span {
     flex: 1;
     text-align: center;
     color: white;
-    text-transform: uppercase;
 }
 
 /* Steckbrief - Bild in der Überschrift */
@@ -213,7 +219,6 @@ p span {
 /* Autogrammkarten - Überschrift */
 #Autogrammkarten h2 {
     color: white;
-    text-transform: uppercase;
 }
 
 /* Autogrammkarten Container */
@@ -243,23 +248,15 @@ p span {
 
 /* Buttons in den Autogrammkarten */
 #Autogrammkarten .autogrammkarten-spalte button {
-    background-color: #2B3A58;
     border: 2px solid #2B3A58;
     color: white;
     padding: 0.5rem 1.1rem;
     margin-bottom: 1.1rem;
-    text-transform: uppercase;
 }
 
 /* Fotogalerie Container */
 #Fotogalerie {
     margin: 1.1rem;
-}
-
-/* Fotogalerie - Überschrift */
-#Fotogalerie h2 {
-    color: #2B3A58;
-    text-transform: uppercase;
 }
 
 /* Fotogalerie - Galerie Container */
@@ -311,14 +308,12 @@ p span {
 
 /* Fotogalerie - Galerie-Buttons */
 #Fotogalerie .gallery-container button {
-    background-color: #2B3A58;
     border: 2px solid #2B3A58;
     color: white;
     padding: 0.5rem 1.1rem;
     justify-self: left;
     margin-top: 1.1rem;
     margin-bottom: 1.1rem;
-    text-transform: uppercase;
 }
 
 /* Footer-Stil */
@@ -331,10 +326,8 @@ footer {
 
 /* Footer Links */
 footer a {
-    color: #2B3A58;
     text-decoration: none;
     font-size: 1rem;
-    text-transform: uppercase;
 }
 
 /* Footer - Rechte Seite */
@@ -352,8 +345,10 @@ footer .right {
         /* 1rem = 16px */
     }
 
-    /* Schriftgröße Absätze */
-    p {
+    /* Schriftgröße */
+    p,
+    header .menu-button,
+    header .close-button {
         font-size: 1rem;
     }
 
@@ -365,16 +360,6 @@ footer .right {
     /* Header - Schriftgröße für den Titel */
     header h1 {
         font-size: 3rem;
-    }
-
-    /* Menübutton Größe auf mobilen Geräten */
-    header .menu-button {
-        font-size: 1rem;
-    }
-
-    /* Schließbutton Größe auf mobilen Geräten */
-    header .close-button {
-        font-size: 1rem;
     }
 
     /* Steckbrief - Layout auf mobilen Geräten */
@@ -402,15 +387,8 @@ footer .right {
     }
 
     /* Steckbrief - Textzentrierung auf mobilen Geräten */
-    #Steckbrief .zeile>p:first-child {
-        text-align: center;
-    }
-
-    #Steckbrief .zeile p:last-child {
-        text-align: center;
-    }
-
-    /* Steckbrief - Wertezentrierung auf mobilen Geräten */
+    #Steckbrief .zeile>p:first-child,
+    #Steckbrief .zeile p:last-child,
     #Steckbrief .werte {
         text-align: center;
     }
