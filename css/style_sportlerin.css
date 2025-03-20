@@ -176,7 +176,6 @@ h2 {
     display: flex;
     position: relative;
     width: 100%;
-    height: 16.6rem;
 }
 
 /* Einzelne Slides im Werdegang */
@@ -197,7 +196,7 @@ h2 {
 #Werdegang .content-box {
     display: flex;
     width: 100%;
-    height: 16.6rem;
+    height: fit-content;
     color: white;
 }
 
@@ -215,7 +214,7 @@ h2 {
 /* Bild in der Bild Box im Werdegang */
 #Werdegang .image-box img {
     width: 100%;
-    height: 100%;
+    height: 101%;
     object-fit: cover;
 }
 
@@ -261,13 +260,13 @@ h2 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     position: relative;
+    margin: 1.3rem;
 }
 
 /* Bild Styling in den gefüllten Boxen */
 .bild img {
-    height: auto;
     display: block;
-    margin-top: 2.7rem;
+    width: 130%;
 }
 
 /* Sektion Styling */
@@ -279,6 +278,7 @@ h2 {
 
 #Länderpokal .bild img {
     margin-left: 1.1rem;
+    margin-bottom: 20%;
 }
 
 /* Gefüllte Box */
@@ -286,15 +286,24 @@ h2 {
     color: white;
     padding: 1.1rem;
     position: relative;
-    top: 17%;
-    height: 60%;
-    width: 115%;
-    margin-left: 1.1rem;
+    top: 10%;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    overflow: hidden;
+    flex-direction: column;
+    height: fit-content;
+    justify-content: flex-start;
+    left: 0;
+    width: 123%;
+    margin-bottom: 30%;
+    z-index: 1;
 }
+
+/* Gefüllte Box & Styling Bild */
+#Meisterin .filled-box,
+#Süddeutsche .filled-box,
+#Länderpokal .bild img {
+    transform: translateX(-23%);
+}
+
 
 #Süddeutsche .filled-box,
 #Meisterin .filled-box {
@@ -302,8 +311,7 @@ h2 {
 }
 
 #Länderpokal .filled-box {
-    margin-right: 1.1rem;
-    right: 8.3rem;
+    height: 52%;
 }
 
 /* Vertikale Linie innerhalb der gefüllten Box */
@@ -313,7 +321,7 @@ h2 {
     width: 2px;
     height: 80%;
     background-color: white;
-    transform: translateX(-50%);
+    transform: translateY(5%);
 }
 
 #Süddeutsche .filled-box::before,
@@ -352,11 +360,17 @@ h2 {
     font-size: 2.5rem;
     font-weight: bold;
     text-align: center;
+    display: block;
+}
+
+.rotated-title span {
+    display: block;
 }
 
 #Süddeutsche .rotated-title,
 #Meisterin .rotated-title {
     transform: rotate(180deg);
+    margin-left: 0;
 }
 
 #Länderpokal .rotated-title {
@@ -389,8 +403,8 @@ h2 {
 /* Icon */
 .icon {
     position: absolute;
-    right: 7.7rem;
-    top: 10rem;
+    right: 30%;
+    top: 180%;
 }
 
 /* Container der Sponsoren */
@@ -471,6 +485,94 @@ footer .right {
     gap: 1.1rem;
 }
 
+
+/* Responsive Design */
+
+@media (max-width: 1188px) {
+
+    #Länderpokal .filled-box {
+        height: 70%;
+    }
+
+    #Länderpokal .icon {
+        top: 240%;
+    }
+}
+
+@media (max-width: 1002px) {
+    
+    .icon {
+        right: 20%;
+        top: 180%;
+    }
+
+    #Länderpokal .icon {
+        top: 150%;
+    }
+
+    #Länderpokal .filled-box::before {
+        right: 36%;
+    }
+
+}
+
+@media (max-width: 980px) {
+
+    .icon {
+        right: 20%;
+        top: 130%;
+    }
+}
+
+@media (max-width: 820px) {
+
+    .filled-box::before {
+        margin-left: 1.6rem;
+    }
+
+    #Süddeutsche .content, #Meisterin .content {
+        right: 2.4rem;
+    }
+
+    #Länderpokal .filled-box {
+        height: 90%;
+    }
+
+    #Länderpokal .grid-container-filled-box {
+        margin-bottom: 7.1rem;
+    }
+
+    #Länderpokal .rotated-title {
+        right: -5%;
+    }
+
+    #Länderpokal .content {
+        left: 2.4rem;
+    }
+
+    #Länderpokal .filled-box::before {
+        right: 37%;
+    }
+
+    .icon {
+        right: 15%;
+        top: 140%;
+    }
+}
+
+@media (max-width: 700px) {
+
+    .icon {
+        right: 15%;
+        top: 145%;
+    }
+
+    #Länderpokal .icon {
+        top: 100%;
+    }
+
+}
+
 /* Responsive Design für mobile Ansicht (360px - 600px) */
 @media (max-width: 600px) {
 
@@ -524,7 +626,8 @@ footer .right {
 
     /* Spieleinsätze Layout auf Mobilgeräten */
     #Spieleinsätze {
-        margin-top: 25rem;
+        margin-top: 4.1rem;
+        margin-bottom: 4.1rem;
     }
 
     /* Grid-Container für Spieleinsätze */
@@ -544,25 +647,28 @@ footer .right {
     }
 
     /* Bereich für Mobilgeräte */
-    #Süddeutsche .grid-container-filled-box,
-    #Meisterin .grid-container-filled-box {
+    .grid-container-filled-box {
+        grid-template-columns: 1fr;
+    }
+
+    #Länderpokal .grid-container-filled-box {
         display: flex;
         flex-direction: column-reverse;
     }
 
-    /* Gefüllte Box für Süddeutsche */
-    #Süddeutsche .filled-box {
-        width: 81%;
-        height: 31.2rem;
+    #Süddeutsche .filled-box, 
+    #Meisterin .filled-box {
+        width: 93.5%;
+        height: 30rem;
+        margin-top: -12.5%;
+        left: 19.5%;
     }
 
     /* Bild */
     #Süddeutsche .bild img,
     #Länderpokal .bild img,
     #Meisterin .bild img {
-        width: 90%;
-        margin-left: 1.2rem;
-        margin-right: 1.2rem;
+        width: 100%;
     }
 
     /* Rotierter Titel */
@@ -572,42 +678,49 @@ footer .right {
         writing-mode: unset;
         transform: unset;
         font-size: 2rem;
-        margin-top: -23.7rem;
+        margin-top: 0;
     }
 
     /* Content */
     #Süddeutsche .content,
     #Länderpokal .content,
     #Meisterin .content {
-        width: 100%;
-        top: 80%;
-    }
-
-    /* Text */
-    #Süddeutsche .text,
-    #Meisterin .text {
-        margin-top: -17.5rem;
-        margin-left: 9.3rem;
+        top: 35%;
+        left: 25%;
     }
 
     /* Icon für Süddeutsche Bereich */
-    #Süddeutsche .icon {
-        right: 2.5rem;
-        top: -6.2rem;
+    #Süddeutsche .icon 
+    {
+        top: 165%;
+    }
+
+    #Länderpokal .icon 
+    {
+        top: 165%;
+    }
+
+    #Meisterin .icon 
+    {
+        top: 165%;
     }
 
     /* Gefüllte Box Linien für Süddeutsche */
     #Süddeutsche .filled-box::before,
-    #Länderpokal .filled-box::before {
-        top: 23%;
-        left: 50%;
+    #Länderpokal .filled-box::before,
+    #Meisterin .filled-box::before
+    {
+        top: 28%;
+        left: 5%;
         width: 80%;
         height: 2px;
     }
 
     /* Gefüllte Box Linien für Süddeutsche */
     #Süddeutsche .filled-box::after,
-    #Länderpokal .filled-box::after {
+    #Länderpokal .filled-box::after,
+    #Meisterin .filled-box::after
+    {
         top: 58%;
         left: 10%;
         width: 80%;
@@ -615,120 +728,45 @@ footer .right {
 
     /* Länderpokal Layout */
     #Länderpokal .grid-container-filled-box {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-        margin: 0 auto;
-        position: relative;
+        margin-top: -10%;
     }
 
     /* Gefüllte Box für Länderpokal */
     #Länderpokal .filled-box {
-        width: 90%;
-        margin-left: 1.2rem;
-        margin-right: 1.2rem;
-        left: 0%;
-        height: 37.5rem;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 1.2rem;
-        color: white;
-        box-sizing: border-box;
-        z-index: 1;
+        width: 93.5%;
+        height: 30rem;
+        margin-top: -20.4%;
     }
 
     /* Bild im Länderpokal Bereich */
     #Länderpokal .bild img {
-        height: auto;
-        max-width: none;
-        object-fit: cover;
-    }
-
-    /* Bildcontainer im Länderpokal Bereich */
-    #Länderpokal .bild {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        position: relative;
-        z-index: 2;
+        margin-left: 23.5%;
     }
 
     /* Rotierter Titel im Länderpokal Bereich */
     #Länderpokal .rotated-title {
-        margin-top: -17.5rem;
+        top: 3%;
+        left: 0%;
     }
 
-    /* Content-Bereich im Länderpokal */
-    #Länderpokal .content {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 50%;
-        position: relative;
-        top: 0;
-        left: 0;
-        text-align: center;
-    }
-
-    /* Text im Länderpokal Bereich */
-    #Länderpokal .text {
-        margin-top: -1.2rem;
-    }
-
-    /* Icon im Länderpokal Bereich */
-    #Länderpokal .icon {
-        right: 0.3rem;
-        top: 15.6rem;
-    }
-
-    /* Gefüllte Box Linien im Länderpokal */
-    #Länderpokal .filled-box::before {
-        top: 20%;
-    }
-
-    /* Gefüllte Box Linien im Länderpokal */
-    #Länderpokal .filled-box::after {
-        top: 71%;
-    }
-
-    /* Gefüllte Box im Meisterin Bereich */
-    #Meisterin .filled-box {
-        width: 81%;
-        height: 34.3rem;
-    }
-
-    /* Rotierter Titel im Meisterin Bereich */
-    #Meisterin .rotated-title {
-        margin-top: -25rem;
+    #Meisterin .grid-container-filled-box {
+        margin-top: -38%;
     }
 
     /* Icon im Meisterin Bereich */
     #Meisterin .icon {
-        right: 2.1rem;
-        top: -5rem;
+        top: 160%;
     }
 
     /* Gefüllte Box Linien im Meisterin Bereich */
     #Meisterin .filled-box::before {
-        top: 27%;
-        left: 50%;
-        width: 80%;
-        height: 2px;
-    }
-
-    /* Gefüllte Box Linien im Meisterin Bereich */
-    #Meisterin .filled-box::after {
-        top: 63%;
-        left: 10%;
-        width: 80%;
+        left: 5%;
     }
 
     /* Container für Sponsoren im vertikalen Layout */
     #Sponsoren .container {
         flex-direction: column;
+        margin-top: unset;
     }
 
     /* Box-Container für Sponsoren im vertikalen Layout */
@@ -744,3 +782,8 @@ footer .right {
     }
 
 }
+
+
+
+
+
