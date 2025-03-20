@@ -283,6 +283,7 @@ h2 span {
 /* Team-Name im Spielplan */
 #MeineNächstenSpiele .team-name {
     color: white;
+    text-align: center;
 }
 
 /* Info-Bereich im Spielplan */
@@ -290,6 +291,7 @@ h2 span {
     text-align: center;
     width: 40%;
     color: white;
+    margin-bottom: 1.1rem;
 }
 
 /* Datum und Uhrzeit im Spielplan */
