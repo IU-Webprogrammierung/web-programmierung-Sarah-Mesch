@@ -23,11 +23,11 @@
         <!-- Hauptüberschrift der Seite -->
         <h1>Fanclub <span>Meschi#11</span></h1>
         <!-- Menü-Button für die Navigation -->
-        <button id="menuButton" class="menu-button" aria-label="Menü öffnen">Menü</button>
+        <button type="button" id="menuButton" class="menu-button" aria-label="Menü öffnen">Menü</button>
         <!-- Navigationsmenü, das nach Klick auf den Menü-Button erscheint -->
         <nav id="menu" class="menu" role="navigation">
             <!-- Button zum Schließen des Menüs -->
-            <button id="closeButton" class="close-button" aria-label="Menü schließen">Schließen</button>
+            <button type="button" id="closeButton" class="close-button" aria-label="Menü schließen">Schließen</button>
             <ul>
                 <!-- Navigationseinträge mit Links zu verschiedenen Seiten -->
                 <li><a href="index.html" class="home" aria-label="Zur Startseite">Home</a></li>
@@ -91,7 +91,7 @@
         </section>
 
         <!-- Abschnitt für das Anmeldeformular zum Fanclub -->
-        <section id="Anmeldeformular" role="form">
+        <section id="Anmeldeformular">
             <div class="form-container">
                 <h2>Melde dich gerne beim Fanclub an</h2>
                 <div class="form-content">
@@ -106,7 +106,7 @@
                             </span>
                         </p>
                     </div>
-                    <form>
+                    <form role="form">
                         <div class="input-row">
                             <!-- Eingabefelder für Name und E-Mail -->
                             <input aria-label="Name" type="text" placeholder="Name*" required>

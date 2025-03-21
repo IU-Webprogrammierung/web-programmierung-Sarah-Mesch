@@ -121,9 +121,9 @@
         <section id="MeineNächstenSpiele"> 
             <h2>Meine nächsten <span>Spiele</span></h2> 
             <!-- Container für den Spielplan -->
-            <div class="spielplan-container" role="list"> 
+            <ul class="spielplan-container"> 
                 <!-- Erstes Spiel -->
-                <div class="spiel" role="listitem"> 
+                <li class="spiel"> 
                     <div class="team">
                         <!-- Logo des ersten Teams -->
                         <img src="img/Jena_logo.png" alt="Team 1 Logo"> 
@@ -139,9 +139,9 @@
                         <img src="img/Potsdam_logo.png" alt="Team 2 Logo"> 
                         <p class="team-name">1. FFC Turbine Potsdam</p> 
                     </div>
-                </div>
+                </li>
                 <!-- Zweites Spiel -->
-                <div class="spiel" role="listitem">
+                <li class="spiel">
                     <div class="team">
                          <!-- Logo des ersten Teams -->
                         <img src="img/Bremen_logo.png" alt="Team 3 Logo">
@@ -157,9 +157,9 @@
                         <img src="img/Jena_logo.png" alt="Team 4 Logo">
                         <p class="team-name">FC Carl Zeiss Jena</p>
                     </div>
-                </div>
+                </li>
                  <!-- Drittes Spiel -->
-                 <div class="spiel" role="listitem">
+                 <li class="spiel">
                     <div class="team">
                         <!-- Logo des ersten Teams -->
                         <img src="img/Jena_logo.png" alt="Team 5 Logo">
@@ -175,11 +175,12 @@
                         <img src="img/Bayern_logo.png" alt="Team 6 Logo">
                         <p class="team-name">FC Bayern München</p>
                     </div>
-                </div>
-
+                </li>
+                <li>
                 <!-- Button zum Anzeigen weiterer Spiele -->
-                <button class="mehr-anzeigen" aria-label="Weitere Spiele anzeigen">Mehr anzeigen</button>
-            </div>
+                <button type="button" class="mehr-anzeigen" aria-label="Weitere Spiele anzeigen">Mehr anzeigen</button>
+                </li>   
+            </ul>
         </section>
     </main>
 
