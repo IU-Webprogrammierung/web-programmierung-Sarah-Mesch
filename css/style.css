@@ -99,6 +99,8 @@ header h1 {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
+    background-color: rgba(0, 0, 0, 0.1) !important;
+    display: inline-block;
 }
 
 /* Stil für span-Elemente innerhalb von h1 */
@@ -112,7 +114,7 @@ header .close-button {
     position: absolute;
     top: 1.1rem;
     right: 1.1rem;
-    background-color: transparent;
+    background-color: rgba(0, 0, 0, 0.2);
     border: 2px solid white;
     color: white;
     padding: 0.5rem 1.1rem;

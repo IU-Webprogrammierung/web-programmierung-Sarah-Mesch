@@ -89,7 +89,7 @@ header .close-button {
     position: absolute;
     top: 1.1rem;
     right: 1.1rem;
-    background-color: transparent;
+    background-color: rgba(0, 0, 0, 0.2);
     border: 2px solid white;
     color: white;
     padding: 0.5rem 1.1rem;
@@ -142,6 +142,8 @@ header h1 {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
+    background-color: rgba(0, 0, 0, 0.1) !important;
+    display: inline-block;
 }
 
 /* Stil für span-Elemente */
@@ -183,37 +185,22 @@ p span {
 }
 
 /* Steckbrief - Steckbrief-Container */
-#Steckbrief .steckbrief-container {
+#Steckbrief dl {
     border: 2px solid #2B3A58;
     display: grid;
-    gap: 1.1rem;
+    gap: 2.1rem;
     padding: 1.1rem;
-}
-
-/* Steckbrief - Zeilen im Steckbrief */
-#Steckbrief .zeile {
-    display: flex;
-    justify-content: space-between;
-    gap: 1.1rem;
+    grid-template-columns: 1fr 2fr;
 }
 
 /* Steckbrief - Erste Spalte der Zeile */
-#Steckbrief .zeile>p:first-child {
+#Steckbrief dt {
     font-weight: bold;
-    flex: 1;
 }
 
 /* Steckbrief - Zweite Spalte der Zeile */
-#Steckbrief .zeile p:last-child {
-    flex: 1;
-    text-align: left;
-}
-
-/* Steckbrief - Wertecontainer */
-#Steckbrief .werte {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
+#Steckbrief dd {
+    grid-column: 2;
 }
 
 /* Autogrammkarten - Überschrift */
@@ -375,22 +362,19 @@ footer .right {
     }
 
     /* Steckbrief - Layout auf mobilen Geräten */
-    #Steckbrief .steckbrief-container {
+    #Steckbrief dl {
         display: flex;
         flex-direction: column;
     }
 
-    /* Steckbrief - Zeilenlayout auf mobilen Geräten */
-    #Steckbrief .zeile {
+    /* Steckbrief - Textzentrierung auf mobilen Geräten */
+    #Steckbrief dt,
+    #Steckbrief dd
+    {
         flex-direction: column;
         gap: 0.3rem;
-    }
-
-    /* Steckbrief - Textzentrierung auf mobilen Geräten */
-    #Steckbrief .zeile>p:first-child,
-    #Steckbrief .zeile p:last-child,
-    #Steckbrief .werte {
         text-align: center;
+        margin: 0 auto;
     }
 
     /* Autogrammkarten - Hintergrund auf mobilen Geräten */
