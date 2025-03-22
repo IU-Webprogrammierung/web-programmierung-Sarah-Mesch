@@ -190,7 +190,7 @@ p span {
     display: grid;
     gap: 2.1rem;
     padding: 1.1rem;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 1fr;
 }
 
 /* Steckbrief - Erste Spalte der Zeile */
@@ -251,6 +251,7 @@ p span {
     display: grid;
     grid-template-columns: 1fr 1fr 1.5fr;
     gap: 1.1rem;
+    list-style: none;
 }
 
 /* Fotogalerie - Spalten in der Galerie */
