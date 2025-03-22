@@ -9,6 +9,10 @@ p {
     font-size: 1rem;
 }
 
+h2 {
+    font-size: 2.4rem;
+}
+
 /* Großbuchstaben */
 header .menu-button,
 header .menu a,
@@ -239,6 +243,7 @@ p span {
     color: white;
     padding: 0.5rem 1.1rem;
     margin-bottom: 1.1rem;
+    font-size: 1rem;
 }
 
 /* Fotogalerie Container */
@@ -302,6 +307,7 @@ p span {
     justify-self: left;
     margin-top: 1.1rem;
     margin-bottom: 1.1rem;
+    font-size: 1rem;
 }
 
 /* Footer-Stil */
@@ -338,6 +344,10 @@ footer .right {
     header .menu-button,
     header .close-button {
         font-size: 1rem;
+    }
+
+    h2 {
+        font-size: 2.4rem;
     }
 
     /* Header - Bildgröße auf mobilen Geräten */
