@@ -42,6 +42,10 @@ header .menu {
     left: 0;
 }
 
+#menu {
+    display: none; /* Verhindert, dass das Menü beim Neuladen kurz sichtbar ist */
+}
+
 /* Navigation-Liste */
 header .menu ul {
     list-style: none;
