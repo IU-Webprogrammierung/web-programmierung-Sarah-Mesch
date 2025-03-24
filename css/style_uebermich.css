@@ -111,6 +111,10 @@ header .menu {
     left: 0;
 }
 
+#menu {
+    display: none; /* Verhindert, dass das Menü beim Neuladen kurz sichtbar ist */
+}
+
 /* Menülisten-Stil im Header */
 header .menu ul {
     list-style: none;
