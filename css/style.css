@@ -265,6 +265,7 @@ h2 span {
     max-width: 33.3rem;
     margin: 2.7rem auto;
     padding-bottom: 2.7rem;
+    list-style: none;
 }
 
 /* Einzelnes Spiel im Spielplan */
