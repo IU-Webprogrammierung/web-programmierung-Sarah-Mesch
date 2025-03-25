@@ -28,11 +28,9 @@ document.querySelectorAll('.ueber_mich, .sportlerin, .fanclub').forEach(item => 
 // Button "Mehr anzeigen" für die nächsten Spiele
 document.addEventListener("DOMContentLoaded", function () {
     // Button-Element abrufen
-    const button = document.querySelector(".mehr-anzeigen");
-    
+    const button = document.querySelector(".mehr-anzeigen"); 
     // Container für die Spiele abrufen
     const spielplanContainer = document.querySelector(".spielplan-container");
-
     // Spiel, das hinzugefügt werden soll
     const neuesSpiel = `
         <li class="spiel">
@@ -51,12 +49,10 @@ document.addEventListener("DOMContentLoaded", function () {
             </div>
         </li>
     `;
-
     // Event-Listener für den Button
     button.addEventListener("click", function () {
         // Neues Spiel am Ende der Liste vor dem Button einfügen
         button.parentElement.insertAdjacentHTML("beforebegin", neuesSpiel);
-
         // Button ausblenden, wenn nur ein weiteres Spiel hinzugefügt werden soll
         button.style.display = "none";
     });
@@ -66,10 +62,8 @@ document.addEventListener("DOMContentLoaded", function () {
 document.addEventListener("DOMContentLoaded", function () {
     // Button-Element abrufen
     const button = document.querySelector(".mehr-bilder");
-    
     // Container für die Bilder abrufen
     const galleryContainer = document.querySelector(".gallery-container");
-
     // Bilder, die hinzugefügt werden sollen
     const extraBilder = `
         <li class="gallery-column column-3">
@@ -86,14 +80,32 @@ document.addEventListener("DOMContentLoaded", function () {
                     <img class="small" src="img/galerie14.svg" alt="Hannah klatschend nach einem Spiel">
         </li>
     `;
-
     // Event-Listener für den Button
     button.addEventListener("click", function () {
         // Neues Bilder am Ende der Galerie vor dem Button einfügen
         button.parentElement.insertAdjacentHTML("beforebegin", extraBilder);
-
         // Button ausblenden
         button.style.display = "none";
+    });
+});
+
+// Event Listener für Download-Button 23/24
+document.querySelectorAll('.download-button23').forEach(button => {
+    button.addEventListener('click', function() {
+        // Holen des PDF-Dateipfads aus den data-Attributen
+        const pdfUrl = button.getAttribute('data-pdf');
+        // Öffnen des PDFs in einem neuen Tab
+        window.open(pdfUrl, '_blank');
+    });
+});
+
+// Event Listener für Download-Button 24/25
+document.querySelectorAll('.download-button24').forEach(button => {
+    button.addEventListener('click', function() {
+        // Holen des PDF-Dateipfads aus den data-Attributen
+        const pdfUrl = button.getAttribute('data-pdf');
+        // Öffnen des PDFs in einem neuen Tab
+        window.open(pdfUrl, '_blank');
     });
 });
 
