@@ -6,34 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Über mich</title>
     <link rel="stylesheet" href="css/style_uebermich.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" defer></script>
+    <script src="jquery.js" defer></script>
     <script src="script.js" defer></script>
 </head>
 
 <body>
-    <header role="banner">
-        <!-- Header-Bereich mit Hintergrundbild -->
-        <div class="header-background">
-            <img src="img/ueber_mich.svg" alt="privates Bild von Hannah im Urlaub">
-        </div>
-        <!-- Link zur Startseite mit Logo -->
-        <a id="LinkzurHomepage" href="index.html" class="home" aria-label="Zur Startseite über das Logo">
-            <img class="header-logo" src="img/logo.svg" alt="Logo von Hannah Mesch">
-        </a>
-        <h1>Über <span>mich</span></h1>
-        <!-- Menübutton zum Öffnen des Navigationsmenüs -->
-        <button type="button" id="menuButton" class="menu-button" aria-label="Menü öffnen">Menü</button>
-        <nav id="menu" class="menu" role="navigation">
-            <!-- Button zum Schließen des Menüs -->
-            <button type="button" id="closeButton" class="close-button" aria-label="Menü schließen">Schließen</button>
-            <ul>
-                <!-- Navigationselemente für die verschiedenen Seiten -->
-                <li><a href="index.html" class="home" aria-label="Zur Startseite">Home</a></li>
-                <li><a href="ueber_mich.html" class="active ueber_mich" aria-label="Mehr über Hannah erfahren">Über mich</a></li>
-                <li><a href="mein_weg_als_sportlerin.html" aria-label="Mein Weg als Sportlerin ansehen">Mein Weg als Sportlerin</a></li>
-                <li><a href="fanclub.html" aria-label="Informationen zum Fanclub">Fanclub</a></li>
-            </ul>
-        </nav>
-    </header>
+    <header id="header_uebermich" role="banner"></header>
 
     <main role="main">
         <!-- Steckbrief-Abschnitt -->

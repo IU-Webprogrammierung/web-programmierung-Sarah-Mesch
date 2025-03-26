@@ -6,37 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fanclub Meschi#11</title>
     <link rel="stylesheet" href="css/style_fanclub.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" defer></script>
+    <script src="jquery.js" defer></script>
     <script src="script.js" defer></script>
 </head>
 
 <body>
     <!-- Header-Bereich der Seite -->
-    <header role="banner">
-        <div class="header-background">
-            <!-- Logo von Hannah Mesch im Header -->
-            <img class="header-logo" src="img/fanclub.svg" alt="Hannah klatscht ihre Fans ab">
-        </div>
-        <!-- Link zur Homepage -->
-        <a id="LinkzurHomepage" href="index.html" class="home" aria-label="Zur Startseite über das Logo">
-            <img class="header-logo" src="img/logo.svg" alt="Logo von Hannah Mesch">
-        </a>
-        <!-- Hauptüberschrift der Seite -->
-        <h1>Fanclub <span>Meschi#11</span></h1>
-        <!-- Menü-Button für die Navigation -->
-        <button type="button" id="menuButton" class="menu-button" aria-label="Menü öffnen">Menü</button>
-        <!-- Navigationsmenü, das nach Klick auf den Menü-Button erscheint -->
-        <nav id="menu" class="menu" role="navigation">
-            <!-- Button zum Schließen des Menüs -->
-            <button type="button" id="closeButton" class="close-button" aria-label="Menü schließen">Schließen</button>
-            <ul>
-                <!-- Navigationseinträge mit Links zu verschiedenen Seiten -->
-                <li><a href="index.html" class="home" aria-label="Zur Startseite">Home</a></li>
-                <li><a href="ueber_mich.html" class="ueber_mich" aria-label="Mehr über Hannah erfahren">Über mich</a></li>
-                <li><a href="mein_weg_als_sportlerin.html" class="sportlerin" aria-label="Mein Weg als Sportlerin ansehen">Mein Weg als Sportlerin</a></li>
-                <li><a href="fanclub.html" class="active fanclub" aria-label="Informationen zum Fanclub">Fanclub</a></li>
-            </ul>
-        </nav>
-    </header>
+    <header id="header_fanclub" role="banner"></header>
 
     <!-- Hauptbereich der Seite -->
     <main role="main">

@@ -139,6 +139,10 @@ header .menu {
     left: 0;
 }
 
+#menu {
+    display: none; /* Verhindert, dass das Menü beim Neuladen kurz sichtbar ist */
+}
+
 /* Liste im Menü */
 header .menu ul {
     list-style: none;
