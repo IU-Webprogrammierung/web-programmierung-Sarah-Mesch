@@ -1,10 +1,9 @@
-/* Festlegung Schriftgröße */
+/* Schriftgröße */
 html {
     font-size: 18px;
     /* 1rem = 18px */
 }
 
-/* Schriftgröße Absätze */
 p {
     font-size: 1rem;
 }
@@ -102,7 +101,7 @@ header .close-button {
     border: 2px solid white;
     color: white;
     padding: 0.5rem 1.1rem;
-    font-size: 1rem; 
+    font-size: 1rem;
 }
 
 /* Navigationsmenü */
@@ -117,7 +116,8 @@ header .menu {
 }
 
 #menu {
-    display: none; /* Verhindert, dass das Menü beim Neuladen kurz sichtbar ist */
+    display: none;
+    /* Verhindert, dass das Menü beim Neuladen kurz sichtbar ist */
 }
 
 /* Navigation-Liste */
@@ -265,7 +265,7 @@ p span {
 }
 
 /* Umbrechen */
-#Veranstaltungen h3 span{
+#Veranstaltungen h3 span {
     display: block;
 }
 
@@ -478,15 +478,15 @@ footer .right {
 }
 
 @media (max-width: 1000px) {
-#Infos .container {
-    margin-bottom: -25%;
-}
+    #Infos .container {
+        margin-bottom: -25%;
+    }
 
 }
 
 @media (max-width: 1200px) {
-#Infos .container {
-    margin-bottom: -10%;
-}
-    
+    #Infos .container {
+        margin-bottom: -10%;
+    }
+
 }

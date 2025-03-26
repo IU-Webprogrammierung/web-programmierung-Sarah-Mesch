@@ -1,10 +1,9 @@
-/* Festlegung Schriftgröße */
+/* Schriftgrößen */
 html {
     font-size: 18px;
     /* 1rem = 18px */
 }
 
-/* Schriftgröße Absätze */
 p {
     font-size: 1rem;
 }
@@ -112,7 +111,8 @@ header .menu {
 }
 
 #menu {
-    display: none; /* Verhindert, dass das Menü beim Neuladen kurz sichtbar ist */
+    display: none;
+    /* Verhindert, dass das Menü beim Neuladen kurz sichtbar ist */
 }
 
 /* Menülisten-Stil im Header */
@@ -384,8 +384,7 @@ footer .right {
 
     /* Steckbrief - Textzentrierung auf mobilen Geräten */
     #Steckbrief dt,
-    #Steckbrief dd
-    {
+    #Steckbrief dd {
         flex-direction: column;
         gap: 0.3rem;
         text-align: center;

@@ -1,10 +1,9 @@
-/* Festlegung Schriftgröße */
+/* Schriftgrößen */
 html {
     font-size: 18px;
     /* 1rem = 18px */
 }
 
-/* Schriftgröße Absätze */
 p {
     font-size: 1rem;
 }
@@ -123,7 +122,8 @@ header .menu {
 }
 
 #menu {
-    display: none; /* Verhindert, dass das Menü beim Neuladen kurz sichtbar ist */
+    display: none;
+    /* Verhindert, dass das Menü beim Neuladen kurz sichtbar ist */
 }
 
 /* Menüliste */
@@ -285,8 +285,7 @@ h2 {
 
 /* Sektion Styling */
 #Süddeutsche .bild img,
-#Meisterin .bild img
- {
+#Meisterin .bild img {
     margin-right: 1.1rem;
 }
 
@@ -514,7 +513,7 @@ footer .right {
 }
 
 @media (max-width: 1002px) {
-    
+
     .icon {
         right: 20%;
         top: 180%;
@@ -544,7 +543,8 @@ footer .right {
         margin-left: 1.6rem;
     }
 
-    #Süddeutsche .content, #Meisterin .content {
+    #Süddeutsche .content,
+    #Meisterin .content {
         right: 2.4rem;
     }
 
@@ -678,7 +678,7 @@ footer .right {
         flex-direction: column-reverse;
     }
 
-    #Süddeutsche .filled-box, 
+    #Süddeutsche .filled-box,
     #Meisterin .filled-box {
         width: 93.5%;
         height: 30rem;
@@ -712,26 +712,22 @@ footer .right {
     }
 
     /* Icon für Süddeutsche Bereich */
-    #Süddeutsche .icon 
-    {
+    #Süddeutsche .icon {
         top: 165%;
     }
 
-    #Länderpokal .icon 
-    {
+    #Länderpokal .icon {
         top: 165%;
     }
 
-    #Meisterin .icon 
-    {
+    #Meisterin .icon {
         top: 165%;
     }
 
     /* Gefüllte Box Linien für Süddeutsche */
     #Süddeutsche .filled-box::before,
     #Länderpokal .filled-box::before,
-    #Meisterin .filled-box::before
-    {
+    #Meisterin .filled-box::before {
         top: 28%;
         left: 5%;
         width: 80%;
@@ -741,8 +737,7 @@ footer .right {
     /* Gefüllte Box Linien für Süddeutsche */
     #Süddeutsche .filled-box::after,
     #Länderpokal .filled-box::after,
-    #Meisterin .filled-box::after
-    {
+    #Meisterin .filled-box::after {
         top: 58%;
         left: 10%;
         width: 80%;
@@ -804,8 +799,3 @@ footer .right {
     }
 
 }
-
-
-
-
-

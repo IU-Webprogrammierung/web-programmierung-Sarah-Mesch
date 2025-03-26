@@ -1,10 +1,12 @@
+// auf allen Seiten
+
 // Menü öffnen
-document.getElementById('menuButton').addEventListener('click', function() {
+document.getElementById('menuButton').addEventListener('click', function () {
     document.getElementById('menu').style.display = 'flex';
 });
 
 // Menü schließen
-document.getElementById('closeButton').addEventListener('click', function() {
+document.getElementById('closeButton').addEventListener('click', function () {
     document.getElementById('menu').style.display = 'none';
 });
 
@@ -13,22 +15,24 @@ document.getElementById("menu").style.display = "none";
 
 // Menü schließen, wenn auf das Logo oder "Home" geklickt wird
 document.querySelectorAll('.home').forEach(item => {
-    item.addEventListener('click', function() {
+    item.addEventListener('click', function () {
         document.getElementById('menu').style.display = 'none';
     });
 });
 
 // Menü schließen, wenn auf "Über mich", "Mein Weg als Sportlerin" oder "Fanclub" geklickt wird
 document.querySelectorAll('.ueber_mich, .sportlerin, .fanclub').forEach(item => {
-    item.addEventListener('click', function() {
+    item.addEventListener('click', function () {
         document.getElementById('menu').style.display = 'none';
     });
 });
 
+// Seite Homepage
+
 // Button "Mehr anzeigen" für die nächsten Spiele
 document.addEventListener("DOMContentLoaded", function () {
     // Button-Element abrufen
-    const button = document.querySelector(".mehr-anzeigen"); 
+    const button = document.querySelector(".mehr-anzeigen");
     // Container für die Spiele abrufen
     const spielplanContainer = document.querySelector(".spielplan-container");
     // Spiel, das hinzugefügt werden soll
@@ -57,6 +61,8 @@ document.addEventListener("DOMContentLoaded", function () {
         button.style.display = "none";
     });
 });
+
+// Seite Über mich
 
 // Button "Mehr Bilder anzeigen" für die Fotogalerie
 document.addEventListener("DOMContentLoaded", function () {
@@ -91,7 +97,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // Event Listener für Download-Button 23/24
 document.querySelectorAll('.download-button23').forEach(button => {
-    button.addEventListener('click', function() {
+    button.addEventListener('click', function () {
         // Holen des PDF-Dateipfads aus den data-Attributen
         const pdfUrl = button.getAttribute('data-pdf');
         // Öffnen des PDFs in einem neuen Tab
@@ -101,7 +107,7 @@ document.querySelectorAll('.download-button23').forEach(button => {
 
 // Event Listener für Download-Button 24/25
 document.querySelectorAll('.download-button24').forEach(button => {
-    button.addEventListener('click', function() {
+    button.addEventListener('click', function () {
         // Holen des PDF-Dateipfads aus den data-Attributen
         const pdfUrl = button.getAttribute('data-pdf');
         // Öffnen des PDFs in einem neuen Tab

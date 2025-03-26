@@ -1,10 +1,9 @@
-/* Festlegung Schriftgröße */
+/* Schriftgrößen */
 html {
     font-size: 18px;
     /* 1rem = 18px */
 }
 
-/* Schriftgröße Absätze */
 p {
     font-size: 1rem;
     margin: 1.1rem;
@@ -140,7 +139,8 @@ header .menu {
 }
 
 #menu {
-    display: none; /* Verhindert, dass das Menü beim Neuladen kurz sichtbar ist */
+    display: none;
+    /* Verhindert, dass das Menü beim Neuladen kurz sichtbar ist */
 }
 
 /* Liste im Menü */
@@ -266,10 +266,10 @@ h2 span {
 
 /* Spielplan-Container im MeineNächstenSpiele-Bereich */
 #MeineNächstenSpiele .spielplan-container {
+    list-style: none;
     max-width: 33.3rem;
     margin: 2.7rem auto;
     padding-bottom: 2.7rem;
-    list-style: none;
 }
 
 /* Einzelnes Spiel im Spielplan */

@@ -1,3 +1,5 @@
+/* Header ausgelagert */
+
 $(document).ready(function () {
     let currentPage = window.location.pathname;
 
