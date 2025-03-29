@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const neuesSpiel = `
         <li class="spiel">
             <div class="team">
-                <img src="img/Hoffenheim.png" alt="Logo vom Verein TSG 1899 Hoffenheim">
+                <img src="img/Hoffenheim_logo.png" alt="Logo vom Verein TSG 1899 Hoffenheim">
                 <p class="team-name">TSG 1899 Hoffenheim</p>
             </div>
             <div class="info">
@@ -96,17 +96,17 @@ document.addEventListener("DOMContentLoaded", function () {
     // Bilder, die hinzugefügt werden sollen
     const extraBilder = `
         <li class="gallery-column column-3">
-                    <img class="small" src="img/galerie8.svg" alt="Hannah jubelt nach einem Tor">
-                    <img class="tall" src="img/galerie9.svg" alt="Hannah im Zweikampf">
+                    <img class="small" src="img/galerie8.webp" alt="Hannah jubelt nach einem Tor">
+                    <img class="tall" src="img/galerie9.webp" alt="Hannah im Zweikampf">
         </li>
         <li class="gallery-column column-1">
-                    <img src="img/galerie10.svg" alt="Hannah auf dem Spielfeld">
-                    <img src="img/galerie11.svg" alt="Hannah lächelt nach einem Sieg">
-                    <img src="img/galerie12.svg" alt="Hannah beim Aufwärmen auf dem Platz">
+                    <img src="img/galerie10.webp" alt="Hannah auf dem Spielfeld">
+                    <img src="img/galerie11.webp" alt="Hannah lächelt nach einem Sieg">
+                    <img src="img/galerie12.webp" alt="Hannah beim Aufwärmen auf dem Platz">
         </li>
         <li class="gallery-column column-2">
-                    <img class="tall" src="img/galerie13.svg" alt="Hannah mit der Rückennummer 11">
-                    <img class="small" src="img/galerie14.svg" alt="Hannah klatschend nach einem Spiel">
+                    <img class="tall" src="img/galerie13.webp" alt="Hannah mit der Rückennummer 11">
+                    <img class="small" src="img/galerie14.webp" alt="Hannah klatschend nach einem Spiel">
         </li>
     `;
     // Event-Listener für den Button

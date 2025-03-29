@@ -3,7 +3,7 @@
 $(document).ready(function () {
     let currentPage = window.location.pathname;
 
-    if (currentPage.endsWith("Index.html")) {
+    if (currentPage.endsWith("index.html")) {
         $("#header_index").load("components/header_index.html", function () {
             $.getScript("script.js");
         });
