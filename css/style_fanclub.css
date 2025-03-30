@@ -19,6 +19,19 @@
     color: #2B3A58;
 }
 
+/* Weiße Textfarbe */
+#Infos .overlay-box,
+#Veranstaltungen .text-box,
+#Anmeldeformular h2,
+#Anmeldeformular .text-section,
+#Anmeldeformular input,
+textarea,
+#Anmeldeformular input::placeholder,
+#Anmeldeformular textarea::placeholder
+ {
+    color: white;
+}
+
 /* Bild innerhalb des Header-Hintergrunds */
 header .header-background img {
     margin: 0;
@@ -72,7 +85,6 @@ p span {
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: white;
     padding: 2.7rem;
     text-align: center;
     z-index: 10;
@@ -114,7 +126,6 @@ p span {
 /* Textbox in der Veranstaltungsbox */
 #Veranstaltungen .text-box {
     height: 50%;
-    color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -148,7 +159,6 @@ p span {
 /* Überschrift im Anmeldeformular */
 #Anmeldeformular h2 {
     margin-bottom: 2.2rem;
-    color: white;
 }
 
 /* Layout des Formularinhalts */
@@ -162,7 +172,6 @@ p span {
 /* Textbereich im Formular */
 #Anmeldeformular .text-section {
     width: 40%;
-    color: white;
 }
 
 /* Formularfeld */
@@ -186,14 +195,7 @@ textarea {
     padding: 0.5rem;
     font-size: 1rem;
     background-color: rgba(173, 173, 172, 0.5);
-    color: white;
     box-sizing: border-box;
-}
-
-/* Platzhalterfarbe in Eingabefeldern */
-#Anmeldeformular input::placeholder,
-#Anmeldeformular textarea::placeholder {
-    color: white;
 }
 
 /* Textbereich im Formular */
@@ -205,7 +207,6 @@ textarea {
 /* Absenden-Button */
 #Anmeldeformular button {
     background-color: white;
-    padding: 0.5rem;
     border: none;
     font-size: 1rem;
     cursor: pointer;
@@ -218,6 +219,20 @@ textarea {
 /* Hover-Effekt für den Button */
 #Anmeldeformular button:hover {
     background-color: gray;
+}
+
+@media (max-width: 1200px) {
+    #Infos .container {
+        margin-bottom: -10%;
+    }
+
+}
+
+@media (max-width: 1000px) {
+    #Infos .container {
+        margin-bottom: -25%;
+    }
+
 }
 
 /* Responsive Design - Mobile Ansicht (bis 600px) */
@@ -291,20 +306,6 @@ textarea {
     #Anmeldeformular input,
     #Anmeldeformular textarea {
         margin-bottom: 0.6rem;
-    }
-
-}
-
-@media (max-width: 1000px) {
-    #Infos .container {
-        margin-bottom: -25%;
-    }
-
-}
-
-@media (max-width: 1200px) {
-    #Infos .container {
-        margin-bottom: -10%;
     }
 
 }

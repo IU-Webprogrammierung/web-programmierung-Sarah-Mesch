@@ -19,6 +19,13 @@
     color: #2B3A58;
 }
 
+#Steckbrief .uebermich-überschrift,
+#Autogrammkarten h2,
+#Autogrammkarten .autogrammkarten-spalte button,
+#Fotogalerie .gallery-container button {
+    color: white;
+}
+
 /* Styling für Span-Elemente innerhalb von p */
 p span {
     display: block;
@@ -42,7 +49,6 @@ p span {
 #Steckbrief .uebermich-überschrift {
     flex: 1;
     text-align: center;
-    color: white;
 }
 
 /* Steckbrief - Bild in der Überschrift */
@@ -68,11 +74,6 @@ p span {
 /* Steckbrief - Zweite Spalte der Zeile */
 #Steckbrief dd {
     grid-column: 2;
-}
-
-/* Autogrammkarten - Überschrift */
-#Autogrammkarten h2 {
-    color: white;
 }
 
 /* Autogrammkarten Container */
@@ -103,7 +104,6 @@ p span {
 /* Buttons in den Autogrammkarten */
 #Autogrammkarten .autogrammkarten-spalte button {
     border: 2px solid #2B3A58;
-    color: white;
     padding: 0.5rem 1.1rem;
     margin-bottom: 1.1rem;
     font-size: 1rem;
@@ -165,7 +165,6 @@ p span {
 /* Fotogalerie - Galerie-Buttons */
 #Fotogalerie .gallery-container button {
     border: 2px solid #2B3A58;
-    color: white;
     padding: 0.5rem 1.1rem;
     justify-self: left;
     margin-top: 1.1rem;
