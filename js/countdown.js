@@ -2,7 +2,7 @@
 document.addEventListener("DOMContentLoaded", function () {
 
     // Definiert das Zieldatum
-    const zielDatum = new Date("2025-08-12T12:00:00").getTime();
+    const zielDatum = new Date("2025-04-12T12:00:00").getTime();
 
     // Funktion zur Aktualisierung des Countdowns
     function updateCountdown() {

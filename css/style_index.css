@@ -104,7 +104,7 @@ header .header-background img {
     background-color: white;
     text-decoration: none;
     font-weight: bold;
-    align-self: flex-end;
+    align-self: flex-start;
     margin-top: auto;
 }
 
