@@ -1,0 +1,24 @@
+p {
+    font-weight: bold;
+}
+
+/* Header-Bereich mit Hintergrundbild */
+header {
+    background-color: #2B3A58;
+}
+
+/* Überschrift im Header */
+header h1 {
+    background-color: unset !important;
+}
+
+#Datenschutz {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 40px;
+}
+
+p span {
+    display: block;
+    font-weight: normal;
+}

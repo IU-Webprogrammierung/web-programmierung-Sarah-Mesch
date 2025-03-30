@@ -1,0 +1,271 @@
+p {
+    margin: 1.1rem;
+}
+
+/* Großbuchstaben */
+#MeinNächstesSpiel h2,
+.filled-box h2,
+.filled-box a,
+#MeineNächstenSpiele h2,
+#MeineNächstenSpiele .mehr-anzeigen
+{
+    text-transform: uppercase;
+}
+
+/* Blaue Hintergrundfarbe */
+.filled-box,
+#MeineNächstenSpiele {
+    background-color: #2B3A58;
+}
+
+/* Blaue Textfarbe */
+#MeinNächstesSpiel h2,
+#MeinNächstesSpiel h3,
+#MeinNächstesSpiel span,
+.filled-box a {
+    color: #2B3A58;
+}
+
+/* Bild im Header Hintergrund */
+header .header-background img {
+    height: 102%;
+}
+
+/* Titel im MeinNächstesSpiel-Bereich */
+#MeinNächstesSpiel h2 {
+    margin-left: 1.1rem;
+}
+
+/* Countdown-Grid im MeinNächstesSpiel-Bereich */
+#MeinNächstesSpiel .grid-container-countdown {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.1rem;
+    padding: 1.1rem;
+    max-width: 66.6rem;
+    margin: 0 auto;
+}
+
+/* Countdown-Box im MeinNächstesSpiel-Bereich */
+#MeinNächstesSpiel .box-countdown {
+    border: 2px solid #2B3A58;
+    padding: 1.1rem;
+    text-align: center;
+}
+
+/* Container für gefüllte Boxen */
+.grid-container-filled-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+    margin: 1.3rem;
+}
+
+/* Bild innerhalb der gefüllten Boxen */
+.bild img {
+    display: block;
+    width: 130%;
+}
+
+/* Gefüllte Boxen im Layout */
+.filled-box {
+    color: white;
+    padding: 1.1rem;
+    position: relative;
+    top: 25%;
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    justify-content: flex-start;
+    left: 0;
+    width: 123%;
+    margin-bottom: 50%;
+}
+
+/* Überschrift innerhalb der gefüllten Box */
+.filled-box h2 {
+    margin-bottom: 1rem;
+    padding: 1rem;
+}
+
+/* Link innerhalb der gefüllten Box */
+.filled-box a {
+    display: inline-block;
+    padding: 0.5rem 1.1rem;
+    background-color: white;
+    text-decoration: none;
+    font-weight: bold;
+    align-self: flex-end;
+    margin-top: auto;
+    margin: 1.1rem;
+}
+
+/* Gefüllte Box & Styling Bild */
+#ÜberMich .filled-box,
+#Fanclub .filled-box,
+#MeinWegAlsSportlerin .bild img {
+    transform: translateX(-23%);
+}
+
+/* Gefüllte Box im MeinWegAlsSportlerin-Bereich */
+#MeinWegAlsSportlerin .filled-box {
+    z-index: 1;
+}
+
+/* Styling für den MeineNächstenSpiele-Bereich */
+#MeineNächstenSpiele {
+    margin-top: 4.1rem;
+    padding-top: 1.1rem;
+}
+
+/* Titel im MeineNächstenSpiele-Bereich */
+#MeineNächstenSpiele h2 {
+    color: white;
+    margin-left: 1.1rem;
+}
+
+/* Spielplan-Container im MeineNächstenSpiele-Bereich */
+#MeineNächstenSpiele .spielplan-container {
+    list-style: none;
+    max-width: 33.3rem;
+    margin: 2.7rem auto;
+    padding-bottom: 2.7rem;
+}
+
+/* Einzelnes Spiel im Spielplan */
+#MeineNächstenSpiele .spiel {
+    display: flex;
+    padding: 1.1rem;
+    margin-bottom: 1.1rem;
+}
+
+/* Team-Bereich im Spielplan */
+#MeineNächstenSpiele .team {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+}
+
+/* Bild des Teams im Spielplan */
+#MeineNächstenSpiele .team img {
+    width: 3.3rem;
+    height: 3.3rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Team-Name im Spielplan */
+#MeineNächstenSpiele .team-name {
+    color: white;
+    text-align: center;
+}
+
+/* Info-Bereich im Spielplan */
+#MeineNächstenSpiele .info {
+    text-align: center;
+    width: 40%;
+    color: white;
+    margin-bottom: 1.1rem;
+}
+
+/* Datum und Uhrzeit im Spielplan */
+#MeineNächstenSpiele .datum,
+.uhrzeit {
+    margin: 5px 0;
+}
+
+/* Button zum Anzeigen von mehr im Spielplan */
+#MeineNächstenSpiele .mehr-anzeigen {
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    padding: 0.5rem 1.1rem;
+    display: block;
+    margin: 1.1rem auto;
+    font-size: 1rem;
+}
+
+/* Responsive Design - Mobile Ansicht (360px - 600px) */
+@media (max-width: 600px) {
+
+    /* Countdown-Grid für kleine Bildschirme */
+    #MeinNächstesSpiel .grid-container-countdown {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Container für gefüllte Boxen für kleine Bildschirme */
+    .grid-container-filled-box {
+        grid-template-columns: 1fr;
+        text-align: center;
+        margin-bottom: 40%;
+    }
+
+    /* Bild in gefüllten Boxen für kleine Bildschirme */
+    .bild img {
+        width: 100%;
+    }
+
+    /* Gefüllte Boxen für kleine Bildschirme */
+    .filled-box {
+        height: fit-content;
+        position: absolute;
+        top: 65%;
+        width: 75%;
+    }
+
+    /* Stil für das ÜberMich-Bild auf kleinen Bildschirmen */
+    #ÜberMich .filled-box {
+        transform: translateX(27%);
+        padding: 0.6rem;
+    }
+
+    /* Layout für MeinWegAlsSportlerin-Bereich auf kleinen Bildschirmen */
+    #MeinWegAlsSportlerin .grid-container-filled-box {
+        flex-direction: column-reverse;
+    }
+
+    /* Bilder im MeinWegAlsSportlerin-Bereich */
+    #MeinWegAlsSportlerin .bild img {
+        transform: unset;
+    }
+
+    /* Styling für den Fanclub-Bereich */
+    #Fanclub .grid-container-filled-box {
+        margin-top: 12.5rem;
+    }
+
+    /* Gefüllte Boxen im Fanclub-Bereich */
+    #Fanclub .filled-box {
+        transform: translateX(27%);
+        padding: 0.6rem;
+    }
+
+    /* Spielplan-Container im MeineNächstenSpiele-Bereich */
+    #MeineNächstenSpiele .spielplan-container {
+        width: 100%;
+    }
+
+    /* Layout der Spiele im Spielplan */
+    #MeineNächstenSpiele .spiel {
+        flex-direction: column;
+        align-items: center
+    }
+}
+
+@media (max-width: 570px) {
+    .grid-container-filled-box {
+        margin-bottom: 60%;
+    }
+}
+
+@media (max-width: 452px) {
+    .grid-container-filled-box {
+        margin-bottom: 80%;
+    }
+}
+
+@media (max-width: 400px) {
+    .grid-container-filled-box {
+        margin-bottom: 100%;
+    }
+}

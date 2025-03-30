@@ -76,7 +76,6 @@ html {
 
 p {
     font-size: 1rem;
-    margin: 1.1rem;
 }
 
 h2 {
@@ -92,27 +91,16 @@ header h1,
 header .menu-button,
 header .menu a,
 header .close-button,
-#MeinNächstesSpiel h2,
-.filled-box h2,
-.filled-box a,
-#MeineNächstenSpiele h2,
-#MeineNächstenSpiele .mehr-anzeigen,
 footer a {
     text-transform: uppercase;
 }
 
 /* Blaue Hintergrundfarbe */
-header .menu,
-.filled-box,
-#MeineNächstenSpiele {
+header .menu {
     background-color: #2B3A58;
 }
 
 /* Blaue Textfarbe */
-#MeinNächstesSpiel h2,
-#MeinNächstesSpiel h3,
-#MeinNächstesSpiel span,
-.filled-box a,
 footer a {
     color: #2B3A58;
 }
@@ -138,7 +126,7 @@ header .header-background {
 /* Bild im Header Hintergrund */
 header .header-background img {
     width: 100%;
-    height: 102%;
+    height: 100%;
     object-fit: cover;
 }
 
@@ -180,7 +168,8 @@ header h1 {
 }
 
 /* Stil für span-Elemente innerhalb von h1 */
-header h1 span {
+header h1 span,
+h2 span {
     display: block;
 }
 
@@ -239,160 +228,6 @@ header nav a.active {
 /* Stil für span-Elemente innerhalb von h2 */
 h2 span {
     display: block;
-}
-
-/* Titel im MeinNächstesSpiel-Bereich */
-#MeinNächstesSpiel h2 {
-    margin-left: 1.1rem;
-}
-
-/* Countdown-Grid im MeinNächstesSpiel-Bereich */
-#MeinNächstesSpiel .grid-container-countdown {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 1.1rem;
-    padding: 1.1rem;
-    max-width: 66.6rem;
-    margin: 0 auto;
-}
-
-/* Countdown-Box im MeinNächstesSpiel-Bereich */
-#MeinNächstesSpiel .box-countdown {
-    border: 2px solid #2B3A58;
-    padding: 1.1rem;
-    text-align: center;
-}
-
-/* Container für gefüllte Boxen */
-.grid-container-filled-box {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    position: relative;
-    margin: 1.3rem;
-}
-
-/* Bild innerhalb der gefüllten Boxen */
-.bild img {
-    display: block;
-    width: 130%;
-}
-
-/* Gefüllte Boxen im Layout */
-.filled-box {
-    color: white;
-    padding: 1.1rem;
-    position: relative;
-    top: 25%;
-    display: flex;
-    flex-direction: column;
-    height: fit-content;
-    justify-content: flex-start;
-    left: 0;
-    width: 123%;
-    margin-bottom: 50%;
-}
-
-/* Überschrift innerhalb der gefüllten Box */
-.filled-box h2 {
-    margin-bottom: 1rem;
-    padding: 1rem;
-}
-
-/* Link innerhalb der gefüllten Box */
-.filled-box a {
-    display: inline-block;
-    padding: 0.5rem 1.1rem;
-    background-color: white;
-    text-decoration: none;
-    font-weight: bold;
-    align-self: flex-end;
-    margin-top: auto;
-    margin: 1.1rem;
-}
-
-/* Gefüllte Box & Styling Bild */
-#ÜberMich .filled-box,
-#Fanclub .filled-box,
-#MeinWegAlsSportlerin .bild img {
-    transform: translateX(-23%);
-}
-
-/* Gefüllte Box im MeinWegAlsSportlerin-Bereich */
-#MeinWegAlsSportlerin .filled-box {
-    z-index: 1;
-}
-
-/* Styling für den MeineNächstenSpiele-Bereich */
-#MeineNächstenSpiele {
-    margin-top: 4.1rem;
-    padding-top: 1.1rem;
-}
-
-/* Titel im MeineNächstenSpiele-Bereich */
-#MeineNächstenSpiele h2 {
-    color: white;
-    margin-left: 1.1rem;
-}
-
-/* Spielplan-Container im MeineNächstenSpiele-Bereich */
-#MeineNächstenSpiele .spielplan-container {
-    list-style: none;
-    max-width: 33.3rem;
-    margin: 2.7rem auto;
-    padding-bottom: 2.7rem;
-}
-
-/* Einzelnes Spiel im Spielplan */
-#MeineNächstenSpiele .spiel {
-    display: flex;
-    padding: 1.1rem;
-    margin-bottom: 1.1rem;
-}
-
-/* Team-Bereich im Spielplan */
-#MeineNächstenSpiele .team {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 30%;
-}
-
-/* Bild des Teams im Spielplan */
-#MeineNächstenSpiele .team img {
-    width: 3.3rem;
-    height: 3.3rem;
-    margin-bottom: 0.5rem;
-}
-
-/* Team-Name im Spielplan */
-#MeineNächstenSpiele .team-name {
-    color: white;
-    text-align: center;
-}
-
-/* Info-Bereich im Spielplan */
-#MeineNächstenSpiele .info {
-    text-align: center;
-    width: 40%;
-    color: white;
-    margin-bottom: 1.1rem;
-}
-
-/* Datum und Uhrzeit im Spielplan */
-#MeineNächstenSpiele .datum,
-.uhrzeit {
-    margin: 5px 0;
-}
-
-/* Button zum Anzeigen von mehr im Spielplan */
-#MeineNächstenSpiele .mehr-anzeigen {
-    background-color: transparent;
-    border: 2px solid white;
-    color: white;
-    padding: 0.5rem 1.1rem;
-    display: block;
-    margin: 1.1rem auto;
-    font-size: 1rem;
 }
 
 /* Footer Styling */

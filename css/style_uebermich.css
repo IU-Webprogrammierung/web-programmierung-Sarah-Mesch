@@ -1,103 +1,13 @@
-/* Toggle-Switch */
-/* Container für Toggle + Text */
-.toggle-container {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    background: #2B3A58;
-    padding: 8px 12px;
-    border-radius: 20px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    margin: 20px 0 0 auto;  
-    width: fit-content; 
-}
-
-/* Text neben dem Toggle */
-.toggle-text {
-    font-size: 0.8rem;
-    color: white;
-    text-transform: uppercase;
-}
-
-/* Toggle-Styling */
-.switch {
-    position: relative;
-    width: 40px;
-    height: 20px;
-}
-
-.slider {
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: white;
-    transition: 0.4s;
-    border-radius: 20px;
-}
-
-.slider::before {
-    position: absolute;
-    content: "";
-    height: 14px;
-    width: 14px;
-    left: 3px;
-    bottom: 3px;
-    background-color: #2B3A58;
-    transition: 0.4s;
-    border-radius: 50%;
-}
-
-input:checked + .slider::before {
-    background-color: #333;
-}
-
-input:checked + .slider::before {
-    transform: translateX(20px);
-}
-
-/* Schwarz-Weiß-Modus */
-.grayscale {
-    filter: grayscale(100%);
-}
-
-html, body {
-    margin: 0;
-    overflow-x: hidden;
-}
-
-/* Schriftgrößen */
-html {
-    font-size: 18px;
-    /* 1rem = 18px */
-}
-
-p {
-    font-size: 1rem;
-}
-
-h2 {
-    font-size: 2.4rem;
-}
-
 /* Großbuchstaben */
-header .menu-button,
-header .menu a,
-header .close-button,
-header h1,
 #Steckbrief .uebermich-überschrift,
 #Autogrammkarten h2,
 #Autogrammkarten .autogrammkarten-spalte button,
 #Fotogalerie h2,
-#Fotogalerie .gallery-container button,
-footer a {
+#Fotogalerie .gallery-container button {
     text-transform: uppercase;
 }
 
 /* Blaue Hintergrundfarbe */
-header .menu,
 #Steckbrief .uebermich-container,
 #Autogrammkarten .autogrammkarten-spalte button,
 #Fotogalerie .gallery-container button {
@@ -105,129 +15,8 @@ header .menu,
 }
 
 /* Blaue Textfarbe */
-#Fotogalerie h2,
-footer a {
+#Fotogalerie h2 {
     color: #2B3A58;
-}
-
-/* Header-Stil */
-header {
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-}
-
-/* Hintergrundbild im Header */
-header .header-background {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
-    z-index: -1;
-}
-
-/* Bild im Hintergrund des Headers */
-header .header-background img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-/* Overlay mit `::before` */
-header .header-background::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.4);
-}
-
-/* Logo im Header */
-header .header-logo {
-    margin: 1rem;
-    position: absolute;
-    width: 8.3rem;
-    height: auto;
-    z-index: 100;
-    top: 0;
-}
-
-/* Menübutton im Header */
-header .menu-button,
-header .close-button {
-    position: absolute;
-    top: 1.1rem;
-    right: 1.1rem;
-    background-color: rgba(0, 0, 0, 0.2);
-    border: 2px solid white;
-    color: white;
-    padding: 0.5rem 1.1rem;
-    font-size: 1rem;
-}
-
-/* Menü im Header */
-header .menu {
-    position: absolute;
-    width: 100%;
-    height: 100vh;
-    justify-content: center;
-    align-items: center;
-    top: 0;
-    left: 0;
-}
-
-#menu {
-    display: none;
-    /* Verhindert, dass das Menü beim Neuladen kurz sichtbar ist */
-}
-
-/* Menülisten-Stil im Header */
-header .menu ul {
-    list-style: none;
-    text-align: center;
-}
-
-/* Menüeinträge im Header */
-header .menu li {
-    margin: 1.1rem 0;
-}
-
-/* Links im Menü */
-header .menu a {
-    text-decoration: none;
-    color: white;
-    font-size: 2.4rem;
-}
-
-/* Aktive Links im Header-Menü */
-header nav a.active {
-    text-decoration: underline;
-}
-
-/* Haupttitel im Header */
-header h1 {
-    color: white;
-    font-size: 4.2rem;
-    display: flex;
-    align-items: center;
-    position: relative;
-    flex-direction: column;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    background-color: rgba(0, 0, 0, 0.1) !important;
-    display: inline-block;
-}
-
-/* Stil für span-Elemente */
-header h1 span,
-h2 span {
-    display: block;
 }
 
 /* Styling für Span-Elemente innerhalb von p */
@@ -384,55 +173,8 @@ p span {
     font-size: 1rem;
 }
 
-/* Footer-Stil */
-footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 1.1rem;
-}
-
-/* Footer Links */
-footer a {
-    text-decoration: none;
-    font-size: 1rem;
-}
-
-/* Footer - Rechte Seite */
-footer .right {
-    display: flex;
-    gap: 1.1rem;
-}
-
-/* Responsive Design für mobile Ansicht */
+/* Responsive Design - Mobile Ansicht (360px - 600px) */
 @media (max-width: 600px) {
-
-    /* Festlegung Schriftgröße */
-    html {
-        font-size: 16px;
-        /* 1rem = 16px */
-    }
-
-    /* Schriftgröße */
-    p,
-    header .menu-button,
-    header .close-button {
-        font-size: 1rem;
-    }
-
-    h2 {
-        font-size: 2.4rem;
-    }
-
-    /* Header - Bildgröße auf mobilen Geräten */
-    header img {
-        width: 6.2rem;
-    }
-
-    /* Header - Schriftgröße für den Titel */
-    header h1 {
-        font-size: 3rem;
-    }
 
     /* Steckbrief - Layout auf mobilen Geräten */
     #Steckbrief .uebermich-container {
