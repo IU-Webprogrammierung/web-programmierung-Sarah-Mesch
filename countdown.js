@@ -27,9 +27,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
         // Aktualisiert die HTML-Elemente mit den berechneten Werten
         document.querySelector(".box-countdown:nth-child(1) h3").textContent = tage; // Tage einfügen
+        document.querySelector(".box-countdown:nth-child(1) time").setAttribute("datetime", `P${tage}D`);
         document.querySelector(".box-countdown:nth-child(2) h3").textContent = stunden; // Stunden einfügen
+        document.querySelector(".box-countdown:nth-child(2) time").setAttribute("datetime", `PT${stunden}H`);
         document.querySelector(".box-countdown:nth-child(3) h3").textContent = minuten; // Minuten einfügen
+        document.querySelector(".box-countdown:nth-child(3) time").setAttribute("datetime", `PT${minuten}M`);
         document.querySelector(".box-countdown:nth-child(4) h3").textContent = sekunden; // Sekunden einfügen
+        document.querySelector(".box-countdown:nth-child(4) time").setAttribute("datetime", `PT${sekunden}S`);
     }
 
     // Führt die Funktion einmal beim Laden der Seite aus, damit sofort der aktuelle Wert angezeigt wird
