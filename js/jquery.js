@@ -19,7 +19,16 @@ $(document).ready(function () {
         $("#header_fanclub").load("components/header_fanclub.html", function () {
             setMenuEvents();
         });
-    }
+    } else if (currentPage.endsWith("datenschutz.html")) {
+        $("#header_datenschutz").load("components/header_datenschutz.html", function () {
+            setMenuEvents();
+    });
+
+    } else if (currentPage.endsWith("impressum.html")) {
+        $("#header_impressum").load("components/header_impressum.html", function () {
+            setMenuEvents();
+    });
+}
 });
 
 function setMenuEvents() {
