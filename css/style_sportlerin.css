@@ -93,7 +93,7 @@ h2 {
 /* Bild in der Bild Box im Werdegang */
 #Werdegang .image-box img {
     width: 100%;
-    height: 101%;
+    height: 100%;
     object-fit: cover;
 }
 
@@ -280,6 +280,12 @@ h2 {
     position: absolute;
     right: 30%;
     top: 180%;
+}
+
+#Länderpokal .icon {
+    position: absolute;
+    right: 30%;
+    top: 210%;
 }
 
 /* Container der Sponsoren */

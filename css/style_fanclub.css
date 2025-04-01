@@ -82,7 +82,7 @@ p span {
 /* Überlagerungstextbox im Informationsbereich */
 #Infos .overlay-box {
     position: absolute;
-    top: 40%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 2.7rem;
@@ -94,7 +94,7 @@ p span {
 /* Überschrift im Veranstaltungsbereich */
 #Veranstaltungen h2 {
     text-align: center;
-    margin-top: 3.2rem;
+    margin-top: 6.2rem;
 }
 
 /* Container für Veranstaltungen */
@@ -280,7 +280,7 @@ textarea {
     }
 
     #Veranstaltungen h2 {
-        margin-top: 6.2rem;
+        margin-top: 9.2rem;
     }
 
     /* Formularinhalt wird auf Mobilgeräten in eine Spalte umgewandelt */
